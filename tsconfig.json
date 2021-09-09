@@ -1,0 +1,66 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"typeRoots": [
+			"./node_modules/@types",
+			"./types"
+		],
+		"experimentalDecorators": true,
+		"target": "es5",
+		"lib": [
+			"dom",
+			"dom.iterable"
+		],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"paths": {
+			"@components/*": [
+				"./src/components/*"
+			],
+			"@libs/*": [
+				"./src/libs/*"
+			],
+			"@public/*": [
+				"./public/*"
+			],
+			"@styles/*": [
+				"./styles/*"
+			],
+			"@utils/*": [
+				"./src/utils/*"
+			],
+			"@config/*": [
+				"./src/config/*"
+			],
+			"@layout/*": [
+				"./src/layout/*"
+			],
+			"@hoc/*": [
+				"./src/hoc/*"
+			],
+			"@src/*": [
+				"./src/*"
+			],
+			"@static/*": [
+				"static/*"
+			],
+		}
+	},
+	"exclude": [
+		"node_modules"
+	],
+	"include": [
+		"./src/**/*"
+	]
+}
