@@ -1,44 +1,25 @@
 import React from 'react';
+import { mainNavigation } from '../../components/constants';
 
 export const FooterNav = () => {
   return (
-    <div className="footer-links-nav">
-      <div className="footer-left" data-aos="zoom-in-right">
-        <ul>
-          <li>
-            <a href="/" className="footer-link">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/about-us" className="footer-link">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className="footer-link">
-              Solutions
-            </a>
-          </li>
-          <li>
-            <a href="/case-study" className="footer-link">
-              Case Study
-            </a>
-          </li>
-          <li>
-            <a href="/insights" className="footer-link">
-              Insights
-            </a>
-          </li>
-          <li>
-            <a href="/careers" className="footer-link">
-              Careers
-            </a>
-          </li>
+    <div className="w-full flex flex-row items-center justify-between pb-4 border-b border-customBackground-400">
+      <div className="flex flex-row items-start justify-start">
+        <ul className="flex flex-row items-center space-x-14">
+          {mainNavigation.map((item, index) => (
+            <li key={index} className="static hoverable flex justify-start items-center">
+              <a
+                href={item.link}
+                className="relative transform transition-all duration-300 text-white hover:text-customColors-500 font-light"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
-      <div className="footer-right socials" data-aos="zoom-in-left">
-        <ul>
+      <div className="flex flex-row items-start justify-end">
+        <ul className="flex flex-row items-center space-x-6">
           <li>
             <a href="#" className="social-link">
               <svg

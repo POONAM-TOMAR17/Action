@@ -82,7 +82,39 @@ export const solutionsArray = [
   { name: 'Digitalization', image: '/images/solutions/digitalization.svg' },
   { name: 'Cloud Computing', image: '/images/solutions/cloud-computing.svg' },
   { name: 'Artificial Intelligence', image: '/images/solutions/artificial-intelligence.svg' },
-  { name: 'Analytics', image: '/images/solutions/Analytics.svg' },
+  { name: 'Analytics', image: '/images/solutions/analytics.svg' },
   { name: 'Product Development', image: '/images/solutions/product-development.svg' },
   { name: 'Technical Consulting', image: '/images/solutions/technical-consulting.svg' }
+];
+
+export const insightsList = [
+  {
+    name: 'Healthcare',
+    image: '/images/insights/image-1.png',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec. Eget vitae pulvinar neque eu cras. Velit turpis justo, tellus, in. Egestas phasellus etiam sed.....',
+    link: '/insights/healthcare'
+  },
+  {
+    name: 'Business Development',
+    image: '/images/insights/image-2.png',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec. Eget vitae pulvinar neque eu cras. Velit turpis justo, tellus, in. Egestas phasellus etiam sed.....',
+    link: '/insights/business-development'
+  }
+];
+
+export const testimonialsList = [
+  {
+    value:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec. Eget vitae pulvinar neque eu cras.',
+    name: 'Mr. Kashyap',
+    designation: 'MD, Vasu Health care'
+  },
+  {
+    value:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec. Eget vitae pulvinar neque eu cras. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est.',
+    name: 'Mr. XXX',
+    designation: 'MD, Vasu Health care'
+  }
 ];

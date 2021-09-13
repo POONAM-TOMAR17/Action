@@ -33,7 +33,8 @@ module.exports = {
       customBackground: {
         100: '#FCFCFE',
         200: '#FCFBFB',
-        300: '#F9F9F9'
+        300: '#F9F9F9',
+        400: '#F4F4F4'
       }
     },
     fontFamily: {
@@ -90,7 +91,8 @@ module.exports = {
         '2.5xl': '28px'
       },
       maxWidth: {
-        '2xs': '15rem'
+        '2xs': '15rem',
+        '5.5xl': '68rem'
       },
       height: {
         106: '34rem'
