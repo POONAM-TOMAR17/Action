@@ -1,101 +1,201 @@
 import { useState } from '@hookstate/core';
 import React from 'react';
+import { ArrowRight } from '../../../../static/svg/ArrowRight';
+import { CloseIcon } from '../../../../static/svg/CloseIcon';
+import { FacebookIcon } from '../../../../static/svg/FacebookIcon';
+import { GooglePlusIcon } from '../../../../static/svg/GooglePlusIcon';
+import { LinkedInIcon } from '../../../../static/svg/LinkedInIcon';
+import { TwitterIcon } from '../../../../static/svg/TwitterIcon';
 import { mainNavigation } from '../../../components/constants';
 import { SubMenu } from '../submenu';
 import SearchBar from './searchBar';
 
 const Navbar = () => {
   const menuActive = useState(false);
+  const subActive = useState(false);
   const searchActive = useState(false);
 
   return (
     <>
-      <header className="relative bg-white w-full h-24">
-        <div className="relative h-full">
+      <header className="relative bg-white w-full xs:h-16 lg:h-24 xs:z-99 lg:z-auto">
+        <div className="relative h-full lg:shadow-lg">
           <div className="w-full h-full flex justify-between items-center xs:px-4 lg:px-8 lg:justify-start lg:container lg:mx-auto">
-            <div className="flex items-center justify-start flex-nowrap">
-              <a href="/" className="flex logo">
+            <div className="flex items-end justify-start flex-nowrap">
+              <a
+                className="lg:hidden flex items-end justify-center mr-5 border-0 outline-none shadow-none focus:outline-none focus:shadow-none"
+                onClick={() => {
+                  menuActive.set(true);
+                  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+                }}
+              >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0)">
+                    <path
+                      d="M2.43775 4.77788C2.37414 4.77698 2.31099 4.78873 2.25197 4.81245C2.19294 4.83617 2.13922 4.87138 2.09392 4.91604C2.04863 4.9607 2.01266 5.01392 1.98811 5.07261C1.96356 5.13129 1.95091 5.19427 1.95091 5.25788C1.95091 5.32149 1.96356 5.38447 1.98811 5.44315C2.01266 5.50184 2.04863 5.55506 2.09392 5.59972C2.13922 5.64438 2.19294 5.67959 2.25197 5.70331C2.31099 5.72703 2.37414 5.73878 2.43775 5.73788H23.5577C23.6214 5.73878 23.6845 5.72703 23.7435 5.70331C23.8026 5.67959 23.8563 5.64438 23.9016 5.59972C23.9469 5.55506 23.9828 5.50184 24.0074 5.44315C24.0319 5.38447 24.0446 5.32149 24.0446 5.25788C24.0446 5.19427 24.0319 5.13129 24.0074 5.07261C23.9828 5.01392 23.9469 4.9607 23.9016 4.91604C23.8563 4.87138 23.8026 4.83617 23.7435 4.81245C23.6845 4.78873 23.6214 4.77698 23.5577 4.77788H2.43775ZM2.43775 11.9779C2.37414 11.977 2.31099 11.9887 2.25197 12.0125C2.19294 12.0362 2.13922 12.0714 2.09392 12.116C2.04863 12.1607 2.01266 12.2139 1.98811 12.2726C1.96356 12.3313 1.95091 12.3943 1.95091 12.4579C1.95091 12.5215 1.96356 12.5845 1.98811 12.6432C2.01266 12.7018 2.04863 12.7551 2.09392 12.7997C2.13922 12.8444 2.19294 12.8796 2.25197 12.9033C2.31099 12.927 2.37414 12.9388 2.43775 12.9379H23.5577C23.6214 12.9388 23.6845 12.927 23.7435 12.9033C23.8026 12.8796 23.8563 12.8444 23.9016 12.7997C23.9469 12.7551 23.9828 12.7018 24.0074 12.6432C24.0319 12.5845 24.0446 12.5215 24.0446 12.4579C24.0446 12.3943 24.0319 12.3313 24.0074 12.2726C23.9828 12.2139 23.9469 12.1607 23.9016 12.116C23.8563 12.0714 23.8026 12.0362 23.7435 12.0125C23.6845 11.9887 23.6214 11.977 23.5577 11.9779H2.43775ZM2.43775 19.1779C2.37414 19.177 2.31099 19.1887 2.25197 19.2125C2.19294 19.2362 2.13922 19.2714 2.09392 19.316C2.04863 19.3607 2.01266 19.4139 1.98811 19.4726C1.96356 19.5313 1.95091 19.5943 1.95091 19.6579C1.95091 19.7215 1.96356 19.7845 1.98811 19.8432C2.01266 19.9018 2.04863 19.9551 2.09392 19.9997C2.13922 20.0444 2.19294 20.0796 2.25197 20.1033C2.31099 20.127 2.37414 20.1388 2.43775 20.1379H23.5577C23.6214 20.1388 23.6845 20.127 23.7435 20.1033C23.8026 20.0796 23.8563 20.0444 23.9016 19.9997C23.9469 19.9551 23.9828 19.9018 24.0074 19.8432C24.0319 19.7845 24.0446 19.7215 24.0446 19.6579C24.0446 19.5943 24.0319 19.5313 24.0074 19.4726C23.9828 19.4139 23.9469 19.3607 23.9016 19.316C23.8563 19.2714 23.8026 19.2362 23.7435 19.2125C23.6845 19.1887 23.6214 19.177 23.5577 19.1779H2.43775Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0.998047 0.458008)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="/" className="flex items-center justify-center">
                 <img src="/images/actonate-logo.svg" alt="actonate-logo" />
               </a>
-              <div className="flex flex-nowrap">
-                <div className={`lg:hidden navbar-toggle ${menuActive.get() ? 'open' : ''}`}>
-                  <button onClick={() => menuActive.set(true)} type="button">
-                    <svg
-                      className="close-ico"
-                      width="17"
-                      height="18"
-                      viewBox="0 0 17 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.0157 16.2459C0.970084 16.2902 0.933703 16.3431 0.908799 16.4017C0.883817 16.4602 0.870722 16.5231 0.870227 16.5867C0.869809 16.6503 0.881993 16.7133 0.906141 16.7722C0.930288 16.8311 0.965891 16.8846 1.01086 16.9295C1.05583 16.9745 1.10933 17.0101 1.16819 17.0343C1.22699 17.0583 1.29011 17.0706 1.35368 17.0701C1.41731 17.0697 1.48019 17.0566 1.53869 17.0316C1.59718 17.0066 1.65018 16.9703 1.69452 16.9247L16.6286 1.99064C16.6743 1.94623 16.7105 1.89327 16.7355 1.83479C16.7605 1.77624 16.7736 1.71338 16.774 1.64974C16.7745 1.58617 16.7622 1.5231 16.7382 1.46427C16.714 1.40544 16.6784 1.35191 16.6335 1.30694C16.5885 1.26196 16.535 1.2264 16.4761 1.20221C16.4172 1.1781 16.3542 1.16587 16.2906 1.16629C16.227 1.16679 16.1642 1.17987 16.1056 1.2049C16.0471 1.22979 15.9942 1.26614 15.9498 1.31182L1.0157 16.2459Z"
-                        fill="black"
-                      />
-                      <path
-                        d="M1.69453 1.31181C1.65018 1.2662 1.59726 1.22982 1.53869 1.20491C1.48019 1.17993 1.41732 1.16683 1.35375 1.16634C1.29012 1.16592 1.22706 1.1781 1.1682 1.20225C1.10933 1.2264 1.05584 1.262 1.01087 1.30698C0.965894 1.35195 0.930291 1.40544 0.906143 1.46431C0.882066 1.5231 0.869812 1.58623 0.8703 1.64979C0.870724 1.71343 0.88382 1.7763 0.908802 1.8348C0.933777 1.89329 0.970087 1.94629 1.0157 1.99063L15.9498 16.9247C15.9942 16.9704 16.0471 17.0066 16.1056 17.0316C16.1642 17.0566 16.227 17.0697 16.2907 17.0701C16.3542 17.0706 16.4173 17.0583 16.4761 17.0343C16.535 17.0101 16.5885 16.9745 16.6335 16.9296C16.6784 16.8846 16.714 16.8311 16.7382 16.7722C16.7623 16.7133 16.7745 16.6503 16.7741 16.5867C16.7736 16.5231 16.7605 16.4603 16.7355 16.4017C16.7106 16.3432 16.6743 16.2903 16.6286 16.2459L1.69453 1.31181Z"
-                        fill="black"
-                      />
-                    </svg>
-                    <svg
-                      className="bar-ico"
-                      width="25"
-                      height="25"
-                      viewBox="0 0 25 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0)">
-                        <path
-                          d="M2.43775 4.77788C2.37414 4.77698 2.31099 4.78873 2.25197 4.81245C2.19294 4.83617 2.13922 4.87138 2.09392 4.91604C2.04863 4.9607 2.01266 5.01392 1.98811 5.07261C1.96356 5.13129 1.95091 5.19427 1.95091 5.25788C1.95091 5.32149 1.96356 5.38447 1.98811 5.44315C2.01266 5.50184 2.04863 5.55506 2.09392 5.59972C2.13922 5.64438 2.19294 5.67959 2.25197 5.70331C2.31099 5.72703 2.37414 5.73878 2.43775 5.73788H23.5577C23.6214 5.73878 23.6845 5.72703 23.7435 5.70331C23.8026 5.67959 23.8563 5.64438 23.9016 5.59972C23.9469 5.55506 23.9828 5.50184 24.0074 5.44315C24.0319 5.38447 24.0446 5.32149 24.0446 5.25788C24.0446 5.19427 24.0319 5.13129 24.0074 5.07261C23.9828 5.01392 23.9469 4.9607 23.9016 4.91604C23.8563 4.87138 23.8026 4.83617 23.7435 4.81245C23.6845 4.78873 23.6214 4.77698 23.5577 4.77788H2.43775ZM2.43775 11.9779C2.37414 11.977 2.31099 11.9887 2.25197 12.0125C2.19294 12.0362 2.13922 12.0714 2.09392 12.116C2.04863 12.1607 2.01266 12.2139 1.98811 12.2726C1.96356 12.3313 1.95091 12.3943 1.95091 12.4579C1.95091 12.5215 1.96356 12.5845 1.98811 12.6432C2.01266 12.7018 2.04863 12.7551 2.09392 12.7997C2.13922 12.8444 2.19294 12.8796 2.25197 12.9033C2.31099 12.927 2.37414 12.9388 2.43775 12.9379H23.5577C23.6214 12.9388 23.6845 12.927 23.7435 12.9033C23.8026 12.8796 23.8563 12.8444 23.9016 12.7997C23.9469 12.7551 23.9828 12.7018 24.0074 12.6432C24.0319 12.5845 24.0446 12.5215 24.0446 12.4579C24.0446 12.3943 24.0319 12.3313 24.0074 12.2726C23.9828 12.2139 23.9469 12.1607 23.9016 12.116C23.8563 12.0714 23.8026 12.0362 23.7435 12.0125C23.6845 11.9887 23.6214 11.977 23.5577 11.9779H2.43775ZM2.43775 19.1779C2.37414 19.177 2.31099 19.1887 2.25197 19.2125C2.19294 19.2362 2.13922 19.2714 2.09392 19.316C2.04863 19.3607 2.01266 19.4139 1.98811 19.4726C1.96356 19.5313 1.95091 19.5943 1.95091 19.6579C1.95091 19.7215 1.96356 19.7845 1.98811 19.8432C2.01266 19.9018 2.04863 19.9551 2.09392 19.9997C2.13922 20.0444 2.19294 20.0796 2.25197 20.1033C2.31099 20.127 2.37414 20.1388 2.43775 20.1379H23.5577C23.6214 20.1388 23.6845 20.127 23.7435 20.1033C23.8026 20.0796 23.8563 20.0444 23.9016 19.9997C23.9469 19.9551 23.9828 19.9018 24.0074 19.8432C24.0319 19.7845 24.0446 19.7215 24.0446 19.6579C24.0446 19.5943 24.0319 19.5313 24.0074 19.4726C23.9828 19.4139 23.9469 19.3607 23.9016 19.316C23.8563 19.2714 23.8026 19.2362 23.7435 19.2125C23.6845 19.1887 23.6214 19.177 23.5577 19.1779H2.43775Z"
-                          fill="black"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0">
-                          <rect
-                            width="24"
-                            height="24"
-                            fill="white"
-                            transform="translate(0.998047 0.458008)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                </div>
-              </div>
             </div>
-            <div
-              className={`navbar lg:h-full lg:flex-1 flex justify-between lg:ml-6 ${
-                menuActive.get() ? 'open' : ''
-              }`}
-            >
+            <div className="lg:h-full lg:flex-1 lg:flex justify-between lg:ml-6">
               <nav
-                className={`flex space-x-10 lg:h-full${
-                  searchActive.get() ? ' w-0 flex-shrink-0 opacity-0 z-1' : ' flex-1'
+                className={
+                  `flex h-full xs:fixed xs:left-0 xs:top-0 xs:w-full lg:position-unset lg:z-auto lg:translate-x-unset transform duration-100 ease-in-out${
+                    searchActive.get()
+                      ? ' lg:w-0 lg:flex-shrink-0 lg:opacity-0 lg:z-1'
+                      : ' lg:flex-1'
+                  }` +
+                  `${
+                    menuActive.get()
+                      ? ' xs:z-9999 xs:translate-x-0'
+                      : ' xs:-translate-x-full xs:z-1'
+                  }`
+                }
+              >
+                <div
+                  onClick={() => {
+                    menuActive.set(false);
+                    document.getElementsByTagName('body')[0].removeAttribute('style');
+                  }}
+                  className={`xs:absolute lg:hidden w-full h-full bg-black bg-opacity-40 transform duration-500${
+                    menuActive.get() ? ' xs:flex xs:z-99 opacity-100' : ' xs:hidden opacity-0'
+                  }`}
+                />
+                <div className="xs:w-4/5 xs:z-999 xs:flex flex-col justify-between items-start bg-white overflow-hidden overflow-y-auto lg:flex lg:z-auto lg:flex-1 lg:h-full lg:bg-transparent lg:overflow-unset no-scrollbar">
+                  <div className="w-full xs:flex lg:hidden items-center justify-start flex-nowrap h-16 px-4">
+                    <a
+                      onClick={() => {
+                        menuActive.set(false);
+                        document.getElementsByTagName('body')[0].removeAttribute('style');
+                      }}
+                      className="border border-transparent cursor-pointer flex items-center justify-center mr-5 overflow-hidden"
+                      style={{ width: '25px', height: '25px' }}
+                    >
+                      <CloseIcon className="w-full h-full" strokeWidth="1" />
+                    </a>
+                    <a href="/" className="flex items-center justify-center">
+                      <img src="/images/actonate-logo.svg" alt="actonate-logo" />
+                    </a>
+                  </div>
+                  <ul className="flex-col xs:w-full lg:w-auto lg:h-full lg:flex-row flex justify-center items-center">
+                    {mainNavigation.map((item, index) =>
+                      item.link !== '' ? (
+                        <li
+                          key={index}
+                          className="hoverable xs:w-full lg:w-auto flex justify-start items-center xs:flex-wrap lg:flex-nowrap lg:h-full"
+                        >
+                          <a
+                            href={item.link}
+                            className="relative transform transition-all duration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base lg:h-full xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                          >
+                            {item.name}
+                            {item.subMenu && item.subMenu.length > 0 && (
+                              <p className="ml-2 flex items-center justify-center">
+                                <ArrowRight
+                                  className="w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90"
+                                  strokeWidth="2"
+                                />
+                              </p>
+                            )}
+                          </a>
+                        </li>
+                      ) : (
+                        <li
+                          key={index}
+                          className="hoverable xs:w-full lg:w-auto flex justify-start items-center xs:flex-wrap lg:flex-nowrap lg:h-full"
+                        >
+                          <a
+                            onClick={() => subActive.set(!subActive.get())}
+                            className="relative transform transition-all duration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                          >
+                            {item.name}
+                            {item.subMenu && item.subMenu.length > 0 && (
+                              <p className="ml-2 flex items-center justify-center">
+                                <ArrowRight
+                                  className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
+                                    subActive.get() ? ' xs:rotate-90' : ''
+                                  }`}
+                                  strokeWidth="2"
+                                />
+                              </p>
+                            )}
+                          </a>
+                          {item.link === '' && item.subMenu && item.subMenu.length > 0 && (
+                            <SubMenu subActive={subActive.get()} subMenu={item.subMenu} />
+                          )}
+                        </li>
+                      )
+                    )}
+                    <li className="xs:w-full lg:w-auto flex justify-start items-center lg:h-full">
+                      <a
+                        href="/contact-us"
+                        className="lg:hidden relative transform transition-all duration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul className="xs:flex lg:hidden flex-nowrap items-center space-x-6 bg-footerBackground w-full p-5">
+                    <li>
+                      <a
+                        href="http://fb.com/actonate"
+                        target="_blank"
+                        className="flex items-center justify-ceter"
+                      >
+                        <FacebookIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/actonate"
+                        target="_blank"
+                        className="flex items-center justify-ceter"
+                      >
+                        <TwitterIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank" className="flex items-center justify-ceter">
+                        <GooglePlusIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://in.linkedin.com/company/actonate"
+                        target="_blank"
+                        className="flex items-center justify-ceter"
+                      >
+                        <LinkedInIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div
+                className={`xs:hidden lg:flex justify-start relative${
+                  searchActive.get() ? ' w-full' : ''
                 }`}
               >
-                <ul className="flex justify-center items-center lg:h-full">
-                  {mainNavigation.map((item, index) => (
-                    <li
-                      key={index}
-                      className="static hoverable flex justify-start items-center lg:h-full lg:px-5"
-                    >
-                      <a
-                        href={item.link}
-                        className="relative transform transition-all duration-300 hover:text-customColors-500"
-                      >
-                        {item.name}
-                      </a>
-                      {item.link === '' && item.subMenu && item.subMenu.length > 0 && (
-                        <SubMenu subMenu={item.subMenu} />
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              <div className={`flex justify-start relative${searchActive.get() ? ' w-full' : ''}`}>
                 <ul className="w-full flex items-center justify-end space-x-10">
                   <li className="flex-1 lg:block">
                     <SearchBar searchActive={searchActive} />
@@ -109,7 +209,6 @@ const Navbar = () => {
                     </a>
                   </li>
                 </ul>
-                <div className="bg-block-top" />
               </div>
             </div>
             <div className="lg:hidden">

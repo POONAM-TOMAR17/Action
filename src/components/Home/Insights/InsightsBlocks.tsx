@@ -8,8 +8,11 @@ const InsightsBlocks = () => {
       {insightsList &&
         insightsList.map((listItem, index) => {
           return (
-            <div key={index} className="w-full bg-customBackground-100 overflow-hidden">
-              <div className="w-full flex justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
+            <div
+              key={index}
+              className="w-full xs:py-5 lg:py-0 bg-customBackground-100 overflow-hidden"
+            >
+              <div className="w-full flex justify-start flex-wrap lg:flex-nowrap xs:px-4 lg:px-8 lg:container lg:mx-auto">
                 <>
                   <InsightBlock
                     isLeft={index % 2 === 0 ? true : false}

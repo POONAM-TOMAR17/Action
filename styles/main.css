@@ -22106,10 +22106,6 @@ select {
   vertical-align: text-bottom;
 }
 
-.font-raleway {
-  font-family: 'Raleway', sans-serif;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -48378,10 +48374,6 @@ select {
     vertical-align: text-bottom;
   }
 
-  .xs\:font-raleway {
-    font-family: 'Raleway', sans-serif;
-  }
-
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -74160,10 +74152,6 @@ select {
 
   .sm\:align-text-bottom {
     vertical-align: text-bottom;
-  }
-
-  .sm\:font-raleway {
-    font-family: 'Raleway', sans-serif;
   }
 
   .sm\:text-xs {
@@ -99946,10 +99934,6 @@ select {
     vertical-align: text-bottom;
   }
 
-  .md\:font-raleway {
-    font-family: 'Raleway', sans-serif;
-  }
-
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -125730,10 +125714,6 @@ select {
     vertical-align: text-bottom;
   }
 
-  .lg\:font-raleway {
-    font-family: 'Raleway', sans-serif;
-  }
-
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -151512,10 +151492,6 @@ select {
 
   .xl\:align-text-bottom {
     vertical-align: text-bottom;
-  }
-
-  .xl\:font-raleway {
-    font-family: 'Raleway', sans-serif;
   }
 
   .xl\:text-xs {

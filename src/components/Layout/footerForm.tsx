@@ -3,17 +3,15 @@ import { ButtonArrow } from '../../../static/svg/ButtonArrow';
 
 export const FooterForm = () => {
   return (
-    <div className="w-full flex flex-row justify-between py-10 sapce-x-10">
-      <div className="w-1/3 flex flex-col items-start justify-start space-y-2">
-        <p className="font-raleway text-3xl tracking-wide text-customColors-600">
-          Lets build future together
-        </p>
+    <div className="w-full flex flex-wrap lg:flex-nowrap justify-between xs:pt-10 xs:pb-8 lg:py-10 space-y-5 lg:space-y-0 lg:sapce-x-10">
+      <div className="w-full lg:w-1/3 flex flex-col items-start justify-start space-y-2">
+        <p className="text-4xl text-customColors-600">Lets build future together</p>
         <p className="text-customColors-400 font-light">
           Get the latest updates of our projects and products, just Information and no spams for
           sure!
         </p>
       </div>
-      <div className="w-1/2 flex flex-row items-end pb-1 justify-end">
+      <div className="w-full lg:w-1/2 flex flex-row items-end pb-1 justify-end">
         <div className="flex-1">
           <input
             type="email"

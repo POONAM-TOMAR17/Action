@@ -2,16 +2,16 @@ import React from 'react';
 
 const OurClients = () => {
   return (
-    <section className="w-full h-full flex justify-start items-start flex-col xs:px-4 lg:px-8 lg:mb-14 lg:container lg:mx-auto">
+    <section className="w-full h-full flex justify-start items-start flex-col xs:px-4 lg:px-8 mb-14 lg:container lg:mx-auto">
       <div className="w-4/5 flex justify-start items-start flex-col space-y-4">
         <p className="text-sm uppercase tracking-widest text-customColors-200 mt-4">Our Clients</p>
         <p className="font-medium text-4xl text-customColors-100 tracking-relaxed leading-snug">
           People we have woked with
         </p>
       </div>
-      <div className="w-full grid grid-cols-4 gap-15 pt-10">
+      <div className="w-full grid xs:grid-cols-3 xs:gap-3 lg:grid-cols-4 lg:gap-15 xs:pt-5 lg:pt-10">
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/siemens.png"
               alt="Siemens"
@@ -21,7 +21,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/maruti-suzuki.png"
               alt="Maruti Suzuki"
@@ -31,7 +31,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/visualbi.png"
               alt="VisualBi Technology"
@@ -41,7 +41,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-2/5 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-1/2 lg:w-2/5 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/one-zoey.png"
               alt="OneZoey"
@@ -51,7 +51,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/sapna.png"
               alt="Sapna Book Store"
@@ -61,7 +61,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/vasu.png"
               alt="Vasu Healthcare"
@@ -71,7 +71,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-2/5 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-1/2 lg:w-2/5 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/lets-shave.png"
               alt="Lets Shave"
@@ -107,7 +107,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/grofers.png"
               alt="Grofers"
@@ -117,7 +117,7 @@ const OurClients = () => {
         </div>
 
         <div className="w-full flex items-center justify-center overflow-hidden oc-img">
-          <div className="w-1/2 flex items-center justify-center overflow-hidden">
+          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/divya-bhaskar.png"
               alt="Divya Bhaskar"

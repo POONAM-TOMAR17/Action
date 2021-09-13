@@ -20,11 +20,11 @@ const InsightBlock = (props: IInsightBlock) => {
         </div>
       )}
       <div
-        className={`w-full lg:w-1/2 flex items-start content-center justify-center flex-wrap space-y-5${
+        className={`w-full lg:w-1/2 flex items-start content-center justify-center flex-wrap space-y-5 xs:order-2 lg:order-none${
           isLeft ? ' lg:pl-20' : ' lg:pr-20'
         }`}
       >
-        <p className="w-full font-medium text-3xl text-customColors-100">{name}</p>
+        <p className="w-full font-medium text-3xl text-customColors-100 xs:mt-5 lg:mt-0">{name}</p>
         <p className="w-full text-lg font-light">{description}</p>
         <a
           href={link}

@@ -37,9 +37,7 @@ module.exports = {
         400: '#F4F4F4'
       }
     },
-    fontFamily: {
-      raleway: "'Raleway', sans-serif"
-    },
+    fontFamily: {},
     zIndex: {
       1: -1,
       0: 0,

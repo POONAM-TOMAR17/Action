@@ -1,16 +1,20 @@
 import React from 'react';
+import { FacebookIcon } from '../../../static/svg/FacebookIcon';
+import { GooglePlusIcon } from '../../../static/svg/GooglePlusIcon';
+import { LinkedInIcon } from '../../../static/svg/LinkedInIcon';
+import { TwitterIcon } from '../../../static/svg/TwitterIcon';
 import { mainNavigation } from '../../components/constants';
 
 export const FooterNav = () => {
   return (
-    <div className="w-full flex flex-row items-center justify-between pb-4 border-b border-customBackground-400">
-      <div className="flex flex-row items-start justify-start">
-        <ul className="flex flex-row items-center space-x-14">
+    <div className="w-full flex flex-wrap lg:flex-nowrap items-center justify-between lg:pb-4 lg:border-b lg:border-customBackground-400">
+      <div className="xs:w-full xs:pb-5 xs:mb-5 xs:border-b xs:border-customBackground-400 lg:w-auto lg:pb-0 lg:mb-0 flex flex-wrap lg:flex-nowrap items-start justify-start lg:border-0">
+        <ul className="xs:w-full lg:w-auto grid grid-cols-3 gap-5 lg:flex lg:flex-nowrap lg:items-center lg:justify-start lg:space-x-14">
           {mainNavigation.map((item, index) => (
             <li key={index} className="static hoverable flex justify-start items-center">
               <a
                 href={item.link}
-                className="relative transform transition-all duration-300 text-white hover:text-customColors-500 font-light"
+                className="relative transform transition-all duration-300 text-customBackground-400 lg:text-white hover:text-customColors-500 font-light"
               >
                 {item.name}
               </a>
@@ -18,82 +22,38 @@ export const FooterNav = () => {
           ))}
         </ul>
       </div>
-      <div className="flex flex-row items-start justify-end">
-        <ul className="flex flex-row items-center space-x-6">
+      <div className="flex flex-wrap lg:flex-nowrap items-start justify-end">
+        <ul className="flex flex-wrap lg:flex-nowrap items-center space-x-6">
           <li>
-            <a href="#" className="social-link">
-              <svg
-                width="51"
-                height="51"
-                viewBox="0 0 51 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M25.8203 0.212402C12.0132 0.212402 0.820312 11.4053 0.820312 25.2124C0.820312 39.0195 12.0132 50.2124 25.8203 50.2124C39.6274 50.2124 50.8203 39.0195 50.8203 25.2124C50.8203 11.4053 39.6274 0.212402 25.8203 0.212402ZM27.6784 27.6737H31.1874L31.6455 23.2589H27.6784V20.6558C27.6784 19.6771 28.324 19.448 28.7821 19.448H31.5778V15.1529L27.7201 15.1373C23.4406 15.1373 22.4723 18.3443 22.4723 20.3851V23.2485H19.9941V27.6737H22.4723V38.9763H27.6784V27.6737Z"
-                  fill="#F1F2F3"
-                  fillOpacity="0.31"
-                />
-              </svg>
+            <a
+              href="http://fb.com/actonate"
+              target="_blank"
+              className="flex items-center justify-ceter"
+            >
+              <FacebookIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
             </a>
           </li>
           <li>
-            <a href="#" className="social-link">
-              <svg
-                width="51"
-                height="51"
-                viewBox="0 0 51 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M25.8203 0.212402C12.0132 0.212402 0.820312 11.4053 0.820312 25.2124C0.820312 39.0195 12.0132 50.2124 25.8203 50.2124C39.6274 50.2124 50.8203 39.0195 50.8203 25.2124C50.8203 11.4053 39.6274 0.212402 25.8203 0.212402ZM34.6329 21.2857C35.5897 21.1699 36.5003 20.9105 37.3489 20.5281C36.7164 21.4923 35.9124 22.3392 34.9831 23.0133L34.999 23.6361C34.999 29.9927 30.2427 37.3223 21.5414 37.3223C18.8701 37.3223 16.3846 36.5251 14.291 35.158C14.6613 35.2005 15.0374 35.2239 15.4192 35.2239C17.6352 35.2239 19.6755 34.4575 21.2936 33.168C19.2245 33.1299 17.4781 31.7393 16.8759 29.8271C17.1655 29.8857 17.4609 29.9165 17.7663 29.9165C18.1986 29.9165 18.6164 29.8564 19.0127 29.7479C16.85 29.3054 15.2189 27.3609 15.2189 25.031V24.9709C15.8572 25.3314 16.5863 25.5483 17.3615 25.5747C16.0935 24.7131 15.2578 23.2404 15.2578 21.5714C15.2578 20.6892 15.4898 19.8628 15.8975 19.1536C18.2303 22.0638 21.7157 23.9789 25.6463 24.1797C25.5656 23.828 25.5238 23.4602 25.5238 23.0836C25.5238 20.4285 27.6419 18.2744 30.2541 18.2744C31.6158 18.2744 32.8434 18.8576 33.7064 19.794C34.7842 19.5771 35.7957 19.177 36.7121 18.6261C36.3576 19.7471 35.6098 20.6907 34.6329 21.2857Z"
-                  fill="#F1F2F3"
-                  fillOpacity="0.31"
-                />
-              </svg>
+            <a
+              href="https://twitter.com/actonate"
+              target="_blank"
+              className="flex items-center justify-ceter"
+            >
+              <TwitterIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
             </a>
           </li>
           <li>
-            <a href="#" className="social-link">
-              <svg
-                width="51"
-                height="51"
-                viewBox="0 0 51 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M25.8203 0.212402C12.0132 0.212402 0.820312 11.4053 0.820312 25.2124C0.820312 39.0195 12.0132 50.2124 25.8203 50.2124C39.6274 50.2124 50.8203 39.0195 50.8203 25.2124C50.8203 11.4053 39.6274 0.212402 25.8203 0.212402ZM19.748 27.2874H25.4733C24.6375 29.6154 22.387 31.2874 19.748 31.2874C16.4006 31.2874 13.6765 28.5954 13.6765 25.2874C13.6765 21.9794 16.4006 19.2874 19.748 19.2874C21.199 19.2874 22.5955 19.8014 23.6802 20.7354L26.3395 17.7194C24.5181 16.1514 22.1785 15.2874 19.748 15.2874C14.1683 15.2874 9.62891 19.7734 9.62891 25.2874C9.62891 30.8014 14.1683 35.2874 19.748 35.2874C25.3276 35.2874 29.867 30.8014 29.867 25.2874V23.2874H19.748V27.2874ZM37.9622 23.2874V19.2874H35.9384V23.2874H31.8908V25.2874H35.9384V29.2874H37.9622V25.2874H42.0099V23.2874H37.9622Z"
-                  fill="#F1F2F3"
-                  fillOpacity="0.31"
-                />
-              </svg>
+            <a href="#" target="_blank" className="flex items-center justify-ceter">
+              <GooglePlusIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
             </a>
           </li>
           <li>
-            <a href="#" className="social-link">
-              <svg
-                width="51"
-                height="51"
-                viewBox="0 0 51 51"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M25.8203 0.212402C12.0132 0.212402 0.820312 11.4053 0.820312 25.2124C0.820312 39.0195 12.0132 50.2124 25.8203 50.2124C39.6274 50.2124 50.8203 39.0195 50.8203 25.2124C50.8203 11.4053 39.6274 0.212402 25.8203 0.212402ZM17.95 19.5452C19.1672 19.5452 20.1539 18.5584 20.1539 17.3412C20.1539 16.1241 19.1672 15.1373 17.95 15.1373C16.7328 15.1373 15.7461 16.1241 15.7461 17.3412C15.7461 18.5584 16.7328 19.5452 17.95 19.5452ZM20.2522 21.4342H15.7461V35.2875H20.2522V21.4342ZM32.5145 21.593C32.5184 21.5942 32.5222 21.5955 32.5261 21.5967C34.4618 22.1017 35.8962 23.846 35.8962 25.9391V35.2875H31.3914V26.4718C29.9544 22.9883 26.5491 27.7312 26.5491 27.7312V35.2875H22.043V21.4342H26.5491V24.0827C27.0982 23.3447 28.7643 21.4342 31.3914 21.4342C31.6987 21.4342 31.9606 21.4682 32.1999 21.5161C32.2616 21.5262 32.3221 21.5375 32.3825 21.5514C32.4161 21.5606 32.4474 21.5709 32.4786 21.5813L32.4788 21.5813L32.4788 21.5813C32.4907 21.5852 32.5025 21.5891 32.5145 21.593Z"
-                  fill="#F1F2F3"
-                  fillOpacity="0.31"
-                />
-              </svg>
+            <a
+              href="https://in.linkedin.com/company/actonate"
+              target="_blank"
+              className="flex items-center justify-ceter"
+            >
+              <LinkedInIcon className="xs:w-9 xs:h-9 lg:w-10 lg:h-10" />
             </a>
           </li>
         </ul>
