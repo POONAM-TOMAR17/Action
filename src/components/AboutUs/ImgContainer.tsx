@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ImgContainer = () => {
+const ImgContainer = () => {
   return (
     <section className="w-full lg:h-full flex justify-between items-center overflow-hidden mb-5">
       <div className="w-full lg:h-full flex justify-start items-center flex-wrap lg:justify-start relative">
@@ -37,3 +37,5 @@ export const ImgContainer = () => {
     </section>
   );
 };
+
+export default ImgContainer;

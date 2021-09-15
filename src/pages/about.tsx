@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImgContainer } from '../components/AboutUs/mainBanner';
+import ImgContainer from '../components/AboutUs/ImgContainer';
 import OurGoal from '../components/AboutUs/OurGoal';
 import OurTeam from '../components/AboutUs/OurTeam/OurTeam';
 import OverView from '../components/AboutUs/OverView';
