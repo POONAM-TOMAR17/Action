@@ -1,8 +1,9 @@
-.body {
+body {
   font-size: 16px;
   font-weight: 400;
   color: #4a5568;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 .form-input,
@@ -11,6 +12,10 @@
 .form-input:focus {
   outline: none;
   box-shadow: none;
+}
+
+.flicking-viewport {
+  transition: height 500ms;
 }
 
 /* default scrollbar reset */
@@ -76,7 +81,11 @@
 }
 
 .main-slider {
-  height: calc(100vh - 96px);
+  height: calc(100vh - 5rem);
+}
+
+.top-image {
+  height: calc(100vh - 5rem);
 }
 
 .cs-slider .slick-list {
@@ -163,6 +172,11 @@
   position: unset;
 }
 
+.team-block {
+  width: 38%;
+  margin-right: 5%;
+}
+
 @media (min-width: 1025px) {
   .mega-menu {
     height: 0px;
@@ -174,6 +188,9 @@
     height: auto;
     opacity: 1;
     z-index: 99;
+  }
+  .team-slider .flicking-viewport {
+    overflow: visible;
   }
   .lg\:overflow-unset {
     overflow: unset;
@@ -195,5 +212,18 @@
   }
   .main-slider {
     height: calc(80vh - 75px);
+  }
+  .top-image {
+    height: calc(80vh - 75px);
+  }
+  .team-slider .flicking-viewport {
+    transition: height 300ms;
+  }
+  .team-block {
+    width: 80%;
+    margin-right: 15%;
+  }
+  .team-block:last-child > div > div:last-child > div > p:last-child {
+    width: 75%;
   }
 }

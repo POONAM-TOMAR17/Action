@@ -118,3 +118,48 @@ export const testimonialsList = [
     designation: 'MD, Vasu Health care'
   }
 ];
+
+export const teamList = [
+  {
+    name: 'John Doe',
+    designation: 'Senior Developer',
+    jobDescrption:
+      'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
+    image: '/images/user-2.png'
+  },
+  {
+    name: 'John Doe',
+    designation: 'Senior Developer',
+    jobDescrption:
+      'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
+    image: '/images/user-3.png'
+  },
+  {
+    name: 'John Doe',
+    designation: 'Senior Developer',
+    jobDescrption:
+      'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
+    image: '/images/user-1.png'
+  },
+  {
+    name: 'John Doe',
+    designation: 'Senior Developer',
+    jobDescrption:
+      'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
+    image: '/images/user-3.png'
+  },
+  {
+    name: 'John Doe',
+    designation: 'Senior Developer',
+    jobDescrption:
+      'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
+    image: '/images/user-2.png'
+  },
+  {
+    name: 'John Doe',
+    designation: 'Senior Developer',
+    jobDescrption:
+      'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
+    image: '/images/user-1.png'
+  }
+];

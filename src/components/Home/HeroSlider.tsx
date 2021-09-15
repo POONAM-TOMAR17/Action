@@ -22,7 +22,7 @@ const HeroSlider = () => {
                   </p>
                   <img
                     src="/images/a-vector.png"
-                    className="h-1/2 lg:h-11/12 object-contain absolute bottom-0 right-0 -mr-3"
+                    className="h-1/2 lg:h-full object-contain absolute bottom-0 right-0 z-1"
                   />
                 </div>
               )

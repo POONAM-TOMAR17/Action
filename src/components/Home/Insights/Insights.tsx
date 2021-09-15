@@ -1,15 +1,23 @@
 import React from 'react';
 import { ButtonArrow } from '../../../../static/svg/ButtonArrow';
 import InsightsBlocks from './InsightsBlocks';
+interface IInsights {
+  singBlock?: boolean;
+}
 
-const Insights = () => {
+const Insights = (props: IInsights) => {
+  const { singBlock } = props;
   return (
-    <section className="w-full flex justify-start items-center flex-wrap lg:mb-5">
+    <section
+      className={`w-full flex justify-start items-center flex-wrap${singBlock ? '' : ' lg:mb-5'}`}
+    >
       <div className="w-full flex items-center justify-between xs:px-4 lg:px-8 lg:my-5 lg:container lg:mx-auto">
         <div className="w-full lg:w-4/5 flex justify-start items-start flex-col space-y-4">
-          <p className="text-sm uppercase tracking-widest text-customColors-200">Our Insights</p>
+          {!singBlock && (
+            <p className="text-sm uppercase tracking-widest text-customColors-200">Our Insights</p>
+          )}
           <p className="font-medium text-4xl text-customColors-100 tracking-relaxed leading-snug">
-            Sharing Knowledge
+            {!singBlock ? `Sharing Knowledge` : `Insights`}
           </p>
         </div>
         <div className="xs:hidden lg:flex-1 lg:flex justify-end items-start">
@@ -23,7 +31,7 @@ const Insights = () => {
         </div>
       </div>
       <div className="w-full">
-        <InsightsBlocks />
+        <InsightsBlocks singBlock={singBlock} />
       </div>
     </section>
   );

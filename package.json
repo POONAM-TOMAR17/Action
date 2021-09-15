@@ -33,6 +33,8 @@
     "tailwindcss": "2.2.4"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.2.1",
+    "@egjs/react-flicking": "^4.3.0",
     "@hookstate/core": "^3.0.11",
     "@tailwindcss/ui": "^0.7.2",
     "@types/eslint-config-prettier": "^6.11.0",

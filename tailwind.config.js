@@ -77,7 +77,8 @@ module.exports = {
     },
     extend: {
       letterSpacing: {
-        relaxed: '0.01em'
+        relaxed: '0.01em',
+        loose: '0.3em'
       },
       backgroundImage: {},
       fontSize: {

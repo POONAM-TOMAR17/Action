@@ -22375,6 +22375,10 @@ select {
   letter-spacing: 0.01em;
 }
 
+.tracking-loose {
+  letter-spacing: 0.3em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -48643,6 +48647,10 @@ select {
     letter-spacing: 0.01em;
   }
 
+  .xs\:tracking-loose {
+    letter-spacing: 0.3em;
+  }
+
   .xs\:text-black {
     --tw-text-opacity: 1;
     color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -74421,6 +74429,10 @@ select {
 
   .sm\:tracking-relaxed {
     letter-spacing: 0.01em;
+  }
+
+  .sm\:tracking-loose {
+    letter-spacing: 0.3em;
   }
 
   .sm\:text-black {
@@ -100203,6 +100215,10 @@ select {
     letter-spacing: 0.01em;
   }
 
+  .md\:tracking-loose {
+    letter-spacing: 0.3em;
+  }
+
   .md\:text-black {
     --tw-text-opacity: 1;
     color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -125983,6 +125999,10 @@ select {
     letter-spacing: 0.01em;
   }
 
+  .lg\:tracking-loose {
+    letter-spacing: 0.3em;
+  }
+
   .lg\:text-black {
     --tw-text-opacity: 1;
     color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -151761,6 +151781,10 @@ select {
 
   .xl\:tracking-relaxed {
     letter-spacing: 0.01em;
+  }
+
+  .xl\:tracking-loose {
+    letter-spacing: 0.3em;
   }
 
   .xl\:text-black {
