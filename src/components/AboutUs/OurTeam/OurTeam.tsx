@@ -21,7 +21,7 @@ const OurTeam = (props: IOurTeam) => {
       </div>
       <div className="w-full xs:h-52 lg:h-auto flex xs:justify-center xs:items-center lg:items-start lg:justify-start xs:mb-5 lg:mb-14">
         <img
-          src="/images/our-team-banner.png"
+          src="/images/our-team-banner.jpg"
           alt="our-team"
           className="w-full h-full xs:object-cover lg:object-contain"
         />

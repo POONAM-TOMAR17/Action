@@ -8,7 +8,7 @@ import Insights from '../components/Home/Insights/Insights';
 import Layout from '../components/Layout/layout';
 import { useWindowSize } from '../components/libs/useWindowSize';
 
-const About = () => {
+const AboutUs = () => {
   const [width] = useWindowSize();
   console.log(width);
   return (
@@ -23,4 +23,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;

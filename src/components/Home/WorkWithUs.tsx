@@ -5,7 +5,7 @@ const WorkWithUs = () => {
     <section className="w-full lg:h-full flex justify-start items-start flex-wrap">
       <div className="w-full h-full flex justify-start items-start relative">
         <img
-          src="/images/footer-banner.png"
+          src="/images/footer-banner.jpg"
           alt="work-with-us"
           className="xs:w-full xs:h-80 xs:object-cover lg:w-auto lg:h-auto xs:object-unset"
         />

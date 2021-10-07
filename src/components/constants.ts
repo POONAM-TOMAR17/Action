@@ -5,7 +5,7 @@ export const mainNavigation = [
   },
   {
     name: 'About',
-    link: '/about'
+    link: '/about-us'
   },
   {
     name: 'Solutions',
@@ -42,36 +42,42 @@ export const mainNavigation = [
 ];
 
 export const mainSlider = [
-  { src: '/images/banner-1.png', text: 'We are Building Solutions for Tomorrow 1' },
-  { src: '/images/banner-2.png', text: 'We are Building Solutions for Tomorrow 2' },
-  { src: '/images/banner-1.png', text: 'We are Building Solutions for Tomorrow 3' }
+  { src: '/images/banner-1.jpg', text: 'We are Building Solutions for Tomorrow 1' },
+  { src: '/images/banner-2.jpg', text: 'We are Building Solutions for Tomorrow 2' },
+  { src: '/images/banner-1.jpg', text: 'We are Building Solutions for Tomorrow 3' }
+];
+
+export const InquiryOptions = [
+  { value: 'project-inquiry', label: 'Project inquiry for' },
+  { value: 'service-request', label: 'Service request' },
+  { value: 'maintainance', label: 'Maintainance' }
 ];
 
 export const caseStudyArray = [
   {
     name: 'Grofers',
-    mainImage: '/images/case-study/image-1.png',
+    mainImage: '/images/case-study/image-1.jpg',
     logo: '/images/clients/grofers.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   },
   {
     name: 'Divya Bhaskar',
-    mainImage: '/images/case-study/image-2.png',
+    mainImage: '/images/case-study/image-2.jpg',
     logo: '/images/clients/divya-bhaskar.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   },
   {
     name: 'Hue',
-    mainImage: '/images/case-study/image-1.png',
+    mainImage: '/images/case-study/image-1.jpg',
     logo: '/images/clients/hue.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   },
   {
     name: 'Siemens',
-    mainImage: '/images/case-study/image-2.png',
+    mainImage: '/images/case-study/image-2.jpg',
     logo: '/images/clients/siemens.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
@@ -90,14 +96,14 @@ export const solutionsArray = [
 export const insightsList = [
   {
     name: 'Healthcare',
-    image: '/images/insights/image-1.png',
+    image: '/images/insights/image-1.jpg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec. Eget vitae pulvinar neque eu cras. Velit turpis justo, tellus, in. Egestas phasellus etiam sed.....',
     link: '/insights/healthcare'
   },
   {
     name: 'Business Development',
-    image: '/images/insights/image-2.png',
+    image: '/images/insights/image-2.jpg',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec. Eget vitae pulvinar neque eu cras. Velit turpis justo, tellus, in. Egestas phasellus etiam sed.....',
     link: '/insights/business-development'
@@ -125,41 +131,41 @@ export const teamList = [
     designation: 'Senior Developer',
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
-    image: '/images/user-2.png'
+    image: '/images/user-2.jpg'
   },
   {
     name: 'John Doe',
     designation: 'Senior Developer',
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
-    image: '/images/user-3.png'
+    image: '/images/user-3.jpg'
   },
   {
     name: 'John Doe',
     designation: 'Senior Developer',
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
-    image: '/images/user-1.png'
+    image: '/images/user-1.jpg'
   },
   {
     name: 'John Doe',
     designation: 'Senior Developer',
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
-    image: '/images/user-3.png'
+    image: '/images/user-3.jpg'
   },
   {
     name: 'John Doe',
     designation: 'Senior Developer',
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
-    image: '/images/user-2.png'
+    image: '/images/user-2.jpg'
   },
   {
     name: 'John Doe',
     designation: 'Senior Developer',
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
-    image: '/images/user-1.png'
+    image: '/images/user-1.jpg'
   }
 ];

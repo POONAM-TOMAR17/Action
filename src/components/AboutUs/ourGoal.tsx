@@ -5,7 +5,7 @@ const OurGoal = () => {
     <section className="w-full flex justify-start items-center flex-wrap xs:mt-5 lg:mt-8 mb-5 relative">
       <div className="w-full h-full xs:absolute xs:flex items-center justify-center lg:block lg:relative z-1">
         <img
-          src="/images/goal-mission-banner.png"
+          src="/images/goal-mission-banner.jpg"
           alt="about-us"
           className="w-full h-full object-cover"
         />

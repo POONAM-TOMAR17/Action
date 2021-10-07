@@ -5,7 +5,7 @@ const MainBlock = () => {
     <div className="w-full flex xs:flex-col lg:flex-row items-center justify-start">
       <div className="lg:flex-1 flex items-center justify-center xs:mb-5 lg:mb-0 lg:mr-10">
         <img
-          src="/images/user-1.png"
+          src="/images/user-1.jpg"
           alt="shoaib-merchant"
           className="w-full h-full object-cover"
         />

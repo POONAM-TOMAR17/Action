@@ -14,6 +14,11 @@ body {
   box-shadow: none;
 }
 
+.form-input::placeholder {
+  color: #c2c2c2;
+  font-weight: 300;
+}
+
 .flicking-viewport {
   transition: height 500ms;
 }
@@ -39,6 +44,58 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* select style */
+
+div.actonate-select__control {
+  border: none;
+}
+
+div.actonate-select__control--is-focused,
+div.actonate-select__control--menu-is-open {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+div.actonate-select__value-container {
+  padding: 0px;
+}
+
+div.actonate-select__single-value {
+  margin: 0px;
+  position: relative;
+}
+
+input.actonate-select__input {
+  position: absolute;
+  z-index: -1;
+  min-width: unset;
+  width: unset;
+}
+
+div.actonate-select__input-container {
+  margin: 0px;
+  padding: 0px;
+}
+
+span.actonate-select__indicator-separator {
+  display: none;
+}
+
+div.actonate-select__option {
+  cursor: pointer;
+}
+
+div.actonate-select__indicator {
+  color: #4a5568;
+  opacity: 0.5;
+}
+
+div.actonate-select__control:hover div.actonate-select__indicator,
+div.actonate-select__control--menu-is-open div.actonate-select__indicator {
+  opacity: 1;
 }
 
 /* slick override style starts */

@@ -5,7 +5,7 @@ export const ImgContainer = () => {
     <section
       data-aos="zoom-in"
       style={{
-        backgroundImage: 'url(/images/digitalization-banner.png)',
+        backgroundImage: 'url(/images/digitalization-banner.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'top center',
         backgroundRepeat: 'no-repeat'
