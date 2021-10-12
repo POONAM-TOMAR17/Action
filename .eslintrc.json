@@ -1,0 +1,53 @@
+{
+  // https://eslint.org/docs/user-guide/configuring#specifying-environments
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "dist/*",
+    "node_modules/*",
+    "internals",
+    "**/*.html",
+    "**/*.config.js"
+  ],
+  // https://github.com/babel/babel-eslint
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    // https://eslint.org/docs/2.0.0/rules/strict
+    "strict": 0
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended"
+  ],
+}
