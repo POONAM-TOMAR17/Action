@@ -1,19 +1,22 @@
 import React from 'react';
-import { Benifits } from '../components/Digitalization/benifits';
-import { ImgContainer } from '../components/Digitalization/mainBanner';
-import { OverView } from '../components/Digitalization/overView';
-import CaseStudy from '../components/Home/CaseStudy/CaseStudy';
+import CaseStudy from '../components/CaseStudy/CaseStudy';
 import Layout from '../components/Layout/layout';
+import { useWindowSize } from '../components/libs/useWindowSize';
+import Benefits from '../components/Solutions/Digitalization/Benefits';
+import ImgContainer from '../components/Solutions/Digitalization/ImgContainer';
+import OverView from '../components/Solutions/Digitalization/OverView';
 
-const Digitalization = () => {
+const AboutUs = () => {
+  const [width] = useWindowSize();
+  console.log(width);
   return (
     <Layout>
       <ImgContainer />
       <OverView />
-      <Benifits />
-      <CaseStudy />
+      <Benefits />
+      <CaseStudy singBlock />
     </Layout>
   );
 };
 
-export default Digitalization;
+export default AboutUs;

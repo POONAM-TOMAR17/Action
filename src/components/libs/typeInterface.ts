@@ -8,6 +8,7 @@ export type CaseStudyType = {
   mainImage: string;
   logo: string;
   description: string;
+  link?: string;
 };
 
 export type SolutionsType = {

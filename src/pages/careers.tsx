@@ -1,11 +1,11 @@
 import React from 'react';
 import { Ambience } from '../components/Careers/ambience';
 import { FestTrips } from '../components/Careers/festTrips';
-import { FooterImage } from '../components/Careers/footerImage';
-import { ImgContainer } from '../components/Careers/mainBanner';
+import ImgContainer from '../components/Careers/ImgContainer';
 import { Openings } from '../components/Careers/openings';
-import { OverView } from '../components/Careers/overView';
+import OverView from '../components/Careers/OverView';
 import { WorkingBenifits } from '../components/Careers/workingBenifits';
+import WorkWithUs from '../components/Home/WorkWithUs';
 import Layout from '../components/Layout/layout';
 
 const Careers = () => {
@@ -17,7 +17,7 @@ const Careers = () => {
       <Ambience />
       <FestTrips />
       <Openings />
-      <FooterImage />
+      <WorkWithUs />
     </Layout>
   );
 };

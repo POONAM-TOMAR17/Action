@@ -42,7 +42,7 @@ export const mainNavigation = [
 ];
 
 export const mainSlider = [
-  { src: '/images/banner-1.jpg', text: 'We are Building Solutions for Tomorrow 1' },
+  { src: '/images/banner-1.jpg', text: 'We are Building Solutions for Tomorrow' },
   { src: '/images/banner-2.jpg', text: 'We are Building Solutions for Tomorrow 2' },
   { src: '/images/banner-1.jpg', text: 'We are Building Solutions for Tomorrow 3' }
 ];
@@ -55,16 +55,16 @@ export const InquiryOptions = [
 
 export const caseStudyArray = [
   {
-    name: 'Grofers',
+    name: 'Divya Bhaskar',
     mainImage: '/images/case-study/image-1.jpg',
-    logo: '/images/clients/grofers.png',
+    logo: '/images/clients/divya-bhaskar.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   },
   {
-    name: 'Divya Bhaskar',
+    name: 'Grofers',
     mainImage: '/images/case-study/image-2.jpg',
-    logo: '/images/clients/divya-bhaskar.png',
+    logo: '/images/clients/grofers.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   },
