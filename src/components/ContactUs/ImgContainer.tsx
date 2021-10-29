@@ -16,7 +16,7 @@ const ImgContainer = () => {
             src="/images/a-vector.png"
             className="xs:h-1/2 xs:transform xs:translate-x-36 lg:h-full absolute lg:translate-x-0 lg:right-0 bottom-0 z-1"
           />
-          <p className="text-5xl font-semibold text-white">Contact Us</p>
+          <p className="text-5xl font-semibold text-white xs:px-4 lg:px-8">Contact Us</p>
           <div className="absolute bottom-10 left-0 w-full">
             <div className="w-full flex items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
               <a

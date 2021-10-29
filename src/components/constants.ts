@@ -11,20 +11,28 @@ export const mainNavigation = [
     name: 'Solutions',
     link: '',
     subMenu: [
-      { name: 'Analytics', link: '/analytics' },
-      { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
-      { name: 'Digitalization', link: '/digitalization' },
-      { name: 'Cloud Computing', link: '/cloud-computing' },
-      { name: 'Expert System', link: '/expert-system' },
-      { name: 'Product Development', link: '/product-development' },
-      { name: 'Technical Consulting', link: '/technical-consulting' },
-      { name: 'Industry', link: '/industry' },
-      { name: 'E-Commerce', link: '/e-commerce' },
-      { name: 'Engineering', link: '/engineering' },
-      { name: 'Social Media', link: '/social-media' },
-      { name: 'Healthcare', link: '/healthcare' },
-      { name: 'Tourism', link: '/tourism' },
-      { name: 'Education', link: '/Education' }
+      {
+        name: 'Core',
+        items: [
+          { name: 'Analytics', link: '/analytics' },
+          { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
+          { name: 'Digitalization', link: '/digitalization' },
+          { name: 'Expert System', link: '/expert-system' },
+          { name: 'Product Development', link: '/product-development' },
+          { name: 'Technical Consulting', link: '/technical-consulting' }
+        ]
+      },
+      {
+        name: 'Industry',
+        items: [
+          { name: 'E-Commerce', link: '/e-commerce' },
+          { name: 'Engineering', link: '/engineering' },
+          { name: 'Social Media', link: '/social-media' },
+          { name: 'Healthcare', link: '/healthcare' },
+          { name: 'Tourism', link: '/tourism' },
+          { name: 'Education', link: '/education' }
+        ]
+      }
     ]
   },
   {
@@ -167,5 +175,71 @@ export const teamList = [
     jobDescrption:
       'Codes at lightening speed, is a happy crisp soul, and enlights intern with ideas and execution solutions!',
     image: '/images/user-1.jpg'
+  }
+];
+
+export const cultureArray = [
+  {
+    name: 'Lunch hours',
+    mainImage: '/images/careers/lunch-hours-img.jpg',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    name: 'Grofers',
+    mainImage: '/images/careers/career-other-img.jpg',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  }
+];
+
+export const openingList = [
+  {
+    id: 'sr-dev',
+    name: 'Senior Developer',
+    openings: 2,
+    experience: '2 yrs+',
+    criteria:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    id: 'bk-dev',
+    name: 'Backend Developer',
+    openings: 2,
+    experience: '2 yrs+',
+    criteria:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    id: 'jr-dev',
+    name: 'Junior Developer',
+    openings: 1,
+    experience: '1 yrs+',
+    criteria:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    id: 'pr-manager',
+    name: 'Project Manager',
+    openings: 1,
+    experience: '5 yrs+',
+    criteria:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    id: 'qa',
+    name: 'Quality Analyst',
+    openings: 2,
+    experience: '2 yrs+',
+    criteria:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    id: 'ux-dev',
+    name: 'User Experience Designer',
+    openings: 2,
+    experience: '2 yrs+',
+    criteria:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   }
 ];

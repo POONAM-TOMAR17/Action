@@ -82,7 +82,7 @@ const Navbar = () => {
                   }`}
                 />
                 <div className="xs:w-4/5 xs:z-999 xs:flex flex-col justify-between items-start bg-white overflow-hidden overflow-y-auto lg:flex lg:z-auto lg:flex-1 lg:h-full lg:bg-transparent lg:overflow-unset no-scrollbar">
-                  <div className="w-full xs:flex lg:hidden items-center justify-start flex-nowrap h-16 px-4">
+                  <div className="w-full xs:flex lg:hidden items-center justify-start flex-nowrap xs:h-16 px-4">
                     <a
                       onClick={() => {
                         menuActive.set(false);
@@ -126,7 +126,7 @@ const Navbar = () => {
                         >
                           <a
                             onClick={() => subActive.set(!subActive.get())}
-                            className="relative transform transition-all duration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                            className="relative transform transition-all duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
                           >
                             {item.name}
                             {item.subMenu && item.subMenu.length > 0 && (
@@ -141,7 +141,11 @@ const Navbar = () => {
                             )}
                           </a>
                           {item.link === '' && item.subMenu && item.subMenu.length > 0 && (
-                            <SubMenu subActive={subActive.get()} subMenu={item.subMenu} />
+                            <SubMenu
+                              subActive={subActive.get()}
+                              menu={item.name}
+                              subMenu={item.subMenu}
+                            />
                           )}
                         </li>
                       )

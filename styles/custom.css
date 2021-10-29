@@ -234,6 +234,11 @@ div.actonate-select__control--menu-is-open div.actonate-select__indicator {
   margin-right: 5%;
 }
 
+.ReactCollapse--collapse {
+  transition-duration: 300ms;
+  transition-property: height;
+}
+
 @media (min-width: 1025px) {
   .mega-menu {
     height: 0px;
