@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { OpeningType } from '../../components/libs/typeInterface';
 
 interface IApplyFormProps {
-  data: OpeningType;
+  name: string;
 }
 
 const ApplyForm = (props: IApplyFormProps) => {
-  const { data } = props;
+  const { name } = props;
   const [files, setFiles] = useState([]);
   const [isMsg, setMsg] = useState(['']);
 
@@ -59,7 +58,7 @@ const ApplyForm = (props: IApplyFormProps) => {
 
   return (
     <form className="w-full">
-      <input type="hidden" name="position" value={data?.name} />
+      <input type="hidden" name="position" value={name} />
       <p className="w-full text-sm font-medium mb-4">Applicant’s Information</p>
       <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-4 lg:gap-8">
         <div className="w-full flex items-start content-start justify-start flex-wrap relative">

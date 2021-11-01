@@ -1,13 +1,13 @@
-import { OpeningType } from '@components/libs/typeInterface';
 import React from 'react';
 import RequirementsData from './RequirementsData';
 
 interface IRequirementsProps {
-  data: OpeningType;
+  jobRole: string[][];
+  duties: string[][];
 }
 
 const Requirements = (props: IRequirementsProps) => {
-  const { data } = props;
+  const { jobRole, duties } = props;
   return (
     <section className="w-full h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 flex-wrap lg:justify-start lg:container lg:mx-auto">
       <div className="w-full lg:w-4/5 flex justify-start items-start flex-col space-y-4">
@@ -19,7 +19,7 @@ const Requirements = (props: IRequirementsProps) => {
         </p>
       </div>
       <div className="w-full flex justify-start items-start flex-col space-y-4 mt-3">
-        <RequirementsData data={data?.jobRole} />
+        <RequirementsData data={jobRole} />
       </div>
 
       {/* Responsibility */}
@@ -29,7 +29,7 @@ const Requirements = (props: IRequirementsProps) => {
         </p>
       </div>
       <div className="w-full flex justify-start items-start flex-col space-y-4 mt-3">
-        <RequirementsData data={data?.duties} />
+        <RequirementsData data={duties} />
       </div>
     </section>
   );

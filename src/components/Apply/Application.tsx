@@ -1,13 +1,12 @@
 import React from 'react';
-import { OpeningType } from '../../components/libs/typeInterface';
 import ApplyForm from './ApplyForm';
 
 interface IApplicationProps {
-  data: OpeningType;
+  name: string;
 }
 
 const Application = (props: IApplicationProps) => {
-  const { data } = props;
+  const { name } = props;
   return (
     <section className="w-full h-full flex justify-between items-center xs:px-4 lg:px-8 xs:mb-10 lg:mb-15 flex-wrap lg:justify-start lg:container lg:mx-auto">
       <div className="w-full lg:w-4/5 flex justify-start items-start flex-col space-y-4">
@@ -24,7 +23,7 @@ const Application = (props: IApplicationProps) => {
           within a week
         </p>
         <div className="w-full">
-          <ApplyForm data={data} />
+          <ApplyForm name={name} />
         </div>
       </div>
     </section>
