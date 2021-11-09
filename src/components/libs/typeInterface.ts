@@ -33,3 +33,25 @@ export type OpeningType = {
   jobRole: string[][];
   duties: string[][];
 };
+
+export type SolutionServicesType = {
+  name: string;
+  desc: string;
+  img: string;
+  list?: string[];
+};
+
+export type SolutionDataType = {
+  id: string;
+  name: string;
+  img: string;
+  link: string;
+  caseStudy: string;
+  title1: string;
+  description1: string;
+  title2?: string;
+  description2?: string;
+  services: SolutionServicesType[];
+  title3?: string;
+  description3?: string;
+};

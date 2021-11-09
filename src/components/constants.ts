@@ -14,23 +14,25 @@ export const mainNavigation = [
       {
         name: 'Core',
         items: [
-          { name: 'Analytics', link: '/analytics' },
-          { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
-          { name: 'Digitalization', link: '/digitalization' },
-          { name: 'Expert System', link: '/expert-system' },
-          { name: 'Product Development', link: '/product-development' },
-          { name: 'Technical Consulting', link: '/technical-consulting' }
+          { name: 'Analytics', link: '/solutions/analytics' },
+          { name: 'Artificial Intelligence', link: '/solutions/artificial-intelligence' },
+          { name: 'Digitalization', link: '/solutions/digitalization' },
+          { name: 'Expert System', link: '/solutions/expert-system' },
+          { name: 'Product Development', link: '/solutions/product-development' },
+          { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
+          { name: 'Business Intelligence', link: '/solutions/business-intelligence' },
+          { name: 'IoT', link: '/solutions/iot' }
         ]
       },
       {
         name: 'Industry',
         items: [
-          { name: 'E-Commerce', link: '/e-commerce' },
-          { name: 'Engineering', link: '/engineering' },
-          { name: 'Social Media', link: '/social-media' },
-          { name: 'Healthcare', link: '/healthcare' },
-          { name: 'Tourism', link: '/tourism' },
-          { name: 'Education', link: '/education' }
+          { name: 'E-Commerce', link: '/solutions/e-commerce' },
+          { name: 'Engineering', link: '/solutions/engineering' },
+          { name: 'Social Media', link: '/solutions/social-media' },
+          { name: 'Healthcare', link: '/solutions/healthcare' },
+          { name: 'Tourism', link: '/solutions/tourism' },
+          { name: 'Education', link: '/solutions/education' }
         ]
       }
     ]
@@ -87,6 +89,13 @@ export const caseStudyArray = [
     name: 'Siemens',
     mainImage: '/images/case-study/image-2.jpg',
     logo: '/images/clients/siemens.png',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
+  },
+  {
+    name: 'Vasu Healthcare',
+    mainImage: '/images/case-study/image-1.jpg',
+    logo: '/images/clients/vasu.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   }

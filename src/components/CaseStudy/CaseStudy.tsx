@@ -3,10 +3,12 @@ import { ButtonArrow } from '../../../static/svg/ButtonArrow';
 import CaseStudyBlocks from './CaseStudyBlocks';
 interface ICaseStudy {
   singBlock?: boolean;
+  name: string;
+  caseStudyName: string;
 }
 
 const CaseStudy = (props: ICaseStudy) => {
-  const { singBlock } = props;
+  const { singBlock, name, caseStudyName } = props;
   return (
     <section
       className={`w-full flex justify-start items-center flex-wrap${singBlock ? '' : ' lg:mb-5'}`}
@@ -17,7 +19,7 @@ const CaseStudy = (props: ICaseStudy) => {
             Case Study
           </p>
           <p className="font-medium text-4xl text-customColors-100 tracking-relaxed leading-snug">
-            Digitalization Case Studies
+            {name} Case Studies
           </p>
         </div>
         <div className="xs:hidden lg:flex-1 lg:flex justify-end items-start">
@@ -31,7 +33,7 @@ const CaseStudy = (props: ICaseStudy) => {
         </div>
       </div>
       <div className="w-full">
-        <CaseStudyBlocks singBlock={singBlock} name="grofers" />
+        <CaseStudyBlocks singBlock={singBlock} name={caseStudyName} />
       </div>
     </section>
   );
