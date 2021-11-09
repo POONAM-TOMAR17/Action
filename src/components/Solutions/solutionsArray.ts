@@ -163,10 +163,10 @@ export const solutionsArray = [
     description1:
       '<p>IoT is set to transform every business, every city and every home in the world. It has a profound potential to transform your enterprise into a digital business and to facilitate the creation of new business models. If implemented correctly, IoT can provide numerous benefits to your business. It can immensely help improve your organization’s efficiency and increase both employee and customer engagement through acquiring real-time sensor data that can be analyzed to derive operational insights.</p>' +
       '<p>Among the numerous benefits of IoT includes the following:</p>' +
-      '<ul class="ml-5 list-disc list-inside">' +
-      '<li><span class="font-medium">Lower operational costs:</span>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity ultilization and lower operational costs</li>' +
-      '<li><span class="font-medium">Increased productivity:</span>IoT data can help businesses derive actionable insights about both the internal and external environments and help reduce time to market</li>' +
-      '<li><span class="font-medium">Better customer experience:</span>The IoT data can help create personalized customer offer by tracking, monitoring and analyzing customer behavior data</li>' +
+      '<ul class="ml-10 list-disc space-y-2">' +
+      '<li><span class="font-medium">Lower operational costs: </span>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity ultilization and lower operational costs</li>' +
+      '<li><span class="font-medium">Increased productivity: </span>IoT data can help businesses derive actionable insights about both the internal and external environments and help reduce time to market</li>' +
+      '<li><span class="font-medium">Better customer experience: </span>The IoT data can help create personalized customer offer by tracking, monitoring and analyzing customer behavior data</li>' +
       '</ul>',
     title2: 'IoT Implementation',
     description2:
@@ -197,12 +197,12 @@ export const solutionsArray = [
     description3:
       '<p>IoT has the potential to create new business models that deliver maximum value to customers. If correctly implemented, IoT can enable businesses react in real-time to key operational events and enable delivery of personalized services to customers.</p>' +
       '<p>Here are snap shots of potential application of IoT in various industries:</p>' +
-      '<ul class="ml-5 list-disc list-inside">' +
-      '<li><span class="font-medium">Sports:</span>Usage of sensors embed on athletes gear can help a team’s medical staff understand in real-time the severity of impacts suffered by an athlete on a playing field, and prescribe appropriate treatment or action. The sensor data can also help in analyzing both an individual’s and team’s performance, their intensity of play and potential weakness in their game. </li>' +
-      '<li><span class="font-medium">Retail:</span>Use smart cameras in a store to analyze the foot traffic – volumes and patterns of flow. This information can be used to rearrange store shelves and contents in order to maximize customer engagement.</li>' +
-      '<li><span class="font-medium">Smart Cities:</span>Uses smart cameral to count number and type of vehicles, including number of pedestrians, in traffic surveys. Information from cameras can be used to deliver better and cost effective public services.</li>' +
-      '<li><span class="font-medium">Security:</span>Smart cameras in airport and other sensitive places recognizes and tracks people and luggage and establish a relationship between the two. The system triggers an alarm if a person moves more than a certain centimeters from their luggage.</li>' +
-      '<li><span class="font-medium">Health:</span>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</li>' +
+      '<ul class="ml-10 list-disc space-y-2">' +
+      '<li><span class="font-medium">Sports: </span>Usage of sensors embed on athletes gear can help a team’s medical staff understand in real-time the severity of impacts suffered by an athlete on a playing field, and prescribe appropriate treatment or action. The sensor data can also help in analyzing both an individual’s and team’s performance, their intensity of play and potential weakness in their game. </li>' +
+      '<li><span class="font-medium">Retail: </span>Use smart cameras in a store to analyze the foot traffic – volumes and patterns of flow. This information can be used to rearrange store shelves and contents in order to maximize customer engagement.</li>' +
+      '<li><span class="font-medium">Smart Cities: </span>Uses smart cameral to count number and type of vehicles, including number of pedestrians, in traffic surveys. Information from cameras can be used to deliver better and cost effective public services.</li>' +
+      '<li><span class="font-medium">Security: </span>Smart cameras in airport and other sensitive places recognizes and tracks people and luggage and establish a relationship between the two. The system triggers an alarm if a person moves more than a certain centimeters from their luggage.</li>' +
+      '<li><span class="font-medium">Health: </span>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</li>' +
       '</ul>' +
       '<p>At Actonate, we can implement IoT into your products and to turn them into service portals that guarantees your business’s long-term sustainability.  Our IoT strategy will enable you offer the hardware/product to your customers for free or at a basic price and charge a monthly subscription for associated services.</p>'
   }
