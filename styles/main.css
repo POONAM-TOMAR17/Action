@@ -2280,6 +2280,10 @@ select {
     --tw-translate-x: 0;
   }
 
+  .lg\:rotate-90 {
+    --tw-rotate: 90deg;
+  }
+
   .lg\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;

@@ -11,7 +11,12 @@ import { MainNavigationType } from '../../../components/libs/typeInterface';
 import { SubMenu } from '../submenu';
 import SearchBar from './searchBar';
 
-const Navbar = () => {
+interface INavbarProps {
+  isMobile: boolean;
+}
+
+const Navbar = (props: INavbarProps) => {
+  const { isMobile } = props;
   const menuActive = useState(false);
   const subActive = useState(false);
   const searchActive = useState(false);
@@ -113,41 +118,42 @@ const Navbar = () => {
                           </a>
                         ) : (
                           <>
-                            <a
-                              href={item.link}
-                              className="xs:hidden relative transform transition-all duration-300 lg:hover:text-customColors-500 lg:flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
-                            >
-                              {item.name}
-                              {item.subMenu && item.subMenu.length > 0 && (
-                                <p
-                                  onClick={() => subActive.set(!subActive.get())}
-                                  className="ml-2 flex items-center justify-center"
-                                >
-                                  <ArrowRight
-                                    className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
-                                      subActive.get() ? ' xs:rotate-90' : ''
-                                    }`}
-                                    strokeWidth="2"
-                                  />
-                                </p>
-                              )}
-                            </a>
-                            <div className="lg:hidden relative transform transition-all duration-300 lg:hover:text-customColors-500 xs:flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto">
-                              <a href={item.link}>{item.name}</a>
-                              {item.subMenu && item.subMenu.length > 0 && (
-                                <p
-                                  onClick={() => subActive.set(!subActive.get())}
-                                  className="ml-2 flex items-center justify-center"
-                                >
-                                  <ArrowRight
-                                    className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
-                                      subActive.get() ? ' xs:rotate-90' : ''
-                                    }`}
-                                    strokeWidth="2"
-                                  />
-                                </p>
-                              )}
-                            </div>
+                            {!isMobile ? (
+                              <a
+                                href={item.link}
+                                className="relative transform transition-all duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                              >
+                                {item.name}
+                                {item.subMenu && item.subMenu.length > 0 && (
+                                  <p
+                                    onClick={() => subActive.set(!subActive.get())}
+                                    className="ml-2 flex items-center justify-center"
+                                  >
+                                    <ArrowRight
+                                      className="w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90"
+                                      strokeWidth="2"
+                                    />
+                                  </p>
+                                )}
+                              </a>
+                            ) : (
+                              <div className="relative transform transition-all duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto">
+                                <a href={item.link}>{item.name}</a>
+                                {item.subMenu && item.subMenu.length > 0 && (
+                                  <p
+                                    onClick={() => subActive.set(!subActive.get())}
+                                    className="ml-2 flex items-center justify-center"
+                                  >
+                                    <ArrowRight
+                                      className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
+                                        subActive.get() ? ' xs:rotate-90' : ''
+                                      }`}
+                                      strokeWidth="2"
+                                    />
+                                  </p>
+                                )}
+                              </div>
+                            )}
 
                             <SubMenu
                               subActive={subActive.get()}
