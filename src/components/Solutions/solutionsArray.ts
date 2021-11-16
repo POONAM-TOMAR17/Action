@@ -511,6 +511,13 @@ export const solutionsArray = [
             desc: '<p>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</p>'
           }
         ]
+      },
+      {
+        labelText: '',
+        title:
+          'At Actonate, we can implement IoT into your products and to turn them into service portals that guarantees your business’s long-term sustainability.  Our IoT strategy will enable you offer the hardware/product to your customers for free or at a basic price and charge a monthly subscription for associated services.',
+        description: '',
+        blocks: []
       }
     ]
   }
