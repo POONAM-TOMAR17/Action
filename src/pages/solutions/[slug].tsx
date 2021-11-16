@@ -6,7 +6,7 @@ import SolutionsContainer from '../../components/Solutions/SolutionsContainer';
 const SolutionsSlugIndex = () => {
   const [width] = useWindowSize();
   const isBrowser = () => typeof window !== 'undefined';
-  let params: string;
+  var params = '';
   if (isBrowser()) {
     let location = window.location.href;
     let allPara = location.split('/');
@@ -15,7 +15,6 @@ const SolutionsSlugIndex = () => {
 
   return (
     <Layout>
-      {/* @ts-ignore */}
       <SolutionsContainer width={width} params={params} />
     </Layout>
   );

@@ -239,6 +239,10 @@ div.actonate-select__control--menu-is-open div.actonate-select__indicator {
   transition-property: height;
 }
 
+.one-line p {
+  display: inline;
+}
+
 @media (min-width: 1025px) {
   .mega-menu {
     height: 0px;

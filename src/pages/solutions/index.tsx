@@ -1,29 +1,21 @@
 import React from 'react';
-import { SubMenuType } from '../../components/libs/typeInterface';
+import { mainNavigation } from '../../components/constants';
+import Layout from '../../components/Layout/layout';
 
-interface ISubMenu {
-  subMenu: SubMenuType[];
-  menu: string;
-  subActive: boolean;
-}
+const SolutionsSlugIndex = () => {
+  const menuArray = mainNavigation.filter((item) => item.name.toLowerCase() === 'solutions');
+  const subMenu = menuArray[0].subMenu;
 
-export const SubMenu = (props: ISubMenu) => {
-  const { subMenu, menu, subActive } = props;
   return (
-    <div
-      className={`mega-menu w-full relative xs:translate xs:duration-300 lg:absolute lg:inset-x-0 lg:shadow-lg lg:left-0 lg:top-full lg:scale-100 lg:h-auto xs:overflow-hidden lg:overflow-unset${
-        subActive
-          ? ' xs:h-auto xs:opacity-100 xs:scale-100 xs:z-auto'
-          : ' xs:h-0 xs:opacity-0 xs:scale-0 xs:z-1'
-      }`}
-    >
+    <Layout>
       <div className="lg:bg-white">
-        <div className="max-w-7xl mx-auto flex flex-wrap xs:px-7 lg:px-12 lg:py-12">
+        <div className="max-w-7xl mx-auto flex flex-wrap xs:px-4 lg:px-8 lg:py-12">
           <div className="w-full xs:hidden lg:flex items-center justify-start border-b border-primary pb-5 mb-5">
-            <p className="font-semibold text-xl">{menu}</p>
+            <p className="font-semibold text-xl">Solutions</p>
           </div>
           <div className="w-full flex flex-wrap">
-            {subMenu.map((value: SubMenuType, index: number) => {
+            {/* tslint:disable-next-line: no-any */}
+            {subMenu?.map((value: any, index: number) => {
               return (
                 <div
                   key={index}
@@ -48,6 +40,8 @@ export const SubMenu = (props: ISubMenu) => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
+
+export default SolutionsSlugIndex;

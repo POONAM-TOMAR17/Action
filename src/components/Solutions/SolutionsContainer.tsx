@@ -1,20 +1,20 @@
 import React, { Fragment } from 'react';
 import CaseStudy from '../../components/CaseStudy/CaseStudy';
-import { SolutionDataType } from '../../components/libs/typeInterface';
+import { SolutionDataType, TextSectionType } from '../../components/libs/typeInterface';
 import ImgContainer from './ImgContainer';
-import MiddleSection from './MiddleSection';
 import OverView from './OverView';
 import { solutionsArray } from './solutionsArray';
+import TextBlocks from './TextBlocks';
 
 interface ISolutionsContainerProps {
   params: string;
-  width: string;
+  width: number;
 }
 
 const SolutionsContainer = (props: ISolutionsContainerProps) => {
   const { params } = props;
-
   const filteredArray = solutionsArray.filter((item) => item.id === params);
+
   return (
     <>
       {filteredArray &&
@@ -22,14 +22,25 @@ const SolutionsContainer = (props: ISolutionsContainerProps) => {
         filteredArray.map((item: SolutionDataType, index: number) => (
           <Fragment key={index}>
             <ImgContainer name={item.name} img={item.img} />
-            <OverView title={item.title1} description={item.description1} />
-            <MiddleSection
-              title={item.title2}
-              description={item.description2}
-              services={item.services}
-              title2={item.title3}
-              description2={item.description3}
+            <OverView
+              labelText={item.overView.labelText}
+              title={item.overView.title}
+              description={item.overView.description}
             />
+            {item.textSections &&
+              item.textSections.length > 0 &&
+              item.textSections.map((section: TextSectionType, i: number) => (
+                <TextBlocks
+                  key={i}
+                  labelText={section.labelText}
+                  title={section.title}
+                  description={section.description}
+                  blocks={section.blocks}
+                  image={section.image}
+                  isService={section.isService}
+                  onlyImage={section.onlyImage}
+                />
+              ))}
             <CaseStudy name={item.name} caseStudyName={item.caseStudy} singBlock />
           </Fragment>
         ))}

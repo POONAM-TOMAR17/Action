@@ -7,6 +7,7 @@ import { GooglePlusIcon } from '../../../../static/svg/GooglePlusIcon';
 import { LinkedInIcon } from '../../../../static/svg/LinkedInIcon';
 import { TwitterIcon } from '../../../../static/svg/TwitterIcon';
 import { mainNavigation } from '../../../components/constants';
+import { MainNavigationType } from '../../../components/libs/typeInterface';
 import { SubMenu } from '../submenu';
 import SearchBar from './searchBar';
 
@@ -98,58 +99,65 @@ const Navbar = () => {
                     </a>
                   </div>
                   <ul className="flex-col xs:w-full lg:w-auto lg:h-full lg:flex-row flex justify-center items-center">
-                    {mainNavigation.map((item, index) =>
-                      item.link !== '' ? (
-                        <li
-                          key={index}
-                          className="hoverable xs:w-full lg:w-auto flex justify-start items-center xs:flex-wrap lg:flex-nowrap lg:h-full"
-                        >
+                    {mainNavigation.map((item: MainNavigationType, index: number) => (
+                      <li
+                        key={index}
+                        className="hoverable xs:w-full lg:w-auto flex justify-start items-center xs:flex-wrap lg:flex-nowrap lg:h-full"
+                      >
+                        {!item.subMenu ? (
                           <a
                             href={item.link}
                             className="relative transform transition-all duration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base lg:h-full xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
                           >
                             {item.name}
-                            {item.subMenu && item.subMenu.length > 0 && (
-                              <p className="ml-2 flex items-center justify-center">
-                                <ArrowRight
-                                  className="w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90"
-                                  strokeWidth="2"
-                                />
-                              </p>
-                            )}
                           </a>
-                        </li>
-                      ) : (
-                        <li
-                          key={index}
-                          className="hoverable xs:w-full lg:w-auto flex justify-start items-center xs:flex-wrap lg:flex-nowrap lg:h-full"
-                        >
-                          <a
-                            onClick={() => subActive.set(!subActive.get())}
-                            className="relative transform transition-all duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
-                          >
-                            {item.name}
-                            {item.subMenu && item.subMenu.length > 0 && (
-                              <p className="ml-2 flex items-center justify-center">
-                                <ArrowRight
-                                  className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
-                                    subActive.get() ? ' xs:rotate-90' : ''
-                                  }`}
-                                  strokeWidth="2"
-                                />
-                              </p>
-                            )}
-                          </a>
-                          {item.link === '' && item.subMenu && item.subMenu.length > 0 && (
+                        ) : (
+                          <>
+                            <a
+                              href={item.link}
+                              className="xs:hidden relative transform transition-all duration-300 lg:hover:text-customColors-500 lg:flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                            >
+                              {item.name}
+                              {item.subMenu && item.subMenu.length > 0 && (
+                                <p
+                                  onClick={() => subActive.set(!subActive.get())}
+                                  className="ml-2 flex items-center justify-center"
+                                >
+                                  <ArrowRight
+                                    className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
+                                      subActive.get() ? ' xs:rotate-90' : ''
+                                    }`}
+                                    strokeWidth="2"
+                                  />
+                                </p>
+                              )}
+                            </a>
+                            <div className="lg:hidden relative transform transition-all duration-300 lg:hover:text-customColors-500 xs:flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto">
+                              <a href={item.link}>{item.name}</a>
+                              {item.subMenu && item.subMenu.length > 0 && (
+                                <p
+                                  onClick={() => subActive.set(!subActive.get())}
+                                  className="ml-2 flex items-center justify-center"
+                                >
+                                  <ArrowRight
+                                    className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
+                                      subActive.get() ? ' xs:rotate-90' : ''
+                                    }`}
+                                    strokeWidth="2"
+                                  />
+                                </p>
+                              )}
+                            </div>
+
                             <SubMenu
                               subActive={subActive.get()}
                               menu={item.name}
                               subMenu={item.subMenu}
                             />
-                          )}
-                        </li>
-                      )
-                    )}
+                          </>
+                        )}
+                      </li>
+                    ))}
                     <li className="xs:w-full lg:w-auto flex justify-start items-center lg:h-full">
                       <a
                         href="/contact-us"

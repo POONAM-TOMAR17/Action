@@ -9,19 +9,19 @@ export const mainNavigation = [
   },
   {
     name: 'Solutions',
-    link: '',
+    link: '/solutions',
     subMenu: [
       {
         name: 'Core',
         items: [
           { name: 'Analytics', link: '/solutions/analytics' },
           { name: 'Artificial Intelligence', link: '/solutions/artificial-intelligence' },
-          { name: 'Digitalization', link: '/solutions/digitalization' },
+          { name: 'Digital Transormation', link: '/solutions/digital-transformation' },
           { name: 'Expert System', link: '/solutions/expert-system' },
           { name: 'Product Development', link: '/solutions/product-development' },
           { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
           { name: 'Business Intelligence', link: '/solutions/business-intelligence' },
-          { name: 'IoT', link: '/solutions/iot' }
+          { name: 'IoT', link: '/solutions/internet-of-things' }
         ]
       },
       {
@@ -252,3 +252,7 @@ export const openingList = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor gravida nisl fringilla nec arcu est. Penatibus imperdiet id elit nec, odio in tristique. '
   }
 ];
+
+export const placeholder = '/images/placeholder.jpg';
+
+export const placeholderBig = '/images/big-placeholder.jpg';

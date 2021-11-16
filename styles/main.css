@@ -810,6 +810,10 @@ select {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -2128,6 +2132,10 @@ select {
     margin-bottom: 1.5rem;
   }
 
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .lg\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2190,6 +2198,10 @@ select {
 
   .lg\:h-20 {
     height: 5rem;
+  }
+
+  .lg\:h-72 {
+    height: 18rem;
   }
 
   .lg\:h-106 {
@@ -2266,10 +2278,6 @@ select {
 
   .lg\:translate-x-0 {
     --tw-translate-x: 0;
-  }
-
-  .lg\:rotate-90 {
-    --tw-rotate: 90deg;
   }
 
   .lg\:scale-100 {

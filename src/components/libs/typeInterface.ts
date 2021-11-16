@@ -1,10 +1,13 @@
+export type MainNavigationType = {
+  name: string;
+  link: string;
+  subMenu?: SubMenuType[];
+};
+
 export type SubMenuType = {
   name: string;
-  items: {
-    name: string;
-    link: string;
-  }[];
-}[];
+  items: MainNavigationType[];
+};
 
 export type CaseStudyType = {
   name: string;
@@ -34,11 +37,27 @@ export type OpeningType = {
   duties: string[][];
 };
 
-export type SolutionServicesType = {
+export type OverViewType = {
+  labelText: string;
+  title: string;
+  description: string;
+};
+
+export type SolutionBlockType = {
   name: string;
   desc: string;
   img: string;
   list?: string[];
+};
+
+export type TextSectionType = {
+  labelText: string;
+  title: string;
+  description: string;
+  isService?: boolean;
+  onlyImage?: boolean;
+  blocks?: SolutionBlockType[];
+  image?: string;
 };
 
 export type SolutionDataType = {
@@ -47,11 +66,6 @@ export type SolutionDataType = {
   img: string;
   link: string;
   caseStudy: string;
-  title1: string;
-  description1: string;
-  title2?: string;
-  description2?: string;
-  services: SolutionServicesType[];
-  title3?: string;
-  description3?: string;
+  overView: OverViewType;
+  textSections: TextSectionType[];
 };
