@@ -1,5 +1,5 @@
 import React from 'react';
-import { caseStudyArray } from '../../components/constants';
+import { caseStudyArray } from '../constants';
 import CaseStudyBlock from './CaseStudyBlock';
 
 interface IInisghtsBlocks {
