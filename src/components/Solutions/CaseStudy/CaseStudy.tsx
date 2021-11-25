@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonArrow } from '../../../static/svg/ButtonArrow';
+import { ButtonArrow } from '../../../../static/svg/ButtonArrow';
 import CaseStudyBlocks from './CaseStudyBlocks';
 interface ICaseStudy {
   singBlock?: boolean;

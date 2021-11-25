@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonArrow } from '../../../static/svg/ButtonArrow';
+import { ButtonArrow } from '../../../../static/svg/ButtonArrow';
 
 interface IInsightBlock {
   name: string;

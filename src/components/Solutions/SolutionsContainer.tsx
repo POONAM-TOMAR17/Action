@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { SolutionDataType, TextSectionType } from '../../components/libs/typeInterface';
-import CaseStudy from '../HomeCaseStudy/CaseStudy';
+import CaseStudy from './CaseStudy/CaseStudy';
 import ImgContainer from './ImgContainer';
 import OverView from './OverView';
 import { solutionsArray } from './solutionsArray';

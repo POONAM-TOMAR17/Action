@@ -2,7 +2,7 @@ import React from 'react';
 import { mainNavigation } from '../../components/constants';
 import Layout from '../../components/Layout/layout';
 
-const SolutionsSlugIndex = () => {
+const SolutionIndex = () => {
   const menuArray = mainNavigation.filter((item) => item.name.toLowerCase() === 'solutions');
   const subMenu = menuArray[0].subMenu;
 
@@ -44,4 +44,4 @@ const SolutionsSlugIndex = () => {
   );
 };
 
-export default SolutionsSlugIndex;
+export default SolutionIndex;

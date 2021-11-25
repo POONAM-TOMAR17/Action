@@ -69,3 +69,30 @@ export type SolutionDataType = {
   overView: OverViewType;
   textSections: TextSectionType[];
 };
+
+export type StudyDescriptionType = {
+  title?: string;
+  list?: string[];
+  textOnly?: string;
+};
+
+export type StudyContentType = {
+  labelText: string;
+  title: string;
+  description: StudyDescriptionType[];
+};
+
+export type CaseStudyInnerType = {
+  id: string;
+  name: string;
+  img: string;
+  link: string;
+  description: string;
+  bannerImg: string;
+  category: string;
+  customName: string;
+  location: string;
+  year: number;
+  overView: OverViewType;
+  // content: StudyContentType;
+};

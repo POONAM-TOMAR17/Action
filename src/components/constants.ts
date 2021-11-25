@@ -39,7 +39,20 @@ export const mainNavigation = [
   },
   {
     name: 'Case Study',
-    link: '/case-study'
+    link: '/case-study',
+    subMenu: [
+      {
+        name: 'Read studies for',
+        items: [
+          { name: 'Siemens', link: '/case-study/siemens' },
+          { name: 'Sapna Online', link: '/case-study/sapna-online' },
+          { name: 'LetsShave', link: '/case-study/letsshave' },
+          { name: 'Grofers', link: '/case-study/grofers' },
+          { name: 'Dainik Bhaskar', link: '/case-study/dainik-bhaskar' },
+          { name: 'Cosmetize', link: '/case-study/cosmetize' }
+        ]
+      }
+    ]
   },
   {
     name: 'Insights',
