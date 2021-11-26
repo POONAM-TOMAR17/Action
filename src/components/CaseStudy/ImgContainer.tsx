@@ -26,7 +26,7 @@ const ImgContainer = (props: IImgContainerProps) => {
           <div className="w-full flex flex-wrap items-center justify-start text-3xl text-white font-semibold  xs:px-4 lg:px-8 lg:container lg:mx-auto">
             <div className="w-full flex flex-row xs:items-start lg:items-center justify-start xs:mb-8 lg:mb-10">
               <a
-                href="/careers"
+                href="/case-study"
                 className="font-light tracking-widest outline-none shadow-none focus:outline-none focus:shadow-none"
               >
                 Case Study

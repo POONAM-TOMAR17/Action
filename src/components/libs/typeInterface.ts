@@ -70,16 +70,33 @@ export type SolutionDataType = {
   textSections: TextSectionType[];
 };
 
-export type StudyDescriptionType = {
-  title?: string;
-  list?: string[];
-  textOnly?: string;
+export type ListStudyContentType = {
+  type: string;
+  data: string[];
 };
 
-export type StudyContentType = {
+export type StudyDescriptionType = {
+  title?: string;
+  list?: ListStudyContentType;
+  textOnly?: string;
+  img?: string;
+};
+
+export type StudyContentMenuType = {
+  name: string;
+  link: string;
+};
+
+export type StudyBlockType = {
+  id?: string;
   labelText: string;
   title: string;
   description: StudyDescriptionType[];
+};
+
+export type StudyContentType = {
+  menu: StudyContentMenuType[];
+  blocks: StudyBlockType[];
 };
 
 export type CaseStudyInnerType = {
@@ -90,9 +107,9 @@ export type CaseStudyInnerType = {
   description: string;
   bannerImg: string;
   category: string;
-  customName: string;
+  customerName: string;
   location: string;
   year: number;
   overView: OverViewType;
-  // content: StudyContentType;
+  content: StudyContentType;
 };

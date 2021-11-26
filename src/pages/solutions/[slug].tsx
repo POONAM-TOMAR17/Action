@@ -8,7 +8,7 @@ const SolutionsSlugIndex = () => {
   const isBrowser = () => typeof window !== 'undefined';
   var params = '';
   if (isBrowser()) {
-    let location = window.location.href;
+    let location = window.location.href.split('#')[0];
     let allPara = location.split('/');
     params = allPara[allPara.length - 1];
   }

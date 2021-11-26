@@ -14,7 +14,10 @@ const OverView = (props: IOverViewProps) => {
   const { labelText, title, description, category, customer, location, year } = props;
   return (
     <section className="w-full flex justify-between items-center xs:px-4 lg:px-8 xs:mb-5 lg:mb-10 lg:justify-start lg:container lg:mx-auto relative">
-      <div className="w-full flex justify-start items-start flex-col space-y-4">
+      <div
+        id="overview"
+        className="w-full flex justify-start items-start flex-col space-y-4 cs-section"
+      >
         {labelText && labelText !== '' && (
           <p className="text-sm uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
             {labelText}
@@ -26,7 +29,7 @@ const OverView = (props: IOverViewProps) => {
           </p>
         )}
         <div className="w-full flex flex-row space-x-5">
-          <div className="relative flex flex-col py-4 bg-customBackground-300 pr-5">
+          <div className="relative w-1/4 flex flex-col py-4 bg-customBackground-300 pr-5">
             <div className="absolute transform lg:-translate-x-full left-0 top-0 w-screen h-full bg-customBackground-300 z-1" />
             <div className="w-full flex flex-col space-y-1">
               <p className="font-light">
@@ -45,7 +48,7 @@ const OverView = (props: IOverViewProps) => {
           </div>
           {description && description !== '' && (
             <div
-              className="flex-1 text-lg space-y-3"
+              className="flex-1 text-lg space-y-3 font-light"
               dangerouslySetInnerHTML={{ __html: description || '' }}
             />
           )}

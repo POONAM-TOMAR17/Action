@@ -11,14 +11,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <script src="static/js/script.min.js" type="text/javascript" />
-      </Helmet>
       <div className="flex flex-col text-primary">
         <Navbar isMobile={width < 1025} />
         {children}
         <Footer />
       </div>
+      <Helmet>
+        <script src="static/js/script.js" type="text/javascript" />
+      </Helmet>
     </>
   );
 };
