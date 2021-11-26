@@ -118,7 +118,7 @@ const ApplyForm = (props: IApplyFormProps) => {
             )}
           </div>
           {/* @ts-ignore */}
-          <p className={`w-full text-customColors-500 text-xs${isMsg !== '' ? '' : ' hidden'}`}>
+          <p className={`w-full text-customColors-500 text-xs ${isMsg !== '' ? '' : ' hidden'}`}>
             {errroMsg}
           </p>
         </div>

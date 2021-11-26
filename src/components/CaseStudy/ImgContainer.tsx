@@ -23,7 +23,7 @@ const ImgContainer = (props: IImgContainerProps) => {
             src="/images/a-vector.png"
             className="xs:h-1/2 xs:transform xs:translate-x-36 lg:h-4/5 absolute lg:translate-x-0 lg:right-0 bottom-0 z-1"
           />
-          <div className="w-full flex flex-wrap items-center justify-start text-3xl text-white font-semibold  xs:px-4 lg:px-8 lg:container lg:mx-auto">
+          <div className="w-full flex flex-wrap items-center justify-start xs:text-xl lg:text-3xl text-white font-semibold  xs:px-4 lg:px-8 lg:container lg:mx-auto">
             <div className="w-full flex flex-row xs:items-start lg:items-center justify-start xs:mb-8 lg:mb-10">
               <a
                 href="/case-study"

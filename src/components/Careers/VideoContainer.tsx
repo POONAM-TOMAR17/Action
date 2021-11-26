@@ -7,7 +7,7 @@ const VideoContainer = () => {
     <div className="w-full flex items-center justify-center relative">
       <img
         src="/images/careers/career-video-cover.jpg"
-        className={`w-full h-full object-contain${
+        className={`w-full h-full object-contain ${
           isVideo.get() ? ' z-1 opacity-0' : ' opacity-100'
         }`}
       />
@@ -24,7 +24,7 @@ const VideoContainer = () => {
         </a>
       </div>
       <div
-        className={`w-full h-full absolute left-0 flex justify-center items-center${
+        className={`w-full h-full absolute left-0 flex justify-center items-center ${
           isVideo.get() ? ' opacity-100' : ' z-1 opacity-0'
         }`}
       >

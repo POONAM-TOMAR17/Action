@@ -20,7 +20,7 @@ const InsightBlock = (props: IInsightBlock) => {
         </div>
       )}
       <div
-        className={`w-full lg:w-1/2 flex items-start content-center justify-center flex-wrap space-y-5${
+        className={`w-full lg:w-1/2 flex items-start content-center justify-center flex-wrap space-y-5 ${
           isLeft ? ' lg:pl-20' : ' lg:pr-20 xs:order-1 lg:order-0'
         }`}
       >

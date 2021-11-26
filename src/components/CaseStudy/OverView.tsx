@@ -28,9 +28,9 @@ const OverView = (props: IOverViewProps) => {
             {title}
           </p>
         )}
-        <div className="w-full flex flex-row space-x-5">
-          <div className="relative w-1/4 flex flex-col py-4 bg-customBackground-300 pr-5">
-            <div className="absolute transform lg:-translate-x-full left-0 top-0 w-screen h-full bg-customBackground-300 z-1" />
+        <div className="w-full flex xs:flex-wrap lg:flex-nowrap lg:flex-row lg:space-x-5">
+          <div className="relative lg:w-1/4 flex flex-col xs:pb-4 lg:py-4 lg:bg-customBackground-300 lg:pr-5">
+            <div className="xs:hidden lg:block absolute transform lg:-translate-x-full left-0 top-0 w-screen h-full lg:bg-customBackground-300 z-1" />
             <div className="w-full flex flex-col space-y-1">
               <p className="font-light">
                 Category<span className="font-semibold">: {category}</span>
@@ -48,7 +48,7 @@ const OverView = (props: IOverViewProps) => {
           </div>
           {description && description !== '' && (
             <div
-              className="flex-1 text-lg space-y-3 font-light"
+              className="xs:flex-none xs:w-full lg:flex-1 text-lg space-y-3 font-light"
               dangerouslySetInnerHTML={{ __html: description || '' }}
             />
           )}

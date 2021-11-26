@@ -99,12 +99,12 @@ const CaseStudySlider = () => {
         {caseStudyArray.map((csItem: CaseStudyType, index: number) => (
           <>
             <div
-              className={`w-full h-full items-center justify-center${
+              className={`w-full h-full items-center justify-center ${
                 index % 2 !== 1 ? ' block' : ' flex'
               }`}
             >
               <div
-                className={`flex relative overflow-hidden${
+                className={`flex relative overflow-hidden ${
                   index % 2 !== 1 ? ' h-full ' : ' m-5 flex-1 h-5/6'
                 }`}
               >

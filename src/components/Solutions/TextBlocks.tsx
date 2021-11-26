@@ -24,7 +24,7 @@ const TextBlocks = (props: ITextBlocksProps) => {
   return (
     <section
       className={
-        `w-full flex justify-between items-center${
+        `w-full flex justify-between items-center ${
           blocks && blocks.length > 0
             ? ' xs:px-4 lg:px-8 xs:mb-5 lg:mb-10 lg:justify-start lg:container lg:mx-auto'
             : ' flex-wrap'
@@ -33,7 +33,7 @@ const TextBlocks = (props: ITextBlocksProps) => {
     >
       <div
         className={
-          `w-full flex flex-col${
+          `w-full flex flex-col ${
             blocks && blocks.length > 0
               ? ' '
               : ' xs:px-4 lg:px-8 lg:justify-start lg:container lg:mx-auto'
@@ -73,7 +73,7 @@ const TextBlocks = (props: ITextBlocksProps) => {
                   className="w-full flex items-start justify-start flex-wrap space-y-4"
                 >
                   <div
-                    className={`w-full  flex itmes-center justify-center${
+                    className={`w-full  flex itmes-center justify-center ${
                       isService ? ' lg:h-72' : ' lg:h-72'
                     }`}
                   >

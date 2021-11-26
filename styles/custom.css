@@ -10,25 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-.cs-menu-link::after {
-  bottom: 0;
-  content: '';
-  height: 2px;
-  left: 0;
-  position: absolute;
-  transform: translate3d(-101%, 0, 0);
-  transition: opacity 0.3s, transform 0.3s;
-  width: 100%;
-}
-
-.cs-menu-link:hover::after {
-  transform: translateZ(0);
-}
-
-.cs-menu-link.active::after {
-  transform: translateZ(0);
-}
-
 .form-input,
 .form-input:hover,
 .form-input:active,

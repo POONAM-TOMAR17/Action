@@ -11,7 +11,7 @@ const SingleBlockStudy = (props: ISingleBlockStudyProps) => {
   const filteredArray = caseStudyArray.filter((item) => item.id === props.name);
   return (
     <>
-      <div className="w-full lg:flex-1 flex items-center justify-center lg:-ml-32 relative">
+      <div className="w-full xs:flex-none lg:flex-1 flex items-center justify-center lg:-ml-32 relative">
         {filteredArray[0].img !== undefined && (
           <img
             src={filteredArray[0].img !== '' ? filteredArray[0].img : placeholder}
@@ -19,8 +19,8 @@ const SingleBlockStudy = (props: ISingleBlockStudyProps) => {
           />
         )}
       </div>
-      <div className="w-full lg:w-1/2 flex items-start content-center justify-center flex-wrap space-y-5 lg:px-16 bg-customBackground-100">
-        <p className="w-full font-medium text-3xl text-customColors-100 xs:mt-5 lg:mt-0">
+      <div className="w-full lg:w-1/2 flex items-start content-center justify-center flex-wrap xs:space-y-2 lg:space-y-5 lg:px-16 bg-customBackground-100">
+        <p className="w-full font-medium xs:text-lg lg:text-3xl text-customColors-100 xs:mt-5 lg:mt-0">
           {filteredArray[0].name}
         </p>
         <p className="w-full text-lg font-light">{filteredArray[0].description}</p>

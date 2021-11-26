@@ -49,7 +49,7 @@ const Openings = () => {
                       <span className="w-3 bg-black rounded-full" style={{ height: '2px' }} />
                       <span
                         style={{ height: '2px' }}
-                        className={`absolute w-3 bg-black rounded-full transform duration-300${
+                        className={`absolute w-3 bg-black rounded-full transform duration-300 ${
                           openedRole.get() === item.id ? ' rotate-0' : ' rotate-90'
                         }`}
                       />

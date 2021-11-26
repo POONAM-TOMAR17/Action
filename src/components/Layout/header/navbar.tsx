@@ -66,7 +66,7 @@ const Navbar = (props: INavbarProps) => {
             <div className="lg:h-full lg:flex-1 lg:flex justify-between lg:ml-6">
               <nav
                 className={
-                  `flex h-full xs:fixed xs:left-0 xs:top-0 xs:w-full lg:position-unset lg:z-auto lg:translate-x-unset transform duration-100 ease-in-out${
+                  `flex h-full xs:fixed xs:left-0 xs:top-0 xs:w-full lg:position-unset lg:z-auto lg:translate-x-unset transform duration-100 ease-in-out ${
                     searchActive.get()
                       ? ' lg:w-0 lg:flex-shrink-0 lg:opacity-0 lg:z-1'
                       : ' lg:flex-1'
@@ -83,7 +83,7 @@ const Navbar = (props: INavbarProps) => {
                     menuActive.set(false);
                     document.getElementsByTagName('body')[0].removeAttribute('style');
                   }}
-                  className={`xs:absolute lg:hidden w-full h-full bg-black bg-opacity-40 transform duration-500${
+                  className={`xs:absolute lg:hidden w-full h-full bg-black bg-opacity-40 transform duration-500 ${
                     menuActive.get() ? ' xs:flex xs:z-99 opacity-100' : ' xs:hidden opacity-0'
                   }`}
                 />
@@ -145,7 +145,7 @@ const Navbar = (props: INavbarProps) => {
                                     className="ml-2 flex items-center justify-center"
                                   >
                                     <ArrowRight
-                                      className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90${
+                                      className={`w-3 h-3 lg:w-2 lg:h-2 lg:mt-1 transform duration-300 lg:rotate-90 ${
                                         subActive.get() ? ' xs:rotate-90' : ''
                                       }`}
                                       strokeWidth="2"
@@ -210,7 +210,7 @@ const Navbar = (props: INavbarProps) => {
                 </div>
               </nav>
               <div
-                className={`xs:hidden lg:flex justify-start relative${
+                className={`xs:hidden lg:flex justify-start relative ${
                   searchActive.get() ? ' w-full' : ''
                 }`}
               >

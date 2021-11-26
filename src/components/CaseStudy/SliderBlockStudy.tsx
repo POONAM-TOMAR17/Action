@@ -20,7 +20,7 @@ const SliderBlockStudy = () => {
         breakpoint: 1025,
         settings: {
           arrows: false,
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           variableWidth: false
         }
@@ -29,10 +29,13 @@ const SliderBlockStudy = () => {
   };
   return (
     <>
-      <Slider {...settings} className="w-full overflow-hidden relative -mx-5">
+      <Slider
+        {...settings}
+        className="w-full overflow-hidden relative xs:mt-5 xs:-mx-px lg:mt-0 lg:-mx-5"
+      >
         {filteredArray.map((csItem: CaseStudyInnerType, index: number) => (
-          <div key={index} className="w-full h-full">
-            <div className="flex-1 m-5">
+          <div key={index} className="w-full lg:h-full">
+            <div className="flex-1 xs:my-5 xs:mx-px lg:m-5">
               <a
                 href={csItem.link}
                 className="w-full lg:h-106 flex items-center justify-center outline-none focus:outline-none shadow-none focus:shadow-none"

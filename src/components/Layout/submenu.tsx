@@ -11,7 +11,7 @@ export const SubMenu = (props: ISubMenu) => {
   const { subMenu, menu, subActive } = props;
   return (
     <div
-      className={`mega-menu w-full relative xs:translate xs:duration-300 lg:absolute lg:inset-x-0 lg:shadow-lg lg:left-0 lg:top-full lg:scale-100 lg:h-auto xs:overflow-hidden lg:overflow-unset${
+      className={`mega-menu w-full relative xs:translate xs:duration-300 lg:absolute lg:inset-x-0 lg:shadow-lg lg:left-0 lg:top-full lg:scale-100 lg:h-auto xs:overflow-hidden lg:overflow-unset ${
         subActive
           ? ' xs:h-auto xs:opacity-100 xs:scale-100 xs:z-auto'
           : ' xs:h-0 xs:opacity-0 xs:scale-0 xs:z-1'

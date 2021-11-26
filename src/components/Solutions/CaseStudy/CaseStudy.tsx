@@ -11,7 +11,7 @@ const CaseStudy = (props: ICaseStudy) => {
   const { singBlock, name, caseStudyName } = props;
   return (
     <section
-      className={`w-full flex justify-start items-center flex-wrap${singBlock ? '' : ' lg:mb-5'}`}
+      className={`w-full flex justify-start items-center flex-wrap ${singBlock ? '' : ' lg:mb-5'}`}
     >
       <div className="w-full flex items-center justify-between xs:px-4 lg:px-8 lg:my-5 lg:container lg:mx-auto">
         <div className="w-full lg:w-4/5 flex justify-start items-start flex-col space-y-4">
