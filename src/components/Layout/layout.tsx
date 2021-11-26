@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { useWindowSize } from '../../components/libs/useWindowSize';
 import { Footer } from './footer';
 import Navbar from './header/navbar';
@@ -16,9 +15,6 @@ const Layout = ({ children }) => {
         {children}
         <Footer />
       </div>
-      <Helmet>
-        <script src="static/js/script.js" type="text/javascript" />
-      </Helmet>
     </>
   );
 };
