@@ -110,7 +110,7 @@ const MainContents = (props: IMainContentsProps) => {
                 >
                   <a
                     href={menuItem.link}
-                    className="cursor-pointer py-4 border-b-2 border-transparent hover:border-customColors-500"
+                    className="cursor-pointer py-4 border-b-2 border-transparent lg:hover:border-customColors-500"
                   >
                     {menuItem.name}
                   </a>

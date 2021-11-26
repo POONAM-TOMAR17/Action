@@ -9,9 +9,9 @@ const ImgContainer = () => {
             <img
               src="/images/career-banner.jpg"
               alt="career"
-              className="absolute left-0 top-0 w-full h-full object-cover z-1"
+              className="w-full h-full object-cover z-1"
             />
-            <div className="w-full h-full bg-black bg-opacity-60" />
+            <div className="absolute left-0 top-0 w-full h-full bg-black bg-opacity-60" />
           </div>
           <img
             src="/images/a-vector.png"

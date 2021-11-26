@@ -9,7 +9,7 @@ const ImgContainer = () => {
             <img
               src="/images/contact-us-banner.jpg"
               alt="contact-us"
-              className="absolute left-0 top-0 w-full h-full object-cover z-1"
+              className="w-full h-full object-cover z-1"
             />
           </div>
           <img

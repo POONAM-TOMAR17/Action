@@ -1222,11 +1222,6 @@ select {
   border-color: rgba(244, 244, 244, var(--tw-border-opacity));
 }
 
-.hover\:border-customColors-500:hover {
-  --tw-border-opacity: 1;
-  border-color: rgba(218, 26, 34, var(--tw-border-opacity));
-}
-
 .focus\:border-black:focus {
   --tw-border-opacity: 1;
   border-color: rgba(0, 0, 0, var(--tw-border-opacity));
@@ -2541,6 +2536,11 @@ select {
   .lg\:border-customBackground-400 {
     --tw-border-opacity: 1;
     border-color: rgba(244, 244, 244, var(--tw-border-opacity));
+  }
+
+  .lg\:hover\:border-customColors-500:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(218, 26, 34, var(--tw-border-opacity));
   }
 
   .lg\:bg-white {

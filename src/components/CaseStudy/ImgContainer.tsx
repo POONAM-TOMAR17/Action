@@ -12,12 +12,8 @@ const ImgContainer = (props: IImgContainerProps) => {
       <div className="w-full lg:h-full flex justify-start items-center flex-wrap lg:justify-start relative">
         <div className="w-full h-full flex items-center justify-center relative top-image">
           <div className="w-full h-full absolute top-0 left-0 z-1">
-            <img
-              src={img}
-              alt={name}
-              className="absolute left-0 top-0 w-full h-full object-cover z-1"
-            />
-            <div className="w-full h-full bg-black bg-opacity-60" />
+            <img src={img} alt={name} className="w-full h-full object-cover z-1" />
+            <div className="absolute left-0 top-0 w-full h-full bg-black bg-opacity-60" />
           </div>
           <img
             src="/images/a-vector.png"
