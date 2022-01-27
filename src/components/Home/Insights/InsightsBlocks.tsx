@@ -10,7 +10,7 @@ const InsightsBlocks = (props: IInisghtsBlocks) => {
   const { singBlock } = props;
   return (
     <>
-      {!singBlock &&
+      {/* {!singBlock &&
         insightsList &&
         insightsList.map((listItem, index) => {
           return (
@@ -46,7 +46,7 @@ const InsightsBlocks = (props: IInisghtsBlocks) => {
             </>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };

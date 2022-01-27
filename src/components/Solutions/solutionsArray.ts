@@ -252,90 +252,101 @@ export const solutionsArray = [
   {
     id: 'business-intelligence',
     name: 'Business Intelligence',
-    img: '/images/digitalization-banner.jpg',
+    // img: '/images/digitalization-banner.jpg',
+    img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/electricalbanner.jpg',
     link: '/solutions/business-intelligence',
     caseStudy: 'vasu healthcare',
     overView: {
       labelText: 'About',
       title: 'Why Business Intelligence?',
       description:
-        '<p>We help you use real-time data to enact your business strategies with clarity and confidence. Our Business Intelligence solution will give you unique actionable insights to help you drive operational efficiency, deep-dive on your company’s financial performance and build the necessary flexibility in your supply chains to deal with market disruptions at the least cost. With our solution, you will gain valuable insights into your customers’ behavior and woow them with personalized offerings.</p>'
+        '<p>In electrical realm, multiple types of instruments are used based on the studies, use cases, and the requirements. The classification is based on the electrical quantities of parts, the nature of the operations, its purposes, its electrical supply, occurring effects, uses and many other terms.Electrical calibration involves the process of verifying the performance of or adjusting any instrument that measures or tests the above parameters. It involves the use of precise devices that assess the performance of key properties for other devices.</p>'
     },
     textSections: [
       {
         isService: true,
         labelText: 'Provision',
-        title: 'Benefits of Business Intelligence',
+        title: 'Master Instruments',
         description: '',
         blocks: [
           {
             name: 'Data Driven Business Decisions',
             desc: '<p>Data is the life blood for any organization. Implementing data analytics helps your organization to make decisions based on facts. It helps organizations track market and customer behavior in real-time and derive key operational insights critical to satisfactory delivery of services.</p>',
-            img: ''
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Fluke-reference-multimeter.jpg'
           },
           {
             name: 'Increased Organizational Efficiency',
             desc: '<p>Business Analytics provides a way to benchmark organization efficiency and identify where operational gaps exists. It helps to measure and report the holistic performance of the organization, provide a basis for deep dives and create what-if scenario modelling.</p>',
-            img: ''
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/2-multimeter.jpg'
           },
           {
             name: 'Increased Competitive Advantage',
             desc: '<p>Data can help with in-depth understanding of macro factors within a market. An Organization can accurately decide its strategy and tactics such as decide when to enter or exit a market, when to grow or de-grow its capacity, when to outsource or produce in-house.</p>',
-            img: ''
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Fluke-multimeter-calibrator.jpg'
           },
           {
             name: 'Improved Data Governance',
             desc: '<p>Modern data architecture enables organizations to combine different data from both internal and external sources for rich analysis. With the option of cloud hosting, there is no need to invest CAPEX into expensive data storage and analytics infrastructure. Both storage and analytics can now been accessed on-demand as a service.</p>',
-            img: ''
-          }
-        ]
-      },
-      {
-        labelText: 'Services',
-        title: 'Services under BI',
-        description:
-          '<p>Our competent team of data engineers will build for you end to end Business Intelligence solution from data extraction, analytics and modelling to data visualization. We have expertise to deliver full scale data engineering requirements.</p>',
-        blocks: [
-          {
-            name: 'Data Extraction',
-            desc: '<p>We build robust and reliable ETL pipelines (extract, transform and load) that will gather the data from the multiple systems, aggregate and process them to generate the required insights and Load them into Data Warehouse tools and platforms</p>',
-            img: ''
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Voltage-ration-transformer.jpg'
           },
-          {
-            name: 'Data Exploration & Analytics',
-            desc: '<p>Utilize cutting-edge robust AI based data models to derive operational insights for smart business recommendations that gives you a competitive edge and guarantees market growth.</p>',
-            img: ''
-          }
-        ]
-      },
-      {
-        labelText: 'About',
-        title: 'Data Extraction',
-        description:
-          '<p>Through data analytics, we help your organization appropriately respond to disruptions in the market place. We will help you become more agile by increasing visibility into your operational capacity and create better understanding into the key trends in your market. Our analytics will help both executive and operational management in the following ways:</p>',
-        blocks: [
-          {
-            name: 'Executive management',
-            desc: '<p>Create responsive business strategic plans that addresses the various potential market disruptions to guarantee business continuity and growth.</p>',
-            img: ''
+           {
+            name: 'Improved Data Governance',
+            desc: '<p>Modern data architecture enables organizations to combine different data from both internal and external sources for rich analysis. With the option of cloud hosting, there is no need to invest CAPEX into expensive data storage and analytics infrastructure. Both storage and analytics can now been accessed on-demand as a service.</p>',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Giga-Ohm-box.jpg'
           },
-          {
-            name: 'Operational management',
-            desc:
-              '<p>Create real-time operational visibility and provide actionable insights that helps the business to improve its productivity and deliver high customer service levels.</p>' +
-              '<p>Business teams from Technical to Sales teams can leverage BI. Samples use cases includes the following:</p>' +
-              '<ul class="list-disc ml-5 space-y-2">' +
-              '<li>Monitoring business performance or other types of metrics</li>' +
-              '<li>Supporting decision-making and strategic planning</li>' +
-              '<li>Evaluating and improving business processes</li>' +
-              '<li>Giving operational workers useful information about customers, equipment, supply chains and other elements of business operations</li>' +
-              '<li>Detecting trends, patterns and relationships in data</li>' +
-              '</ul>' +
-              '<p>We help you extract the maximum possible value from data by combining for analysis data from different sources, both internal and external data sources, and both structured and unstructured data types.</p>',
-            img: ''
+            {
+            name: 'Improved Data Governance',
+            desc: '<p>Modern data architecture enables organizations to combine different data from both internal and external sources for rich analysis. With the option of cloud hosting, there is no need to invest CAPEX into expensive data storage and analytics infrastructure. Both storage and analytics can now been accessed on-demand as a service.</p>',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/AC-DC-divider.jpg'
           }
         ]
       },
+      // {
+      //   labelText: 'Services',
+      //   title: 'Services under BI',
+      //   description:
+      //     '<p>Our competent team of data engineers will build for you end to end Business Intelligence solution from data extraction, analytics and modelling to data visualization. We have expertise to deliver full scale data engineering requirements.</p>',
+      //   blocks: [
+      //     {
+      //       name: 'Data Extraction',
+      //       desc: '<p>We build robust and reliable ETL pipelines (extract, transform and load) that will gather the data from the multiple systems, aggregate and process them to generate the required insights and Load them into Data Warehouse tools and platforms</p>',
+      //       img: ''
+      //     },
+      //     {
+      //       name: 'Data Exploration & Analytics',
+      //       desc: '<p>Utilize cutting-edge robust AI based data models to derive operational insights for smart business recommendations that gives you a competitive edge and guarantees market growth.</p>',
+      //       img: ''
+      //     }
+      //   ]
+      // },
+      // {
+      //   labelText: 'About',
+      //   title: 'Data Extraction',
+      //   description:
+      //     '<p>Through data analytics, we help your organization appropriately respond to disruptions in the market place. We will help you become more agile by increasing visibility into your operational capacity and create better understanding into the key trends in your market. Our analytics will help both executive and operational management in the following ways:</p>',
+      //   blocks: [
+      //     {
+      //       name: 'Executive management',
+      //       desc: '<p>Create responsive business strategic plans that addresses the various potential market disruptions to guarantee business continuity and growth.</p>',
+      //       img: ''
+      //     },
+      //     {
+      //       name: 'Operational management',
+      //       desc:
+      //         '<p>Create real-time operational visibility and provide actionable insights that helps the business to improve its productivity and deliver high customer service levels.</p>' +
+      //         '<p>Business teams from Technical to Sales teams can leverage BI. Samples use cases includes the following:</p>' +
+      //         '<ul class="list-disc ml-5 space-y-2">' +
+      //         '<li>Monitoring business performance or other types of metrics</li>' +
+      //         '<li>Supporting decision-making and strategic planning</li>' +
+      //         '<li>Evaluating and improving business processes</li>' +
+      //         '<li>Giving operational workers useful information about customers, equipment, supply chains and other elements of business operations</li>' +
+      //         '<li>Detecting trends, patterns and relationships in data</li>' +
+      //         '</ul>' +
+      //         '<p>We help you extract the maximum possible value from data by combining for analysis data from different sources, both internal and external data sources, and both structured and unstructured data types.</p>',
+      //       img: ''
+      //     }
+      //   ]
+      // },
       {
         onlyImage: true,
         labelText: '',
@@ -378,29 +389,29 @@ export const solutionsArray = [
           }
         ]
       },
-      {
-        labelText: '',
-        title: 'Sample PowerBI deployment',
-        description: '',
-        image: ''
-      },
-      {
-        labelText: '',
-        title: '',
-        description:
-          '<p>Actonate has the required experience to develop Data visualization dashboards that needs your business needs. Our engineers are experienced in visualization tools such as PowerBI, Amazon QuickSight among others and they are also experienced in software engineering, databases and data analysis.</p>' +
-          '<p>Actonate is capable of offering of carrying out any scope for powerBI projects including the following:</p>' +
-          '<ul class="list-disc ml-5 space-y-2">' +
-          '<li>Setting business requirements for BI tools</li>' +
-          '<li>Translating business requirements into technical ones</li>' +
-          '<li>Leading BI software development, deployment, and maintenance</li>' +
-          '<li>Report curation and data modeling</li>' +
-          '<li>Participation in data warehouse design</li>' +
-          '<li>Documenting contents in a data warehouse and meta-data storage</li>' +
-          '<li>Creating technical documentation for BI tools</li>' +
-          '</ul>',
-        blocks: []
-      }
+      // {
+      //   labelText: '',
+      //   title: 'Sample PowerBI deployment',
+      //   description: '',
+      //   image: ''
+      // },
+      // {
+      //   labelText: '',
+      //   title: '',
+      //   description:
+      //     '<p>Actonate has the required experience to develop Data visualization dashboards that needs your business needs. Our engineers are experienced in visualization tools such as PowerBI, Amazon QuickSight among others and they are also experienced in software engineering, databases and data analysis.</p>' +
+      //     '<p>Actonate is capable of offering of carrying out any scope for powerBI projects including the following:</p>' +
+      //     '<ul class="list-disc ml-5 space-y-2">' +
+      //     '<li>Setting business requirements for BI tools</li>' +
+      //     '<li>Translating business requirements into technical ones</li>' +
+      //     '<li>Leading BI software development, deployment, and maintenance</li>' +
+      //     '<li>Report curation and data modeling</li>' +
+      //     '<li>Participation in data warehouse design</li>' +
+      //     '<li>Documenting contents in a data warehouse and meta-data storage</li>' +
+      //     '<li>Creating technical documentation for BI tools</li>' +
+      //     '</ul>',
+      //   blocks: []
+      // }
     ]
   },
   {

@@ -6,7 +6,10 @@ const HeroSlider = () => {
     <section className="w-full lg:h-full flex justify-between items-center lg:mb-5">
       <div className="w-full lg:h-full flex justify-start items-center flex-wrap lg:justify-start relative">
         {/* Slider */}
-        <div className="w-full h-full relative main-slider swiper-container">
+        <div
+          className="w-full h-full relative main-slider swiper-container"
+          // style={{ height: '723x' }}
+        >
           {mainSlider.map(
             (item, index) =>
               index === 0 && (
@@ -15,15 +18,21 @@ const HeroSlider = () => {
                   className="w-full h-full flex items-center justify-center relative overflow-hidden swiper-slide"
                 >
                   <div className="w-full h-full absolute left-0 z-1">
-                    <img src={item.src} className="w-full h-full object-cover" alt="main-image" />
+                    {/* <img src={item.src} className="w-full h-full object-cover" alt="main-image" /> */}
+                    <img
+                      src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2560,h_1769/http://wordpress.actionengineers.com/wp-content/uploads/2021/09/action-building-scaled.jpg"
+                      className="w-full h-full object-cover"
+                      alt="main-image"
+                    />
                   </div>
                   <p className="xs:w-full xs:px-6 text-white text-5xl font-bold lg:w-1/2 lg:px-14 lg:leading-normal">
-                    {item.text}
+                    {/* {item.text} */}
+                    Example
                   </p>
-                  <img
+                  {/* <img
                     src="/images/a-vector.png"
                     className="h-1/2 lg:h-full object-contain absolute bottom-0 right-0 z-1"
-                  />
+                  /> */}
                 </div>
               )
           )}

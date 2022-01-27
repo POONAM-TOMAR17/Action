@@ -1,5 +1,6 @@
 import React from 'react';
 import { caseStudyArray } from '../../constants';
+import TableContainer from '../TableContainer';
 import CaseStudyBlock from './CaseStudyBlock';
 
 interface IInisghtsBlocks {
@@ -13,7 +14,7 @@ const InsightsBlocks = (props: IInisghtsBlocks) => {
   const filterArray = caseStudyArray.filter((item) => item.name.toLowerCase() === name);
   return (
     <>
-      {!singBlock &&
+      {/* {!singBlock &&
         caseStudyArray &&
         caseStudyArray.map((listItem, index) => {
           return (
@@ -49,7 +50,8 @@ const InsightsBlocks = (props: IInisghtsBlocks) => {
             </>
           </div>
         </div>
-      )}
+      )} */}
+      <TableContainer />
     </>
   );
 };

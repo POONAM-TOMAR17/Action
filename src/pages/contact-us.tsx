@@ -14,8 +14,8 @@ const ContactUs = () => {
       <ImgContainer />
       <OverView />
       <ContactForm isMobile={width < 1025} />
-      <CustomerSupportContainer />
-      <AddressForm />
+      {/* <CustomerSupportContainer /> */}
+      {/* <AddressForm /> */}
     </Layout>
   );
 };

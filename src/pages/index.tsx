@@ -1,3 +1,4 @@
+import Solutions2 from '../components/Home/Solutions2';
 import React from 'react';
 import CaseStudy from '../components/Home/CaseStudy/CaseStudy';
 import HeroSlider from '../components/Home/HeroSlider';
@@ -14,8 +15,9 @@ const Index = () => {
     <Layout>
       <HeroSlider />
       <OverView />
-      <CaseStudy />
-      <Solutions />
+      {/* <CaseStudy /> */}
+      {/* <Solutions /> */}
+      <Solutions2 />
       <Insights />
       <Testimonials />
       <OurClients />

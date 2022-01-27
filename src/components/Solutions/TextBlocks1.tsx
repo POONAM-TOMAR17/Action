@@ -77,12 +77,12 @@ const TextBlocks = (props: ITextBlocksProps) => {
                       isService ? ' lg:h-72' : ' lg:h-72'
                     }`}
                   >
-                    <img src={bimg} alt={item.name} className="w-full h-full object-cover" />
-                    {/* <img
+                    {/* <img src={bimg} alt={item.name} className="w-full h-full object-cover" /> */}
+                    <img
                       src="http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Fluke-reference-multimeter.jpg"
                       alt={item.name}
                       className="w-full h-full object-cover"
-                    /> */}
+                    />
                   </div>
                   {isService ? (
                     <>

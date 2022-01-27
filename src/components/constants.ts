@@ -4,11 +4,24 @@ export const mainNavigation = [
     link: '/'
   },
   {
-    name: 'About',
-    link: '/about-us'
+    name: 'About Us',
+    link: '/about-us',
+     subMenu: [
+      {
+        name: 'Core',
+        items: [
+          { name: 'Our History', link: '/solutions/analytics' },
+          { name: 'Accreditation', link: '/solutions/artificial-intelligence' },
+          { name: 'Our Team', link: '/solutions/digital-transformation' },
+          { name: 'Quality Policy', link: '/solutions/expert-system' },
+         
+        ]
+      },
+    
+    ]
   },
   {
-    name: 'Solutions',
+    name: 'Products',
     link: '/solutions',
     subMenu: [
       {
@@ -38,28 +51,28 @@ export const mainNavigation = [
     ]
   },
   {
-    name: 'Case Study',
+    name: 'Calibration',
     link: '/case-study',
     subMenu: [
       {
         name: 'Read studies for',
         items: [
-          { name: 'Siemens', link: '/case-study/siemens' },
-          { name: 'Sapna Online', link: '/case-study/sapna-online' },
-          { name: 'LetsShave', link: '/case-study/letsshave' },
-          { name: 'Grofers', link: '/case-study/grofers' },
-          { name: 'Dainik Bhaskar', link: '/case-study/dainik-bhaskar' },
-          { name: 'Cosmetize', link: '/case-study/cosmetize' }
+          { name: 'Electrical Calibration', link: '/case-study/siemens' },
+          { name: 'Dimension', link: '/case-study/sapna-online' },
+          { name: 'Mass,Volume,Weight', link: '/case-study/letsshave' },
+          { name: 'Pressure', link: '/case-study/grofers' },
+          { name: 'Torque', link: '/case-study/dainik-bhaskar' },
+          { name: 'Thermal', link: '/case-study/cosmetize' }
         ]
       }
     ]
   },
   {
-    name: 'Insights',
+    name: 'Consulting',
     link: '/insights'
   },
   {
-    name: 'Careers',
+    name: 'Our Labs',
     link: '/careers'
   }
 ];
@@ -115,7 +128,7 @@ export const caseStudyArray = [
 ];
 
 export const solutionsArray = [
-  { name: 'Digitalization', image: '/images/solutions/digitalization.svg' },
+  { name: 'Digitalization', image: 'https://sp-ao.shortpixel.ai/client/to_webp,q_gloss…ers.com/wp-content/uploads/2021/06/Electrical.jpg' },
   { name: 'Cloud Computing', image: '/images/solutions/cloud-computing.svg' },
   { name: 'Artificial Intelligence', image: '/images/solutions/artificial-intelligence.svg' },
   { name: 'Analytics', image: '/images/solutions/analytics.svg' },
