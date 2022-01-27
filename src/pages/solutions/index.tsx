@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/layout';
 
 const SolutionIndex = () => {
   const menuArray = mainNavigation.filter((item) => item.name.toLowerCase() === 'solutions');
-  const subMenu = menuArray[0].subMenu;
+  const subMenu = menuArray?.[0]?.subMenu;
 
   return (
     <Layout>

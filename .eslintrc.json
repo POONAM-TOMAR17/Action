@@ -49,5 +49,5 @@
     "prettier",
     "plugin:import/recommended",
     "plugin:prettier/recommended"
-  ],
+  ]
 }

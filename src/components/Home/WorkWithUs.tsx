@@ -19,12 +19,14 @@ const WorkWithUs = () => {
             <div className="xs:w-3/5 left-10 lg:left-24 lg:w-2/5 h-full flex flex-col justify-center items-left relative">
               {/* <div className="w-full h-full flex items-end lg:items-center justify-center bg-white bg-opacity-80 xs:py-5 lg:py-0 lg:px-15 wwu-bg">
                 <div className="w-full flex flex-col wwu-text lg:ml-5"> */}
-              <p className="xs:ml-6 lg:ml-0 text-2xl text-white">Working with us</p>
-              <p className="xs:hidden lg:block text-md text-white mt-3 pr-4">
+              <p className="xs:ml-6 lg:ml-0 text-md uppercase text-white">Working with us</p>
+              <p className="xs:hidden lg:block text-3xl font-bold text-white mt-3 pr-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio in tristique.
-                Penatibus imperdiet id elit nec, odio in tristique. Et ac integer dignissim nec.
               </p>
-              <a href=" " className="w-3/12 border uppercase text-white mt-6 border-white p-2">
+              <a
+                href=" "
+                className="w-3/12 border text-base rounded-sm uppercase text-white mt-6 border-white p-2"
+              >
                 Inquire us
               </a>
               {/* </div>

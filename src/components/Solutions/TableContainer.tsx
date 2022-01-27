@@ -40,12 +40,12 @@ export default function TableContainer() {
             <table className="min-w-full divide-y divide-x divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th
+                  {/* <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                   >
                     SR NO
-                  </th>
+                  </th> */}
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
@@ -86,11 +86,11 @@ export default function TableContainer() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {people.map((person) => (
                   <tr key={person.email}>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    {/* <td className="px-6 py-4 whitespace-nowrap">
                       <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                         1
                       </span>
-                    </td>
+                    </td> */}
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
                         {/* <div className="flex-shrink-0 h-10 w-10">
