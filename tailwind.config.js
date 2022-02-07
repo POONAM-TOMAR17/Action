@@ -32,12 +32,18 @@ module.exports = {
         600: '#E72931',
         700: '#EA3338',
         800: '#7777777',
+        900: '#333333'
       },
       customBackground: {
         100: '#FCFCFE',
         200: '#FCFBFB',
         300: '#F9F9F9',
-        400: '#F4F4F4'
+        400: '#F4F4F4',
+        500: '#f6f6f6',
+        600: '#e9e9e9',
+        700: '#dcdcdc',
+        800: '#f9f9f9',
+        900: '#ececec'
       }
     },
     fontFamily: {},

@@ -2,8 +2,10 @@ import React, { Fragment } from 'react';
 import { SolutionDataType, TextSectionType } from '../../components/libs/typeInterface';
 import CaseStudy from './CaseStudy/CaseStudy';
 import ImgContainer from './ImgContainer';
+import InstrumentCalibration from './Instrumentcalibration';
 import OverView from './OverView';
 import { solutionsArray } from './solutionsArray';
+import TableContainer from './TableContainer';
 import TextBlocks from './TextBlocks';
 
 interface ISolutionsContainerProps {
@@ -21,6 +23,7 @@ const SolutionsContainer = (props: ISolutionsContainerProps) => {
         filteredArray.length > 0 &&
         filteredArray.map((item: SolutionDataType, index: number) => (
           <Fragment key={index}>
+            {console.log('item check', item)}
             <ImgContainer name={item.name} img={item.img} />
             <OverView
               labelText={item.overView.labelText}
@@ -41,7 +44,9 @@ const SolutionsContainer = (props: ISolutionsContainerProps) => {
                   onlyImage={section.onlyImage}
                 />
               ))}
-            <CaseStudy name={item.name} caseStudyName={item.caseStudy} singBlock />
+            <InstrumentCalibration features={item.features} />
+            <TableContainer people={item.people} />
+            {/* <CaseStudy name={item.name} caseStudyName={item.caseStudy} singBlock /> */}
           </Fragment>
         ))}
     </>

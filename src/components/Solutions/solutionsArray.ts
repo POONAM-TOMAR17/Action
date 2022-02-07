@@ -1,111 +1,427 @@
 export const solutionsArray = [
   {
     id: 'digital-transformation',
-    name: 'Digital Transformation',
+    name: 'PRESSURE CALIBRATION',
     img: '/images/digitalization-banner.jpg',
     link: '/solutions/digital-transformation',
     caseStudy: 'grofers',
     overView: {
-      labelText: 'About',
-      title: 'Why Digital Transformation',
+      labelText: '',
+      title: '',
       description:
-        '<p>Digital Transformation is at the top of the agenda of every enterprise now. If there is any corporate lessons learnt from covid 19, it is that companies that have digitally transformed their operations have proven more resilient dealing with the uncertainty caused by the pandemic. Some have even profited from the covid-19 situation.' +
-        '<p>At Actonate, we will help you to digitally transform your operations in a way that delivers maximum value for your customers and that guarantees business growth and continuity.  Our state of the art digital transformation framework will help you maximize your return on technology investments and increase your shareholder equity. We promise to deliver for you’re an agile and intelligent digitalized operations that will give you an edge over your competition.</p>'
-    },
+        '<p>Instruments used to measure and display pressure in an integral unit are called pressure meters or pressure gauges or vacuum gauges. Pressure range, sensitivity, dynamic response, and cost all vary by several orders of magnitude from one instrument design to the next. Mechanical pressure gauges are indicating pressure measuring instruments for gauge, absolute and differential pressure.</p>' 
+        
+    },  
+  features:  [
+  {
+    name1: 'PRESSURE GAUGE – Accuracy (≥ 1.0)'
+  },
+  {
+    name1: 'DIFFERENTIAL PRESSURE GAUGE – ANALOG'
+  },
+  {
+    name1: 'MAGNEHELIC GAUGE'
+  },
+  {
+    name1: 'ANALOG TYPE PRESSURE GAUGE – DIGITAL TYPE'
+  },
+  {
+    name1: 'PRESSURE SWITCH'
+  },
+  {
+    name1: 'BLOOD PRESSURE MEASURING UNIT'
+  },
+  {
+    name1: 'VACUUM GAUGE'
+  },
+  {
+    name1: 'DIGITAL PRESSURE CALIBRATOR'
+  },
+  {
+    name1: 'INCLINED MANOMETER'
+  },
+  {
+    name1: 'COMPOUND GAUGE'
+  },
+  {
+    name1: 'MANOMETER (PRESSURE OR VACUUM)'
+  },
+  {
+    name1: 'DEAD WEIGHT TESTER (UPTO 700 KG)'
+  },
+
+  {
+    name1: 'PRESSURE / VACCUM TRASMITTER OR TRANSDUCER'
+  },
+  
+    ],
+    people: [
+    {
+    no: '1',
+    name: 'ELECTRO TECHNICAL ALTERNATING CURRENT (< 1 GHZ) (MEASURE)',
+    title:
+      'AC ACTIVE ENERGY 1 PHASE – 2 WIRE / 3 PHASE – 4 WIRE( 50 Hz,110 V TO 240 V, 1 A TO 5 A(55 Wh-3.6 kWh),0.5 PF TO UPF',
+    range1: '55 Wh to 3600 Wh',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '0.63% to 0.28%',
+role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'Using Energy meter by comparison method.'
+  },
+  {
+    no: '',
+    name: '',
+    title:
+      'AC ACTIVE POWER 1 PHASE – 2 WIRE / 3 PHASE – 4 WIRE( 50 Hz, 110 V TO 240 V, 1 A TO 5 A (55W – 3.6 kW,0.5 PF TO UPF)',
+
+    range1: '55 W to 3600 W',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '0.33 % to 0.34 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING ENERGY METER BY COMPARISON METHOD'
+  },
+  {
+    no: '',
+    name: '',
+    title: 'AC CURRENT RATIO',
+    range1: '1 to 1000 (50 Hz)',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '4.74 % to 0.8 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: '	USING 6 1/2 DIGITAL MULTIMETER & CT BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '',
+    name: '',
+    title: 'AC CURRENT',
+    range1: '10 A to 1000 A',
+    range2: '100 µA to 100 mA (50Hz)',
+    range3: '100 mA to 10 A(50 Hz)',
+    range4: '',
+    range5: '',
+    role1: '0.2 % to 0.55 %',
+    role2: '0.5 % to 0.2 %',
+    role3: '0.2 % to 0.3 %',
+    role4: '',
+    role5: '',
+    method: 'USING 6 1/2 DIGITAL MULTIMETER & CT BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '2',
+    name: 'ELECTRO TECHNICAL ALTERNATING CURRENT (< 1 GHZ) (MEASURE)',
+    title: 'AC VOLTAGE',
+    range1: '1 V to 1000 V (50Hz)',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.33 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING HIGH VOLTAGE DIVIDER BY DIRECT'
+  },
+  {
+    no: '',
+    name: '',
+    title: '',
+    range1: '1 V to 1000 V (50Hz)',
+    range2: '1 V to 1000 V (50Hz)',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '4.8 % to 0.12 %',
+    role2: '0.12%',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING 6 1/2 DIGITAL MULTIMETER & CT BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '',
+    name: '',
+    title: 'AC VOLTAGE RATIO',
+    range1: '1 ( 50 Hz) to 2000 (50Hz)',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1 ( 50 Hz) to 2000 (50Hz)',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING 6 1/2 DIGITAL MULTIMETER & STANDARD RATIO TRANSFORMER BYDIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '3',
+    name: 'ELECTRO TECHNICAL ALTERNATING CURRENT (< 1 GHZ) (SOURCE)',
+    title: 'CAPACITOR (1 kHz)',
+    range1: '1 nF to 10 µF)',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.31 % to 2.38 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING CAPACITANCE BOX BY DIRECT METHOD'
+  },
+  {
+    no: '',
+    name: 'ELECTRO TECHNICAL DIRECT CURRENT (MEASURE)',
+    title: 'CAPACITOR',
+    range1: '1 nF to 1 mF)',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '5.5 % to 2.2 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING 6 1/2 DIGITAL MULTIMETER BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '4',
+    name: 'ELECTRO TECHNICAL DIRECT CURRENT(MEASURE)',
+    title: 'INDUCTOR (1 kHz)',
+    range1: '100 µH to 10 H',
+   range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.4 % to 2.32 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING INDUCTOR BOX BY DIRECT METHOD'
+  },
+  {
+    no: '5',
+    name: 'ELECTRO TECHNICAL DIRECT CURRENT (MEASURE)',
+    title: 'DC CURRENT',
+    range1: '1 A to 10 A',
+    range2: '10 µA to 100 µA',
+    range3: '10 A to 100 A',
+    range4: '100 µA to 1 A',
+    range5: '100 A to 1000 A',
+    role1: '0.1 % to 0.2 %',
+    role2: '0.36 % to 0.1 %',
+    role3: '1.0 % to 0.69 %',
+    role4: '0.1 %',
+    role5: '0.69 % to 0.84 %',
+    method: 'USING 6 1/2 DIGITAL MULTIMETER BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '6',
+    name: 'ELECTRO TECHNICAL DIRECT CURRENT (MEASURE)',
+    title: 'DC VOLTAGE',
+    range1: '1 mV to 100 mV',
+    range2: '100 mV to 1000 V',
+    range3: '1kV – 15kV to 15kV – 70 kV',
+    range4: '',
+    range5: '',
+    role1: '1.84 % to 1.79 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING 6 1/2 DIGITAL MULTIMETER BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '7',
+    name: 'ELECTRO TECHNICAL DIRECT CURRENT (MEASURE)',
+    title: 'LOW RESISTANCE (4 WIRE)',
+    range1: '0.1 mOhm to 20 Ohm',
+       range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '0.45 % to 0.1 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING 6 1/2 DIGITAL MULTIMETER, DC SHUNT(VI METHOD) & LOW RESISTANCE BOX BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '',
+    name: '',
+    title: 'RESISTANCE (2 WIRE)',
+    range1: '1 ohm to 100 ohm',
+    range2: '10 M ohm to 100 M ohm',
+    range3: '100 M ohm to 1 G ohm',
+    range4: '100 ohm to 10 M ohm',
+    range5 :'',
+    role1: '0.7 % to 0.02 %',
+    role2: '10 M ohm to 100 M ohm',
+    role3: '1.0 % to 3.0 %',
+    role4: '0.02 % to 0.05 %',
+    role5: '',
+    method: 'USING 6 1/2 DIGITAL MULTIMETER BY DIRECT / COMPARISON METHOD'
+  },
+  {
+    no: '',
+    name: '',
+    title: 'RESISTANCE (FOR INSULATION TESTER)',
+    range1: '1 M ohm to 1 T ohm',
+       range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '6.22 % to 1.49 %',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method: 'USING RESISTANCE BOX (DISCRETE VALUES) BY DIRECT METHOD'
+  }
+  ],
     textSections: [
       {
         isService: true,
-        labelText: 'Provision',
-        title: 'Impacts of Digitalization',
+        labelText: '',
+        title: 'Master Instruments',
         description: '',
         blocks: [
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Digital-manometer.jpg',
             name: 'Improved Efficiency',
             desc: '<p>Digital technology enhances your organization efficiency in several key ways such as improved information flow, increased collaboration among employees and different functions, and automation of manual processes.</p>'
           },
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Digital-pressure-gauge.jpg',
             name: 'Cost Saving',
             desc: '<p>Technology transformation brings with it the benefits of new and quicker systems that can save your organizations large sums of money compared to running legacy systems.  The total cost of ownership for severely reduces with smart investments in technology.</p>'
           },
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Pressure-calibrator.jpg',
             name: 'Better Customer Experience',
             desc: '<p>Digital Transformation improves an organization’s agility and its ability to quickly respond to customer needs. Digital analytics combines with automation helps to delight customers with personalized product offering.</p>'
           },
-          {
-            img: '',
-            name: 'Increased Transparency',
-            desc: '<p>One of the key benefits of digital transformation is increased operational transparency. When done rightly, technology can an enable organizations peel through multiple layers of operational complexity with ease, provide real-time operational visibility and facilitate for fast decision making.</p>'
-          }
+         
         ]
       },
-      {
-        isService: true,
-        labelText: 'Services',
-        title: 'Services under Digital Transformation',
-        description:
-          '<p>We will offer you cost effective and a scalable digitalization solutions. We can help you start your company’s digitalization journey even on a limited budget. We emphasis on starting with the basics. That is making sure that all your operational and supply chain processes are streamlined even before technology is adopted.</p>' +
-          '<p>We anchor our digitalization approach on the following key four pillars</p>',
-        blocks: [
-          {
-            name: '',
-            desc: '<p class="font-semibold">1. We will define a clear business case for digitalization that is aligned to your organization’s corporate strategy.</p>',
-            img: '/images/solutions/digitalization/digi-vector-1.png'
-          },
-          {
-            name: '',
-            desc: '<p class="font-semibold">2. We will help you to calculate the total cost of ownership of investing into digitalization and provide a detailed cost benefit analysis.</p>',
-            img: '/images/solutions/digitalization/digi-vector-2.png'
-          },
-          {
-            name: '',
-            desc: '<p class="font-semibold">3. We will carry out the digital transformation processes in a way that maximizes customer value delivery and increases shareholder value.</p>',
-            img: '/images/solutions/digitalization/digi-vector-3.png'
-          },
-          {
-            name: '',
-            desc: '<p class="font-semibold">4. We will choose the technology suite that is appropriate for you and help you avoid being locked to vendor licenses, while utilizing as much of your existing IT infrastructure as possible</p>',
-            img: '/images/solutions/digitalization/digi-vector-4.png'
-          }
-        ]
-      },
-      {
-        labelText: '',
-        title: 'Business Process Re-engineering & Digitalization',
-        description:
-          '<p>We will digitalize your business processes to ensure consistent quality delivery of services and business outcomes to your customers. We will help you reduce the complexities in your business operations through process re-engineering and technology implementation. With our expertise in disruptive technologies, we will help you leverage technologies such as Big Data, Internet of Things, Cloud Computing, Blockchain and Augmented realities to implement SMART operations – agile operations that are able to respond to customer and business demands in real-time or near real time.</p>',
-        image: ''
-      },
-      {
-        labelText: 'Usecases',
-        title: 'Potential use cases: Digitalization of key Business Processes',
-        description:
-          '<p>Our team of experts will help you identify where digitalization can deliver the most impact within your organization. They have extensive expertise in digitalizing end to end key supply chain processes such as, but not limited to the list below:</p>',
-        blocks: [
-          {
-            img: '',
-            name: 'Warehouse management',
-            desc: '<p>Actonate has developed a best in class warehouse management solutions to cater for any of your operational needs whether operating an e-commerce fulfillment or you simply want to automate all your warehouse processes. We offer a modular cost competitive solution for various warehouse processes such as Order Management, Inventory Management, Order Shipping, Purchase Oder Management, Returns Management, Oder Pick and Park, Invoice and Payments.</p>'
-          },
-          {
-            img: '',
-            name: 'Asset management',
-            desc: '<p>Actonate’s asset management solution will help you save millions by increasing asset uptime for your key operational assets. We will collect and analyze real-time data for you and gives you deeper insights into the health and operations of your assets. You will be able to easily carry out predictive and preventive maintenance that is informed by advanced analytics. We are able to link the asset management solution to the inventory management module for optimized spare parts inventory.</p>'
-          },
-          {
-            img: '',
-            name: 'Workforce management',
-            desc: '<p>We understand that labor is one of the biggest cost centers of a business, especially for service industry. Therefore, the need to optimize the productivity of employees cannot be over emphasized. We can digitalize your workforce scheduling processes to help you plan your staffing requirements and use AI data analytics to gain productivity insights. We give you visibility to both the long term and short term labor requirements.</p>'
-          },
-          {
-            img: '',
-            name: 'Inventory management',
-            desc: '<p>Actonate can help your company significantly improve your cashflow by freeing up cash held in excess inventory. Our digital inventory optimization solution will increase assets availability at the lowest possible cost. We use advanced AI analytics to help predict and prescribe future inventory requirements in your supply chain and provide dynamic inventory re-order points according to prevailing environmental factors. Our solution will also enable you easily carry out scenario outlooks for what-if inventory cost benefit analysis.</p>'
-          }
-        ]
-      }
+       // {
+      //   isService: true,
+      //   labelText: 'Services',
+      //   title: 'Services under Digital Transformation',
+      //   description:
+      //     '<p>We will offer you cost effective and a scalable digitalization solutions. We can help you start your company’s digitalization journey even on a limited budget. We emphasis on starting with the basics. That is making sure that all your operational and supply chain processes are streamlined even before technology is adopted.</p>' +
+      //     '<p>We anchor our digitalization approach on the following key four pillars</p>',
+      //   blocks: [
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">1. We will define a clear business case for digitalization that is aligned to your organization’s corporate strategy.</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-1.png'
+      //     },
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">2. We will help you to calculate the total cost of ownership of investing into digitalization and provide a detailed cost benefit analysis.</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-2.png'
+      //     },
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">3. We will carry out the digital transformation processes in a way that maximizes customer value delivery and increases shareholder value.</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-3.png'
+      //     },
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">4. We will choose the technology suite that is appropriate for you and help you avoid being locked to vendor licenses, while utilizing as much of your existing IT infrastructure as possible</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-4.png'
+      //     }
+      //   ]
+      // },
+      // {
+      //   isService: true,
+      //   labelText: 'Services',
+      //   title: 'Services under Digital Transformation',
+      //   description:
+      //     '<p>We will offer you cost effective and a scalable digitalization solutions. We can help you start your company’s digitalization journey even on a limited budget. We emphasis on starting with the basics. That is making sure that all your operational and supply chain processes are streamlined even before technology is adopted.</p>' +
+      //     '<p>We anchor our digitalization approach on the following key four pillars</p>',
+      //   blocks: [
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">1. We will define a clear business case for digitalization that is aligned to your organization’s corporate strategy.</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-1.png'
+      //     },
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">2. We will help you to calculate the total cost of ownership of investing into digitalization and provide a detailed cost benefit analysis.</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-2.png'
+      //     },
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">3. We will carry out the digital transformation processes in a way that maximizes customer value delivery and increases shareholder value.</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-3.png'
+      //     },
+      //     {
+      //       name: '',
+      //       desc: '<p class="font-semibold">4. We will choose the technology suite that is appropriate for you and help you avoid being locked to vendor licenses, while utilizing as much of your existing IT infrastructure as possible</p>',
+      //       img: '/images/solutions/digitalization/digi-vector-4.png'
+      //     }
+      //   ]
+      // },
+      // {
+      //   labelText: '',
+      //   title: 'Business Process Re-engineering & Digitalization',
+      //   description:
+      //     '<p>We will digitalize your business processes to ensure consistent quality delivery of services and business outcomes to your customers. We will help you reduce the complexities in your business operations through process re-engineering and technology implementation. With our expertise in disruptive technologies, we will help you leverage technologies such as Big Data, Internet of Things, Cloud Computing, Blockchain and Augmented realities to implement SMART operations – agile operations that are able to respond to customer and business demands in real-time or near real time.</p>',
+      //   image: ''
+      // },
+      // {
+      //   labelText: 'Usecases',
+      //   title: 'Potential use cases: Digitalization of key Business Processes',
+      //   description:
+      //     '<p>Our team of experts will help you identify where digitalization can deliver the most impact within your organization. They have extensive expertise in digitalizing end to end key supply chain processes such as, but not limited to the list below:</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Warehouse management',
+      //       desc: '<p>Actonate has developed a best in class warehouse management solutions to cater for any of your operational needs whether operating an e-commerce fulfillment or you simply want to automate all your warehouse processes. We offer a modular cost competitive solution for various warehouse processes such as Order Management, Inventory Management, Order Shipping, Purchase Oder Management, Returns Management, Oder Pick and Park, Invoice and Payments.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Asset management',
+      //       desc: '<p>Actonate’s asset management solution will help you save millions by increasing asset uptime for your key operational assets. We will collect and analyze real-time data for you and gives you deeper insights into the health and operations of your assets. You will be able to easily carry out predictive and preventive maintenance that is informed by advanced analytics. We are able to link the asset management solution to the inventory management module for optimized spare parts inventory.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Workforce management',
+      //       desc: '<p>We understand that labor is one of the biggest cost centers of a business, especially for service industry. Therefore, the need to optimize the productivity of employees cannot be over emphasized. We can digitalize your workforce scheduling processes to help you plan your staffing requirements and use AI data analytics to gain productivity insights. We give you visibility to both the long term and short term labor requirements.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Inventory management',
+      //       desc: '<p>Actonate can help your company significantly improve your cashflow by freeing up cash held in excess inventory. Our digital inventory optimization solution will increase assets availability at the lowest possible cost. We use advanced AI analytics to help predict and prescribe future inventory requirements in your supply chain and provide dynamic inventory re-order points according to prevailing environmental factors. Our solution will also enable you easily carry out scenario outlooks for what-if inventory cost benefit analysis.</p>'
+      //     }
+      //   ]
+      // }
     ]
   },
   {
@@ -121,6 +437,160 @@ export const solutionsArray = [
         '<p>We build robust end to end e-commerce platforms that will help you offer a seamless Omni channel experience to your customers - whether your customers are buying from your online store or physical store, they get to experience your brand in the same way.</p>' +
         '<p>We provide all e-commerce technology solutions from website building to payment integration and logistics handling. We will ensure that your customers can easily reach you on various platforms such as website, Amazon, woo commerce, shopifly, flipkart among others and through web and mobile app. We are happy to assist you continue selling your products and services online ensuring that your business continues, despite the covid 19 pandemic.</p>'
     },
+     features:  [
+  {
+    name1: 'vghv'
+  },
+  {
+    name1: 'CLIP ON METER / CLAMP METER'
+  },
+  {
+    name1: 'INSULATTON TESTER (MEGGAR ) / EARTH TESTER'
+  },
+  {
+    name1: 'HV BREAK DOWN TESTER / OIL TEST KIT / HOLIDAY DETECTOR / SPARK TESTER'
+  },
+  {
+    name1: 'DECADE RESISTANCE BOX'
+  },
+  {
+    name1: 'PANEL METER VOLT/AMP'
+  },
+  {
+    name1: 'PANEL POWER / POWER FACTOR METER'
+  },
+  {
+    name1: 'mV/m AMP./ Ohms./ TH / RTD CALIBRATOR'
+  },
+  {
+    name1: 'FREQUENCY METER / COUNTER'
+  },
+  {
+    name1: 'TIMER / STOP WATCH'
+  },
+  {
+    name1: 'TIME INTERVAL METER'
+  },
+  {
+    name1: 'CIRCUIT BRAKER TIMMING KIT'
+  },
+
+  {
+    name1: 'TACHOMETER / RPM METER'
+  },
+  {
+    name1: 'SHUNT / CT'
+  },
+  {
+    name1: 'REGULATED POWER SUPPLY (Amp & Volt Ranges)'
+  },
+  {
+    name1: 'TRANSFORMER RATIO TESTER'
+  },
+  {
+    name1: 'OSCILLOSCOPE (CRO) – Voltage, Current & Frequency'
+  },
+  {
+    name1: 'POWER CLAMP METERS'
+  },
+  {
+    name1: 'POWER ANALYSER / LOAD ANALYSER'
+  },
+  {
+    name1: 'WELDING RECTIFIER / GENERATOR etc. (1000A AC, 500A DC)'
+  },
+  {
+    name1: 'MOTOR CHECKER (EMC Tester)'
+  },
+  {
+    name1: 'CAPACITANCE METER'
+  },
+  {
+    name1: 'LCR METER'
+  },
+
+  {
+    name1: 'CURRENT INJECTION (RELAY TEST) KIT'
+  },
+  {
+    name1: 'LOW RESISTANCE / WINDING RESISTANCE METER / MICROHM METER'
+  },
+  {
+    name1: 'HIGH RESISTANCE METER ( MILLION Mega Ohm Meter )'
+  },
+  {
+    name1: 'ENERGY METER'
+  },
+  {
+    name1: 'MULTIFUNCTION METERS'
+  },
+  {
+    name1: 'ELCB TESTER'
+  },
+  {
+    name1: 'OMICRON KIT'
+  },
+  {
+    name1: 'PROCESS INDICATORS / CONTROLLERS with Voltage / Amp. / Resistance Input'
+  },
+  {
+    name1: 'PROCESS CALIBRATOR CONTACT RESISTANCE METER ( CRM KIT )'
+  }
+    ],
+      people: [
+    {
+    no: '1',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '2 Nm to 20 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.49 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '2',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: ' TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '20 Nm to 200 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.56 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '3',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+
+    range1: '200 Nm to 2000 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.03 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  }
+  ],
     textSections: [
       {
         isService: true,
@@ -251,21 +721,175 @@ export const solutionsArray = [
   },
   {
     id: 'business-intelligence',
-    name: 'Business Intelligence',
+    name: 'ELECTRICAL CALIBRATION',
     // img: '/images/digitalization-banner.jpg',
     img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/electricalbanner.jpg',
     link: '/solutions/business-intelligence',
     caseStudy: 'vasu healthcare',
     overView: {
-      labelText: 'About',
-      title: 'Why Business Intelligence?',
+      labelText: '',
+      title: '',
       description:
         '<p>In electrical realm, multiple types of instruments are used based on the studies, use cases, and the requirements. The classification is based on the electrical quantities of parts, the nature of the operations, its purposes, its electrical supply, occurring effects, uses and many other terms.Electrical calibration involves the process of verifying the performance of or adjusting any instrument that measures or tests the above parameters. It involves the use of precise devices that assess the performance of key properties for other devices.</p>'
     },
+     features:  [
+  {
+    name1: 'MULTIMETER'
+  },
+  {
+    name1: 'CLIP ON METER / CLAMP METER'
+  },
+  {
+    name1: 'INSULATTON TESTER (MEGGAR ) / EARTH TESTER'
+  },
+  {
+    name1: 'HV BREAK DOWN TESTER / OIL TEST KIT / HOLIDAY DETECTOR / SPARK TESTER'
+  },
+  {
+    name1: 'DECADE RESISTANCE BOX'
+  },
+  {
+    name1: 'PANEL METER VOLT/AMP'
+  },
+  {
+    name1: 'PANEL POWER / POWER FACTOR METER'
+  },
+  {
+    name1: 'mV/m AMP./ Ohms./ TH / RTD CALIBRATOR'
+  },
+  {
+    name1: 'FREQUENCY METER / COUNTER'
+  },
+  {
+    name1: 'TIMER / STOP WATCH'
+  },
+  {
+    name1: 'TIME INTERVAL METER'
+  },
+  {
+    name1: 'CIRCUIT BRAKER TIMMING KIT'
+  },
+
+  {
+    name1: 'TACHOMETER / RPM METER'
+  },
+  {
+    name1: 'SHUNT / CT'
+  },
+  {
+    name1: 'REGULATED POWER SUPPLY (Amp & Volt Ranges)'
+  },
+  {
+    name1: 'TRANSFORMER RATIO TESTER'
+  },
+  {
+    name1: 'OSCILLOSCOPE (CRO) – Voltage, Current & Frequency'
+  },
+  {
+    name1: 'POWER CLAMP METERS'
+  },
+  {
+    name1: 'POWER ANALYSER / LOAD ANALYSER'
+  },
+  {
+    name1: 'WELDING RECTIFIER / GENERATOR etc. (1000A AC, 500A DC)'
+  },
+  {
+    name1: 'MOTOR CHECKER (EMC Tester)'
+  },
+  {
+    name1: 'CAPACITANCE METER'
+  },
+  {
+    name1: 'LCR METER'
+  },
+
+  {
+    name1: 'CURRENT INJECTION (RELAY TEST) KIT'
+  },
+  {
+    name1: 'LOW RESISTANCE / WINDING RESISTANCE METER / MICROHM METER'
+  },
+  {
+    name1: 'HIGH RESISTANCE METER ( MILLION Mega Ohm Meter )'
+  },
+  {
+    name1: 'ENERGY METER'
+  },
+  {
+    name1: 'MULTIFUNCTION METERS'
+  },
+  {
+    name1: 'ELCB TESTER'
+  },
+  {
+    name1: 'OMICRON KIT'
+  },
+  {
+    name1: 'PROCESS INDICATORS / CONTROLLERS with Voltage / Amp. / Resistance Input'
+  },
+  {
+    name1: 'PROCESS CALIBRATOR CONTACT RESISTANCE METER ( CRM KIT )'
+  }
+    ],
+      people: [
+    {
+    no: '1',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '2 Nm to 20 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.49 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '2',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: ' TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '20 Nm to 200 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.56 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '3',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+
+    range1: '200 Nm to 2000 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.03 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  }
+  ],
     textSections: [
       {
         isService: true,
-        labelText: 'Provision',
+        labelText: '',
         title: 'Master Instruments',
         description: '',
         blocks: [
@@ -358,36 +982,36 @@ export const solutionsArray = [
         labelText: '',
         title: '',
         description: '',
-        blocks: [
-          {
-            name: 'Master Data Creation/ Data warehouse',
-            desc:
-              '<p>Enterprise data is the life blood of your organization. Actonate has the expertise to create master data (data warehouse) by collecting all your data from different sources and storing it in one place for analysis. Our best in class analytics will help you create a comprehensive data driven decision making process</p>' +
-              '<p>We have experience extracting data from different sources such as:</p>' +
-              '<ul class="list-disc ml-5 space-y-2">' +
-              '<li>Customer service</li>' +
-              '<li>Social media</li>' +
-              '<li>Audit data</li>' +
-              '<li>Regulatory data</li>' +
-              '<li>Point of Sales (POS) data</li>' +
-              '<li>Supplier data</li>' +
-              '<li>Financial data</li>' +
-              '<li>Etc</li>' +
-              '</ul>',
-            img: ''
-          },
-          {
-            name: 'Data Visualization',
-            desc:
-              '<p>We make the Business Intelligence solution scalable according to your business needs and bring to your finger-tips real-time best in class analytics engine and data visualization tools such as:</p>' +
-              '<ul class="list-disc ml-5 space-y-2">' +
-              '<li><span class="font-medium">Amazon QuickSight BI:</span> Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud. QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights.</li>' +
-              '<li><span class="font-medium">Microsoft PowerBI:</span> PowerBI is a self-service tool for Executives and Analysts. It lets you model your data, create interactive dashboards, reports and visualization.</li>' +
-              '</ul>' +
-              '<p>Actonate has the required experience to develop Data visualization dashboards that needs your business needs. Our engineers are experienced in visualization tools such as PowerBI, Amazon QuickSight among others and they are also experienced in software engineering, databases and data analysis.</p>',
-            img: ''
-          }
-        ]
+        // blocks: [
+        //   {
+        //     name: 'Master Data Creation/ Data warehouse',
+        //     desc:
+        //       '<p>Enterprise data is the life blood of your organization. Actonate has the expertise to create master data (data warehouse) by collecting all your data from different sources and storing it in one place for analysis. Our best in class analytics will help you create a comprehensive data driven decision making process</p>' +
+        //       '<p>We have experience extracting data from different sources such as:</p>' +
+        //       '<ul class="list-disc ml-5 space-y-2">' +
+        //       '<li>Customer service</li>' +
+        //       '<li>Social media</li>' +
+        //       '<li>Audit data</li>' +
+        //       '<li>Regulatory data</li>' +
+        //       '<li>Point of Sales (POS) data</li>' +
+        //       '<li>Supplier data</li>' +
+        //       '<li>Financial data</li>' +
+        //       '<li>Etc</li>' +
+        //       '</ul>',
+        //     img: ''
+        //   },
+        //   {
+        //     name: 'Data Visualization',
+        //     desc:
+        //       '<p>We make the Business Intelligence solution scalable according to your business needs and bring to your finger-tips real-time best in class analytics engine and data visualization tools such as:</p>' +
+        //       '<ul class="list-disc ml-5 space-y-2">' +
+        //       '<li><span class="font-medium">Amazon QuickSight BI:</span> Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud. QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights.</li>' +
+        //       '<li><span class="font-medium">Microsoft PowerBI:</span> PowerBI is a self-service tool for Executives and Analysts. It lets you model your data, create interactive dashboards, reports and visualization.</li>' +
+        //       '</ul>' +
+        //       '<p>Actonate has the required experience to develop Data visualization dashboards that needs your business needs. Our engineers are experienced in visualization tools such as PowerBI, Amazon QuickSight among others and they are also experienced in software engineering, databases and data analysis.</p>',
+        //     img: ''
+        //   }
+        // ]
       },
       // {
       //   labelText: '',
@@ -416,120 +1040,876 @@ export const solutionsArray = [
   },
   {
     id: 'internet-of-things',
-    name: 'Internet of Things (IoT)',
+    name: 'DIMENSION CALIBRATION',
     img: '/images/digitalization-banner.jpg',
     link: '/solutions/iot',
     caseStudy: 'vasu healthcare',
     overView: {
-      labelText: 'About',
-      title: 'Why IoT?',
+      // labelText: 'About',
+      // title: 'Why IoT?',
+       labelText: '',
+       title: '',
       description:
-        '<p>IoT is set to transform every business, every city and every home in the world. It has a profound potential to transform your enterprise into a digital business and to facilitate the creation of new business models. If implemented correctly, IoT can provide numerous benefits to your business. It can immensely help improve your organization’s efficiency and increase both employee and customer engagement through acquiring real-time sensor data that can be analyzed to derive operational insights.</p>'
+        '<p>Dimensional gauges and instruments provide quantitative measurements of product or component dimensional and form attributes such as wall thickness, depth, height, length, inner diameter (ID), outer diameter (OD), taper or bore.</p>'
     },
+     features:  [
+  {
+    name1: 'VERNIER CALIPER'
+  },
+  {
+    name1: 'BEVEL PROTRACTOR / COMBINATION SET'
+  },
+  {
+    name1: 'TAPER GAUGE'
+  },
+  {
+    name1: 'OUTSIDE / INSIDE / DEPTH MICROMETRE INCLUDING DIGITAL TYPE – UNIT ONLY'
+  },
+  {
+    name1: 'RIGHT ANGLE/ ENGG. SQUARE'
+  },
+  {
+    name1: 'TEST SLEEVE'
+  },
+  {
+    name1: 'DIAL THICKNESS GAUGE / PLUNGER DIAL / LEVER DIAL'
+  },
+  {
+    name1: 'FORCE / TENSION GAUGE UPTO 20 kg. (PUSH/PULL GAUGE)'
+  },
+  {
+    name1: 'SURFACE PLATE'
+  },
+  {
+    name1: 'HEIGHT / DEPTH GAUGE'
+  },
+  {
+    name1: 'BORE GAUGE'
+  },
+  {
+    name1: 'SLIP GAUGE (>Gr. 1.0)'
+  },
+
+  {
+    name1: 'PISTOL CALIPER'
+  },
+  {
+    name1: 'FEELER GAUGE / PIN GAUGE'
+  },
+  {
+    name1: 'COATING THICKNESS GAUGE'
+  },
+  {
+    name1: 'STANDARD FOIL OF COATING THICKNESS GAUGE'
+  },
+  {
+    name1: 'WET FILM THICKNESS GAUGE'
+  },
+  {
+    name1: 'SURFACE PROFILE GAUGE'
+  },
+  {
+    name1: 'ULTRASONIC THICKNESS GAUGE'
+  },
+  {
+    name1: 'SCALE TAPE / MEASURE TAPE'
+  },
+  {
+    name1: 'PIE TAPE'
+  },
+  {
+    name1: 'ANGLE PROTRACTOR'
+  },
+  {
+    name1: 'RUBBER HARDNESS TESTER'
+  },
+
+  {
+    name1: 'MASTER LEVEL'
+  },
+  {
+    name1: 'SPIRIT LEVEL'
+  },
+  {
+    name1: 'THREAD PITCH GAUGE'
+  },
+  {
+    name1: 'RADIUS GAUGE'
+  },
+  {
+    name1: 'GLASS SCALE'
+  },
+  {
+    name1: 'ADHESION TESTER'
+  },
+  {
+    name1: 'SALT CONTAMINATION TESTER'
+  },
+  {
+    name1: 'FORD CUP'
+  },
+  {
+    name1: 'UNIVERSAL WELD GAUGE / FILLET GAUGE'
+       },
+  
+  {
+    name1: 'BID HEIGHT GAUGE'
+       },
+  {
+    name1: 'THEODLITE / AUTO LEVEL / DUMMPY'
+       },
+  {
+    name1: 'HI-LO GAUGE'
+       },
+  {
+    name1: 'PROFILE PROJECTOR / VISION MEASURING MACHINE'
+       },
+   {
+    name1: 'OPTICAL TOOLMAKER / MICROSCOPE'
+       },
+    {
+    name1: 'PORTABLE METAL HARDNESS TESTER'
+       },
+     {
+    name1: 'SNAPE GAUGE'
+       },
+      {
+    name1: 'SCALE & MEASURING TAPE CALIBRATOR'
+       },
+       {
+    name1: 'V BLOCK / STRAIGHT EDGE / ANGLE etc.'
+       },
+        {
+    name1: 'PLAIN PLUG GAUGE'
+       },
+         {
+    name1: 'PLAIN RING GAUGE'
+       },
+          {
+    name1: 'THREAD PLUG GAUGE'
+       },
+           {
+    name1: 'THREAD RING GAUGE'
+       },
+            {
+    name1: 'CROSS-HATCH CUTTER'
+       },
+            {
+    name1: 'LASER DISTANCE METER'
+  }
+    ],
+      people: [
+    {
+    no: '1',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '2 Nm to 20 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.49 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '2',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: ' TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '20 Nm to 200 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.56 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '3',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+
+    range1: '200 Nm to 2000 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.03 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  }
+  ],
     textSections: [
       {
         isService: true,
         labelText: 'Provision',
-        title: 'Benefits of IoT',
+        // title: 'Benefits of IoT',
+         title: 'Master Instruments',
         description: '',
         blocks: [
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Length-measuring-machine.jpg',
             name: 'Lower operational costs',
             desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
           },
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Vision-measuring-machine.jpg',
             name: 'Increased productivity',
             desc: '<p>IoT data can help businesses derive actionable insights about both the internal and external environments. It helps the organization to appropriately and timely respond to market trends thereby remaining relevant to the customers.</p>'
           },
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Steel-caliper-checker.jpg',
             name: 'Better customer experience',
             desc: '<p>The IoT data can help create personalized customer offer by tracking, monitoring and analyzing customer behavior data. This is key for any organization looking to guarantee market growth.</p>'
           },
           {
-            img: '',
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Scale-tape-measuring.jpg',
+            name: 'Improved productivity',
+            desc: '<p>IoT enables manual and repetitive task to be automated thereby freeing up human capacity for more challenging and complex tasks. This greatly improves operational efficiency and job satisfaction among employees.</p>'
+          },
+           {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Dial-gauge-calibrator.jpg',
+            name: 'Improved productivity',
+            desc: '<p>IoT enables manual and repetitive task to be automated thereby freeing up human capacity for more challenging and complex tasks. This greatly improves operational efficiency and job satisfaction among employees.</p>'
+          },
+            {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/TC-slip-gauge-set.jpg',
             name: 'Improved productivity',
             desc: '<p>IoT enables manual and repetitive task to be automated thereby freeing up human capacity for more challenging and complex tasks. This greatly improves operational efficiency and job satisfaction among employees.</p>'
           }
         ]
       },
-      {
-        labelText: 'Services',
-        title: 'IoT Implementation',
-        description:
-          '<p>Despite the many benefits of IoT devices, the technology can create pitfalls for the business if implementation is not executed properly. Actonate has extensive experience in the deployment of IoT technology and will help you accelerate your time to value of your IoT initiatives in the following ways:</p>',
-        blocks: [
-          {
-            img: '',
-            name: 'Define a benefit framework',
-            desc: '<p>We will help you define and organize the business benefits of IoT initiatives. Whether these benefits are around improving internal operations or are about understanding your external environment.</p>'
-          },
-          {
-            img: '',
-            name: 'Define business goals and performance measure of your IoT initiative',
-            desc: '<p>We will help you to clearly define your IoT use case and its value proposition to your business. In so doing, you will gain proper understanding of the new functionalities, capabilities and differentiations that IoT will deliver for you. We will also help develop metrics to measure the success of the IoT initiative and its impact on your customers.</p>'
-          },
-          {
-            img: '',
-            name: 'Create an IoT Roadmap',
-            desc: '<p>We will create an IoT roadmap that speaks to your unique business needs so that you can maximize the returns on the initiatives. Our IoT architects are experienced in solution level thinking and in deployment of key IoT components such as things, gateways, mobile devices, cloud solution and enterprise architecture.</p>'
-          },
-          {
-            img: '',
-            name: 'Security',
-            desc: '<p>Our security experts will ensure that your IoT devices are fully secure of potential security threats. We will implement measures to protect your IoT devices and platforms from both information attacks, by encrypting communication, and physical tempering. We build roboost IoT security systems for you by analyzing how, where and when to secure data in your networks.</p>'
-          }
-        ]
-      },
+      // {
+      //   labelText: 'Services',
+      //   title: 'IoT Implementation',
+      //   description:
+      //     '<p>Despite the many benefits of IoT devices, the technology can create pitfalls for the business if implementation is not executed properly. Actonate has extensive experience in the deployment of IoT technology and will help you accelerate your time to value of your IoT initiatives in the following ways:</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Define a benefit framework',
+      //       desc: '<p>We will help you define and organize the business benefits of IoT initiatives. Whether these benefits are around improving internal operations or are about understanding your external environment.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Define business goals and performance measure of your IoT initiative',
+      //       desc: '<p>We will help you to clearly define your IoT use case and its value proposition to your business. In so doing, you will gain proper understanding of the new functionalities, capabilities and differentiations that IoT will deliver for you. We will also help develop metrics to measure the success of the IoT initiative and its impact on your customers.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Create an IoT Roadmap',
+      //       desc: '<p>We will create an IoT roadmap that speaks to your unique business needs so that you can maximize the returns on the initiatives. Our IoT architects are experienced in solution level thinking and in deployment of key IoT components such as things, gateways, mobile devices, cloud solution and enterprise architecture.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Security',
+      //       desc: '<p>Our security experts will ensure that your IoT devices are fully secure of potential security threats. We will implement measures to protect your IoT devices and platforms from both information attacks, by encrypting communication, and physical tempering. We build roboost IoT security systems for you by analyzing how, where and when to secure data in your networks.</p>'
+      //     }
+      //   ]
+      // },
       {
         labelText: '',
         title: '',
         description: '',
         image: ''
       },
+      // {
+      //   labelText: 'Applications',
+      //   title: 'IoT Potential Applications',
+      //   description:
+      //     '<p>IoT has the potential to create new business models that deliver maximum value to customers. If correctly implemented, IoT can enable businesses react in real-time to key operational events and enable delivery of personalized services to customers.</p>' +
+      //     '<p>Here are snap shots of potential application of IoT in various industries</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Sports',
+      //       desc: '<p>Usage of sensors embed on athletes gear can help a team’s medical staff understand in real-time the severity of impacts suffered by an athlete on a playing field, and prescribe appropriate treatment or action. The sensor data can also help in analyzing both an individual’s and team’s performance, their intensity of play and potential weakness in their game.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Retail',
+      //       desc: '<p>Use smart cameras in a store to analyze the foot traffic – volumes and patterns of flow. This information can be used to rearrange store shelves and contents in order to maximize customer engagement.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Smart Cities',
+      //       desc: '<p>Uses smart cameral to count number and type of vehicles, including number of pedestrians, in traffic surveys. Information from cameras can be used to deliver better and cost effective public services.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Security',
+      //       desc: '<p>Smart cameras in airport and other sensitive places recognizes and tracks people and luggage and establish a relationship between the two. The system triggers an alarm if a person moves more than a certain centimeters from their luggage.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Health',
+      //       desc: '<p>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</p>'
+      //     }
+      //   ]
+      // },
+      // {
+      //   labelText: '',
+      //   title:
+      //     'At Actonate, we can implement IoT into your products and to turn them into service portals that guarantees your business’s long-term sustainability.  Our IoT strategy will enable you offer the hardware/product to your customers for free or at a basic price and charge a monthly subscription for associated services.',
+      //   description: '',
+      //   blocks: []
+      // }
+    ]
+  },
+
+// trial
+   {
+    id: 'artificial-intelligence',
+    name: 'MASS, VOLUME & WEIGHT CALIBRATION',
+    img: '/images/digitalization-banner.jpg',
+    link: '/solutions/iot',
+    caseStudy: 'vasu healthcare',
+    overView: {
+      // labelText: 'About',
+      // title: 'Why IoT?',
+       labelText: '',
+       title: '',
+      description:
+        '<p>Mass and weight are often used interchangeably; however, they are different. As a physical quantity, mass is the product of density and volume. Weight or weight force is the force with which a body is attracted to the Earth. Weight force is determined by the product of the mass and the acceleration of gravity.</p>' +
+      '<p>Mass is generally measured by instruments called balances. Not all balances, however, are the same; some are capable of giving you more accurate answers than others. Volumes of liquids are measured with the aid of graduated cylinders, pipets, and burets. The measurements of volumes of solid objects are not as straightforward as it is with liquids. In some cases, when dealing with regular solids such as cubes, cylinders, or prisms, it is quite possible to calculate the volumes by measuring the pertinent dimensions of the object.</p>'
+     },
+     features:  [
+  {
+    name1: 'GLASS PIPETTE / BURETTE'
+  },
+  {
+    name1: 'WEIGHT BALANCE'
+  },
+  {
+    name1: 'LOOSE WEIGHTS (Subject to our Scope of NABL)'
+  },
+  {
+    name1: 'MEASURING CYLINDER / FLASK / BEAKER'
+  },
+  {
+    name1: 'ANALYTICAL WEIGHT BOX'
+  },
+  {
+    name1: 'HYDROMETER'
+  },
+  {
+    name1: 'MICRO PIPETTE'
+  },
+ 
+     ],
+      people: [
+    {
+    no: '1',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '2 Nm to 20 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.49 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '2',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: ' TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '20 Nm to 200 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.56 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '3',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+
+    range1: '200 Nm to 2000 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.03 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  }
+  ],
+    textSections: [
       {
-        labelText: 'Applications',
-        title: 'IoT Potential Applications',
-        description:
-          '<p>IoT has the potential to create new business models that deliver maximum value to customers. If correctly implemented, IoT can enable businesses react in real-time to key operational events and enable delivery of personalized services to customers.</p>' +
-          '<p>Here are snap shots of potential application of IoT in various industries</p>',
+        isService: true,
+        // labelText: 'Provision',
+        // title: 'Benefits of IoT',
+         labelText: '',
+         title: 'Master Instruments',
+        description: '',
         blocks: [
           {
-            img: '',
-            name: 'Sports',
-            desc: '<p>Usage of sensors embed on athletes gear can help a team’s medical staff understand in real-time the severity of impacts suffered by an athlete on a playing field, and prescribe appropriate treatment or action. The sensor data can also help in analyzing both an individual’s and team’s performance, their intensity of play and potential weakness in their game.</p>'
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/E2-class-weights.jpg',
+            name: 'Lower operational costs',
+            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
           },
           {
-            img: '',
-            name: 'Retail',
-            desc: '<p>Use smart cameras in a store to analyze the foot traffic – volumes and patterns of flow. This information can be used to rearrange store shelves and contents in order to maximize customer engagement.</p>'
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/F2-class-weights.jpg',
+            name: 'Increased productivity',
+            desc: '<p>IoT data can help businesses derive actionable insights about both the internal and external environments. It helps the organization to appropriately and timely respond to market trends thereby remaining relevant to the customers.</p>'
           },
-          {
-            img: '',
-            name: 'Smart Cities',
-            desc: '<p>Uses smart cameral to count number and type of vehicles, including number of pedestrians, in traffic surveys. Information from cameras can be used to deliver better and cost effective public services.</p>'
-          },
-          {
-            img: '',
-            name: 'Security',
-            desc: '<p>Smart cameras in airport and other sensitive places recognizes and tracks people and luggage and establish a relationship between the two. The system triggers an alarm if a person moves more than a certain centimeters from their luggage.</p>'
-          },
-          {
-            img: '',
-            name: 'Health',
-            desc: '<p>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</p>'
-          }
+         
+           
         ]
       },
+      // {
+      //   labelText: 'Services',
+      //   title: 'IoT Implementation',
+      //   description:
+      //     '<p>Despite the many benefits of IoT devices, the technology can create pitfalls for the business if implementation is not executed properly. Actonate has extensive experience in the deployment of IoT technology and will help you accelerate your time to value of your IoT initiatives in the following ways:</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Define a benefit framework',
+      //       desc: '<p>We will help you define and organize the business benefits of IoT initiatives. Whether these benefits are around improving internal operations or are about understanding your external environment.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Define business goals and performance measure of your IoT initiative',
+      //       desc: '<p>We will help you to clearly define your IoT use case and its value proposition to your business. In so doing, you will gain proper understanding of the new functionalities, capabilities and differentiations that IoT will deliver for you. We will also help develop metrics to measure the success of the IoT initiative and its impact on your customers.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Create an IoT Roadmap',
+      //       desc: '<p>We will create an IoT roadmap that speaks to your unique business needs so that you can maximize the returns on the initiatives. Our IoT architects are experienced in solution level thinking and in deployment of key IoT components such as things, gateways, mobile devices, cloud solution and enterprise architecture.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Security',
+      //       desc: '<p>Our security experts will ensure that your IoT devices are fully secure of potential security threats. We will implement measures to protect your IoT devices and platforms from both information attacks, by encrypting communication, and physical tempering. We build roboost IoT security systems for you by analyzing how, where and when to secure data in your networks.</p>'
+      //     }
+      //   ]
+      // },
       {
         labelText: '',
-        title:
-          'At Actonate, we can implement IoT into your products and to turn them into service portals that guarantees your business’s long-term sustainability.  Our IoT strategy will enable you offer the hardware/product to your customers for free or at a basic price and charge a monthly subscription for associated services.',
+        title: '',
         description: '',
-        blocks: []
-      }
+        image: ''
+      },
+      // {
+      //   labelText: 'Applications',
+      //   title: 'IoT Potential Applications',
+      //   description:
+      //     '<p>IoT has the potential to create new business models that deliver maximum value to customers. If correctly implemented, IoT can enable businesses react in real-time to key operational events and enable delivery of personalized services to customers.</p>' +
+      //     '<p>Here are snap shots of potential application of IoT in various industries</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Sports',
+      //       desc: '<p>Usage of sensors embed on athletes gear can help a team’s medical staff understand in real-time the severity of impacts suffered by an athlete on a playing field, and prescribe appropriate treatment or action. The sensor data can also help in analyzing both an individual’s and team’s performance, their intensity of play and potential weakness in their game.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Retail',
+      //       desc: '<p>Use smart cameras in a store to analyze the foot traffic – volumes and patterns of flow. This information can be used to rearrange store shelves and contents in order to maximize customer engagement.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Smart Cities',
+      //       desc: '<p>Uses smart cameral to count number and type of vehicles, including number of pedestrians, in traffic surveys. Information from cameras can be used to deliver better and cost effective public services.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Security',
+      //       desc: '<p>Smart cameras in airport and other sensitive places recognizes and tracks people and luggage and establish a relationship between the two. The system triggers an alarm if a person moves more than a certain centimeters from their luggage.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Health',
+      //       desc: '<p>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</p>'
+      //     }
+      //   ]
+      // },
+      // {
+      //   labelText: '',
+      //   title:
+      //     'At Actonate, we can implement IoT into your products and to turn them into service portals that guarantees your business’s long-term sustainability.  Our IoT strategy will enable you offer the hardware/product to your customers for free or at a basic price and charge a monthly subscription for associated services.',
+      //   description: '',
+      //   blocks: []
+      // }
     ]
+  },
+   
+   {
+    id: 'expert-system',
+    name: 'TORQUE CALIBRATION',
+    img: '/images/digitalization-banner.jpg',
+    link: '/solutions/iot',
+    caseStudy: 'vasu healthcare',
+    overView: {
+      // labelText: 'About',
+      // title: 'Why IoT?',
+       labelText: '',
+       title: '',
+      description:
+        '<p>Mass and weight are often used interchangeably; however, they are different. As a physical quantity, mass is the product of density and volume. Weight or weight force is the force with which a body is attracted to the Earth. Weight force is determined by the product of the mass and the acceleration of gravity.</p>' +
+      '<p>Mass is generally measured by instruments called balances. Not all balances, however, are the same; some are capable of giving you more accurate answers than others. Volumes of liquids are measured with the aid of graduated cylinders, pipets, and burets. The measurements of volumes of solid objects are not as straightforward as it is with liquids. In some cases, when dealing with regular solids such as cubes, cylinders, or prisms, it is quite possible to calculate the volumes by measuring the pertinent dimensions of the object.</p>'
+     },
+     features:  [
+  {
+    name1: 'TORQUE WRENCH'
+  },
+ 
+     ],
+      people: [
+    {
+    no: '1',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '2 Nm to 20 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.49 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '2',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: ' TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '20 Nm to 200 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.56 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '3',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+
+    range1: '200 Nm to 2000 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.03 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
   }
+  ],
+    textSections: [
+      {
+        isService: true,
+        // labelText: 'Provision',
+        // title: 'Benefits of IoT',
+         labelText: '',
+         title: 'Master Instruments',
+        description: '',
+        blocks: [
+          {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Torque-sensor.jpg',
+            name: 'Lower operational costs',
+            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
+          },
+         
+           
+        ]
+      },
+      // {
+      //   labelText: 'Services',
+      //   title: 'IoT Implementation',
+      //   description:
+      //     '<p>Despite the many benefits of IoT devices, the technology can create pitfalls for the business if implementation is not executed properly. Actonate has extensive experience in the deployment of IoT technology and will help you accelerate your time to value of your IoT initiatives in the following ways:</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Define a benefit framework',
+      //       desc: '<p>We will help you define and organize the business benefits of IoT initiatives. Whether these benefits are around improving internal operations or are about understanding your external environment.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Define business goals and performance measure of your IoT initiative',
+      //       desc: '<p>We will help you to clearly define your IoT use case and its value proposition to your business. In so doing, you will gain proper understanding of the new functionalities, capabilities and differentiations that IoT will deliver for you. We will also help develop metrics to measure the success of the IoT initiative and its impact on your customers.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Create an IoT Roadmap',
+      //       desc: '<p>We will create an IoT roadmap that speaks to your unique business needs so that you can maximize the returns on the initiatives. Our IoT architects are experienced in solution level thinking and in deployment of key IoT components such as things, gateways, mobile devices, cloud solution and enterprise architecture.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Security',
+      //       desc: '<p>Our security experts will ensure that your IoT devices are fully secure of potential security threats. We will implement measures to protect your IoT devices and platforms from both information attacks, by encrypting communication, and physical tempering. We build roboost IoT security systems for you by analyzing how, where and when to secure data in your networks.</p>'
+      //     }
+      //   ]
+      // },
+      {
+        labelText: '',
+        title: '',
+        description: '',
+        image: ''
+      },
+      // {
+      //   labelText: 'Applications',
+      //   title: 'IoT Potential Applications',
+      //   description:
+      //     '<p>IoT has the potential to create new business models that deliver maximum value to customers. If correctly implemented, IoT can enable businesses react in real-time to key operational events and enable delivery of personalized services to customers.</p>' +
+      //     '<p>Here are snap shots of potential application of IoT in various industries</p>',
+      //   blocks: [
+      //     {
+      //       img: '',
+      //       name: 'Sports',
+      //       desc: '<p>Usage of sensors embed on athletes gear can help a team’s medical staff understand in real-time the severity of impacts suffered by an athlete on a playing field, and prescribe appropriate treatment or action. The sensor data can also help in analyzing both an individual’s and team’s performance, their intensity of play and potential weakness in their game.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Retail',
+      //       desc: '<p>Use smart cameras in a store to analyze the foot traffic – volumes and patterns of flow. This information can be used to rearrange store shelves and contents in order to maximize customer engagement.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Smart Cities',
+      //       desc: '<p>Uses smart cameral to count number and type of vehicles, including number of pedestrians, in traffic surveys. Information from cameras can be used to deliver better and cost effective public services.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Security',
+      //       desc: '<p>Smart cameras in airport and other sensitive places recognizes and tracks people and luggage and establish a relationship between the two. The system triggers an alarm if a person moves more than a certain centimeters from their luggage.</p>'
+      //     },
+      //     {
+      //       img: '',
+      //       name: 'Health',
+      //       desc: '<p>Smart mirror that tracks the end user’s physical health conditions. The mirror monitors facial expressions to look for signs of depression, anxiety or stress. This information can help with early interventions which leads to high chances of success treatment of above conditions, and reduced medical expenses for both the individual and the government.</p>'
+      //     }
+      //   ]
+      // },
+      // {
+      //   labelText: '',
+      //   title:
+      //     'At Actonate, we can implement IoT into your products and to turn them into service portals that guarantees your business’s long-term sustainability.  Our IoT strategy will enable you offer the hardware/product to your customers for free or at a basic price and charge a monthly subscription for associated services.',
+      //   description: '',
+      //   blocks: []
+      // }
+    ]
+  },
+    {
+    id: 'product-development',
+    name: 'THERMAL CALIBRATION',
+    img: '/images/digitalization-banner.jpg',
+    link: '/solutions/iot',
+    caseStudy: 'vasu healthcare',
+    overView: {
+       labelText: '',
+       title: '',
+      description:
+        '<p>Thermal Instruments have been designing and manufacturing primary process control instruments for measuring temperature, flow, pressure, level, and related accessories. Fixed points are the most accurate devices available for defining a temperature scale. Fixed point cells are designed to realize the liquid-solid equilibrium temperatures of certain high purity metal elements, for calibration of thermometers at ITS-90 fixed points.</p>' 
+      
+      },
+     features:  [
+  {
+    name1: 'TEMPERATURE INDICATOR / CONTROLLER / SCANNER (WITHOUT SENSOR)'
+  },
+  {
+    name1: 'OVEN / INCUBATOR / FREEZER (USING NINE SENSORS)'
+  },
+  {
+    name1: 'TEMPERATURE CUM HUMIDITY INDICATOR (For 10-50°C, 30-90% RH)'
+  },
+  {
+    name1: 'TEMPERATURE INDICATOR / CONTROLLER / SCANNER (WITH SENSOR)'
+  },
+  {
+    name1: 'TEMPERATURE SENSOR'
+  },
+  {
+    name1: 'TEMPERATURE TRANSMITTER'
+  },
+  {
+    name1: 'TEMPERATURE RECORDER'
+  },
+  {
+    name1: 'OVEN / BOD INCUBATOR / FREEZER / REFRIGERATOR'
+  },
+  {
+    name1: 'FREEZER OR REFRIGERATOR (USING SINGLE SENSOR)'
+  },
+  {
+    name1: 'MAPPING FURNACE (MUFFLE)'
+  },
+  {
+    name1: 'TEMPERATURE DATA LOGGER'
+  },
+  {
+    name1: 'DRY & WET BULB THERMOMETER / SLING PSYCHROMETER'
+  },
+
+  {
+    name1: 'TEMPERATURE BATH / DRY-BLOCK CALIBRATOR'
+  },
+  {
+    name1: 'INFRARED THERMOMETER (NON CONTACT TYPE)'
+  },
+  {
+    name1: 'TEMPERATURE INDICATOR (SURFACE)'
+  },
+  {
+    name1: 'DEW POINT METER'
+  },
+  {
+    name1: 'HUMIDITY / ENVIRONMENTAL (STABILITY CHAMBERS) FOR SINGLE'
+  },
+  {
+    name1: 'HUMIDITY DATA LOGGER'
+  },
+  {
+    name1: 'HUMIDITY TRANSMITTER'
+  },
+  {
+    name1: 'HUMIDITY / ENVIRONMENTAL CHAMBERS (9 SENSOR MAPPING)'
+  },
+  
+      ],
+      people: [
+    {
+    no: '1',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '2 Nm to 20 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '2.49 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '2',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: ' TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+    range1: '20 Nm to 200 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.56 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  },
+  {
+    no: '3',
+    name: 'MECHANICAL TORQUE MEASURING DEVICES',
+    title: 'TORQUE WRENCH (Type I- Class B & C / Type II – Class A & B)',
+
+    range1: '200 Nm to 2000 Nm',
+    range2: '',
+    range3: '',
+    range4: '',
+    range5: '',
+    role1: '1.03 % ',
+    role2: ' ',
+    role3: ' ',
+    role4: ' ',
+    role5: ' ',
+    method:
+      'USING DIGITAL TORQUE CALIBRATION SYSTEM WITH TRANSDUCERS,BASED ON ISO 6789-2:2017 IN CLOCKWISE DIRECTION ONLY.'
+  }
+  ],
+    textSections: [
+      {
+        isService: true,
+       
+         labelText: '',
+         title: 'Master Instruments',
+        description: '',
+        blocks: [
+          {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/temprature-scaner-sensors.jpg',
+            name: 'Lower operational costs',
+            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
+          },
+          {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/digital-IR-thermometer.jpg',
+            name: 'Increased productivity',
+            desc: '<p>IoT data can help businesses derive actionable insights about both the internal and external environments. It helps the organization to appropriately and timely respond to market trends thereby remaining relevant to the customers.</p>'
+          },
+          {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/humidity-date-logger.jpg',
+            name: 'Lower operational costs',
+            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
+          },
+           {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/R-type-thermocouple.jpg',
+            name: 'Lower operational costs',
+            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
+          },
+            {
+            img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/4-wire.jpg',
+            name: 'Lower operational costs',
+            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>'
+          },
+           
+        ]
+      },
+      
+      {
+        labelText: '',
+        title: '',
+        description: '',
+        image: ''
+      },
+    
+    ]
+  }, 
 ];

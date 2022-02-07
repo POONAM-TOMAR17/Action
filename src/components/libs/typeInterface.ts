@@ -50,6 +50,28 @@ export type SolutionBlockType = {
   list?: string[];
 };
 
+export type InstrumentCalibrationType = {
+  name1: string;
+
+}
+
+export type TableContainerType = {
+  no: string;
+  name: string;
+  title: string;
+  range1: string;
+  range2: string;
+  range3: string;
+  range4: string;
+  range5: string;
+  role1: string;
+  role2: string;
+  role3: string;
+  role4: string;
+  role5: string;
+  method: string;
+
+}
 export type TextSectionType = {
   labelText: string;
   title: string;
@@ -63,6 +85,8 @@ export type TextSectionType = {
 export type SolutionDataType = {
   id: string;
   name: string;
+  features: { name1: string }[];
+  people: TableContainerType[];
   img: string;
   link: string;
   caseStudy: string;

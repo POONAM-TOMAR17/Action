@@ -121,10 +121,39 @@ const ContactForm = (props: IContactForm) => {
           <form action="" name="contact_form" method="post">
             {/* <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-5 lg:gap-x-10 lg:gap-y-8"> */}
             <div className="w-full flex">
-              <div className="w-1/2 uppercase text-xl">Mailing Address</div>
-              <div className="w-1/2 uppercase text-xl ">Contact Info</div>
+              <div className="w-1/2 uppercase text-xl">
+                Mailing Address
+                <p className="text-sm py-4 pb-8">
+                  Near Petrol Pump, Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
+                  India – 390010.
+                </p>
+              </div>
+              <div className="w-1/2 uppercase text-xl ">
+                Contact Info
+                <p className="text-sm py-3">
+                  8866064026,9033064026, 9824389873, 9712578788 info@actionengineers.com
+                </p>
+              </div>
             </div>
-
+            <div className="mapouter">
+              <div className="gmap_canvas">
+                <iframe
+                  width="600"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Action%20engineers&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameBorder="0"
+                  scrolling="no"
+                  marginHeight={0}
+                  marginWidth={0}
+                ></iframe>
+                <a href="https://fmovies-online.net"></a>
+                <br></br>
+                <style>.mapouter</style>
+                <a href="https://www.embedgooglemap.net">custom google maps embed</a>
+                <style>.gmap_canvas </style>
+              </div>
+            </div>
             <div className="w-full xs:hidden lg:flex items-center justify-center flex-wrap" />
 
             <div className="w-full xs:hidden lg:flex items-center justify-center flex-wrap" />

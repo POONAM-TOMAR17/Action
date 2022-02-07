@@ -51,7 +51,7 @@ const InsightsBlocks = (props: IInisghtsBlocks) => {
           </div>
         </div>
       )} */}
-      <TableContainer />
+      {/* <TableContainer people= {item.people} /> */}
     </>
   );
 };

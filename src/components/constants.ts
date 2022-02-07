@@ -9,12 +9,14 @@ export const mainNavigation = [
      subMenu: [
       {
         name: 'Core',
-        items: [
-          { name: 'Our History', link: '/solutions/analytics' },
-          { name: 'Accreditation', link: '/solutions/artificial-intelligence' },
-          { name: 'Our Team', link: '/solutions/digital-transformation' },
-          { name: 'Quality Policy', link: '/solutions/expert-system' },
-         
+           items: [
+         { name: 'Our History', link: '/case-study/siemens' },
+         { name: 'Accreditation', link: '/solutions/business-intelligence' },
+          { name: 'Our Team', link: '/case-study/sapna-online' },
+          { name: 'Quality Policy', link: '/case-study/letsshave' },
+          // { name: 'Pressure', link: '/case-study/grofers' },
+          // { name: 'Torque', link: '/case-study/dainik-bhaskar' },
+          // { name: 'Thermal', link: '/case-study/cosmetize' }
         ]
       },
     
@@ -23,48 +25,92 @@ export const mainNavigation = [
   {
     name: 'Products',
     link: '/solutions',
-    subMenu: [
-      {
-        name: 'Core',
-        items: [
-          { name: 'Analytics', link: '/solutions/analytics' },
-          { name: 'Artificial Intelligence', link: '/solutions/artificial-intelligence' },
-          { name: 'Digital Transormation', link: '/solutions/digital-transformation' },
-          { name: 'Expert System', link: '/solutions/expert-system' },
-          { name: 'Product Development', link: '/solutions/product-development' },
-          { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
-          { name: 'Business Intelligence', link: '/solutions/business-intelligence' },
-          { name: 'IoT', link: '/solutions/internet-of-things' }
-        ]
-      },
-      {
-        name: 'Industry',
-        items: [
-          { name: 'E-Commerce', link: '/solutions/e-commerce' },
-          { name: 'Engineering', link: '/solutions/engineering' },
-          { name: 'Social Media', link: '/solutions/social-media' },
-          { name: 'Healthcare', link: '/solutions/healthcare' },
-          { name: 'Tourism', link: '/solutions/tourism' },
-          { name: 'Education', link: '/solutions/education' }
-        ]
-      }
-    ]
+    // subMenu: [
+    //   {
+    //     name: 'Core',
+    //     items: [
+    //       { name: 'Analytics', link: '/solutions/analytics' },
+    //       { name: 'Artificial Intelligence', link: '/solutions/artificial-intelligence' },
+    //       { name: 'Digital Transormation', link: '/solutions/digital-transformation' },
+    //       { name: 'Expert System', link: '/solutions/expert-system' },
+    //       { name: 'Product Development', link: '/solutions/product-development' },
+    //       { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
+    //       { name: 'Business Intelligence', link: '/solutions/business-intelligence' },
+    //       { name: 'IoT', link: '/solutions/internet-of-things' }
+    //     ]
+    //   },
+    //   {
+    //     name: 'Industry',
+    //     items: [
+    //       { name: 'E-Commerce', link: '/solutions/e-commerce' },
+    //       { name: 'Engineering', link: '/solutions/engineering' },
+    //       { name: 'Social Media', link: '/solutions/social-media' },
+    //       { name: 'Healthcare', link: '/solutions/healthcare' },
+    //       { name: 'Tourism', link: '/solutions/tourism' },
+    //       { name: 'Education', link: '/solutions/education' }
+    //     ]
+    //   }
+    // ]
+    //    subMenu: [
+    //   {
+    //     name: 'Read studies for',
+    //     items: [
+    //       // { name: 'Electrical Calibration', link: '/case-study/siemens' },
+    //          { name: 'Electrical Calibration', link: '/solutions/business-intelligence' },
+    //       { name: 'Dimension', link: '/case-study/sapna-online' },
+    //       { name: 'Mass,Volume,Weight', link: '/case-study/letsshave' },
+    //       { name: 'Pressure', link: '/case-study/grofers' },
+    //       { name: 'Torque', link: '/case-study/dainik-bhaskar' },
+    //       { name: 'Thermal', link: '/case-study/cosmetize' }
+    //     ]
+    //   }
+    // ]
   },
   {
     name: 'Calibration',
     link: '/case-study',
+    // subMenu: [
+    //   {
+    //     name: 'Read studies for',
+    //     items: [
+    //       // { name: 'Electrical Calibration', link: '/case-study/siemens' },
+    //          { name: 'Electrical Calibration', link: '/solutions/business-intelligence' },
+    //       { name: 'Dimension', link: '/case-study/sapna-online' },
+    //       { name: 'Mass,Volume,Weight', link: '/case-study/letsshave' },
+    //       { name: 'Pressure', link: '/case-study/grofers' },
+    //       { name: 'Torque', link: '/case-study/dainik-bhaskar' },
+    //       { name: 'Thermal', link: '/case-study/cosmetize' }
+    //     ]
+    //   }
+    // ]
     subMenu: [
       {
-        name: 'Read studies for',
+        name: 'Core',
         items: [
-          { name: 'Electrical Calibration', link: '/case-study/siemens' },
-          { name: 'Dimension', link: '/case-study/sapna-online' },
-          { name: 'Mass,Volume,Weight', link: '/case-study/letsshave' },
-          { name: 'Pressure', link: '/case-study/grofers' },
-          { name: 'Torque', link: '/case-study/dainik-bhaskar' },
-          { name: 'Thermal', link: '/case-study/cosmetize' }
+          { name: 'Electrical Calibration', link: '/solutions/business-intelligence' },
+          { name: 'Pressure', link: '/solutions/digital-transformation' },
+             { name: 'Dimension', link: '/solutions/internet-of-things' },
+          // { name: 'Dimension', link: '/solutions/analytics' },
+          { name: 'Mass,Volume,Weight', link: '/solutions/artificial-intelligence' },
+          
+          { name: 'Torque', link: '/solutions/expert-system' },
+          { name: 'Thermal', link: '/solutions/product-development' },
+          // { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
+         
+          // { name: 'IoT', link: '/solutions/internet-of-things' }
         ]
-      }
+      },
+      // {
+      //   name: 'Industry',
+      //   items: [
+      //     { name: 'E-Commerce', link: '/solutions/e-commerce' },
+      //     { name: 'Engineering', link: '/solutions/engineering' },
+      //     { name: 'Social Media', link: '/solutions/social-media' },
+      //     { name: 'Healthcare', link: '/solutions/healthcare' },
+      //     { name: 'Tourism', link: '/solutions/tourism' },
+      //     { name: 'Education', link: '/solutions/education' }
+      //   ]
+      // }
     ]
   },
   {

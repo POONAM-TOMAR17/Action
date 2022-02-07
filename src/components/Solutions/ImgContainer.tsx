@@ -15,12 +15,12 @@ const ImgContainer = (props: IImgContainerProps) => {
             <img src={img} alt={name} className="w-full h-full object-cover z-1" />
             <div className="absolute left-0 top-0 w-full h-full bg-black bg-opacity-60" />
           </div>
-          <img
+          {/* <img
             src="/images/a-vector.png"
             className="xs:h-1/2 xs:transform xs:translate-x-36 lg:h-full absolute lg:translate-x-0 lg:right-0 bottom-0 z-1"
-          />
+          /> */}
           <div className="flex flex-row items-center justify-centet text-5xl text-white font-semibold xs:px-4 lg:px-8">
-            <span className="mr-3 font-light xs:hidden lg:inline-block"> Solutions |</span>
+            {/* <span className="mr-3 font-light xs:hidden lg:inline-block"> Solutions |</span> */}
             {name}
           </div>
           <div className="absolute bottom-10 left-0 w-full">

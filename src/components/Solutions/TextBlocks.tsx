@@ -1,6 +1,8 @@
 import React from 'react';
 import { placeholder, placeholderBig } from '../../../src/components/constants';
 import { SolutionBlockType } from '../../components/libs/typeInterface';
+import InstrumentCalibration from './Instrumentcalibration';
+import Example from './TextBlocks1';
 
 interface ITextBlocksProps {
   labelText: string;

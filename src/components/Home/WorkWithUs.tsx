@@ -23,14 +23,20 @@ const WorkWithUs = () => {
               <p className="xs:hidden lg:block text-3xl font-bold text-white mt-3 pr-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor odio in tristique.
               </p>
-              <a
+              {/* <a
                 href=" "
                 className="w-3/12 border text-base rounded-sm uppercase text-white mt-6 border-white p-2"
               >
                 Inquire us
-              </a>
-              {/* </div>
-              </div> */}
+              </a> */}
+              <div className="text-left mt-6 sm:col-span-2">
+                <button
+                  type="submit"
+                  className="inline-flex uppercase justify-center py-2 px-4 border border-white shadow-sm text-md font-medium rounded-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Inquire us
+                </button>
+              </div>
             </div>
           </div>
         </div>
