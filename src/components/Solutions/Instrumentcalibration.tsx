@@ -116,7 +116,7 @@ export default function InstrumentCalibration(props: IInstrumentsProps) {
               {/* <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none"> */}
 
               {/* <div className="prose prose-indigo text-gray-500 grid-cols-3 grid "> */}
-              <div className="  text-gray-500 grid-cols-3 grid ">
+              <div className="  text-customColors-800 text-sm gap-y-3 grid-cols-3 gap-x-6 grid ">
                 {features.map((feature) => (
                   <div key={feature.name1} className="">
                     {/* <ul className="w-full list-inside ml-5"> */}
