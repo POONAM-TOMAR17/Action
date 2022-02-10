@@ -23,7 +23,7 @@ const posts = [
 
     date: 'Mar 10, 2020',
     datetime: '2020-03-10',
-    imageUrl: '/images/electrotech.png',
+    imageUrl: '/images/mechanical.png',
 
     author: {
       name: 'DOWNLOAD CERTIFICATE',
@@ -35,11 +35,11 @@ const posts = [
   {
     title: 'Improve your customer experience',
     href: '#',
-    category: { name: 'thermal', href: '#' },
+    category: { name: 'Thermal', href: '#' },
 
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
-    imageUrl: '/images/electrotech.png',
+    imageUrl: '/images/thermal.png',
 
     author: {
       name: 'DOWNLOAD CERTIFICATE',
@@ -48,30 +48,30 @@ const posts = [
   }
 ];
 
-export default function Example() {
+export default function NABLSection() {
   return (
-    <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div className="relative bg-gray-50   px-4 sm:px-6 lg:pt-4 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
         <div className="bg-white h-1/3 sm:h-2/3" />
       </div>
-      <div className="relative max-w-7xl mx-auto">
-        <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+      <div className="relative max-w-6xl mx-auto">
+        <div className=" max-w-lg mx-auto grid gap-10 lg:grid-cols-3 lg:max-w-none">
           {posts.map((post) => (
             <div key={post.title} className="flex flex-col  overflow-hidden">
               <div className="flex-shrink-0">
-                <img className="h-48 w-full object-contain" src={post.imageUrl} alt="" />
+                <img className="h-20 w-full object-contain" src={post.imageUrl} alt="" />
               </div>
               <div className="flex-1 bg-white flex flex-col justify-between text-center">
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-indigo-600">
+                  <p className="text-md  mt-6 font-medium text-customColors-800">
                     <a href={post.category.href} className="hover:underline">
                       {post.category.name}
                     </a>
                   </p>
                 </div>
                 <a
-                  className="block w-full py-3 px-5 text-center bg-red-300
-                   border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
+                  className="block w-full mt-6 py-3 px-5 text-center bg-white border-customColors-1100
+                   border border-transparent  shadow-md text-base font-sm text-customColors-800 hover:bg-gray-50 sm:inline-block sm:w-auto"
                   href={post.author.href}
                 >
                   {post.author.name}

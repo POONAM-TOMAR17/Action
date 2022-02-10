@@ -9,17 +9,19 @@ import Solutions from '../components/Home/Solutions';
 import Testimonials from '../components/Home/Testimonials/Testimonials';
 import WorkWithUs from '../components/Home/WorkWithUs';
 import Layout from '../components/Layout/layout';
+import NABLSection from '../components/Home/NABLSection';
 
 const Index = () => {
   return (
     <Layout>
       <HeroSlider />
-      <OverView />
+      {/* <OverView /> */}
       {/* <CaseStudy /> */}
       {/* <Solutions /> */}
       <Solutions2 />
       <Insights />
-      <Testimonials />
+      <NABLSection />
+      {/* <Testimonials /> */}
       <OurClients />
       <WorkWithUs />
     </Layout>
