@@ -209,7 +209,7 @@ const Navbar = (props: INavbarProps) => {
                   </ul>
                 </div>
               </nav>
-              <div
+              {/* <div
                 className={`xs:hidden lg:flex justify-start relative ${
                   searchActive.get() ? ' w-full' : ''
                 }`}
@@ -227,7 +227,7 @@ const Navbar = (props: INavbarProps) => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="lg:hidden">
               <SearchBar searchActive={searchActive} />
