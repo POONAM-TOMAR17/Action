@@ -9,7 +9,7 @@ const posts = [
 
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
-    imageUrl: '/images/electrotech.png',
+    imageUrl: '/images/clients/electrotech.png',
 
     author: {
       name: 'DOWNLOAD CERTIFICATE',
@@ -23,7 +23,7 @@ const posts = [
 
     date: 'Mar 10, 2020',
     datetime: '2020-03-10',
-    imageUrl: '/images/mechanical.png',
+    imageUrl: '/images/clients/mechanical.png',
 
     author: {
       name: 'DOWNLOAD CERTIFICATE',
@@ -39,7 +39,7 @@ const posts = [
 
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
-    imageUrl: '/images/thermal.png',
+    imageUrl: '/images/clients/thermal.png',
 
     author: {
       name: 'DOWNLOAD CERTIFICATE',
