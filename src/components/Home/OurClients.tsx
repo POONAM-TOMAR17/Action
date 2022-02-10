@@ -50,7 +50,7 @@ const OurClients = () => {
           <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/TATA.png"
-              alt="Sapna Book Store"
+              alt="OneZoey"
               className="w-full h-full object-contain"
             />
           </div>
@@ -166,7 +166,7 @@ const OurClients = () => {
         <div className="w-full flex items-center justify-center overflow-hidden ">
           <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
-              src="/images/clients/1.png"
+              src="/images/clients/fertilizer.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
             />
