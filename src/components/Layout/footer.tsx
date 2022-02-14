@@ -9,6 +9,14 @@ const Companytext = styled.p`
     font-weight: normal;
   }
 `;
+const Copyrighttext = styled.p`
+   {
+    font-size: 12px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+  }
+`;
 const navigation = {
   solutions: [
     { name: 'Home', href: '#' },
@@ -104,18 +112,21 @@ export const Footer = () => {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-1">
           <div className="space-y-8 xl:col-span-1">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-1">
               <div>
-                <h3 className="text-base font-semibold text-white leading-6 tracking-wider uppercase">
+                <p className="text-sm font-normal text-white font-poppins leading-6 tracking-wider uppercase">
                   Company
-                </h3>
+                </p>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className=" text-gray-400 text-sm hover:text-white">
-                        <Companytext>{item.name}</Companytext>
+                      <a
+                        href={item.href}
+                        className=" text-gray-400 font-normal font-poppins text-sm hover:text-white"
+                      >
+                        <p>{item.name}</p>
                       </a>
                     </li>
                   ))}
@@ -130,9 +141,9 @@ export const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base font-normal text-gray-400 hover:text-white"
+                        className=" text-gray-400 font-normal font-poppins text-sm hover:text-white"
                       >
-                        <Companytext className="text-sm">{item.name}</Companytext>
+                        <p className="text-sm">{item.name}</p>
                       </a>
                     </li>
                   ))}
@@ -140,10 +151,10 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-8 xl:col-span-1">
-            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+          <div className="space-y-4 mr-12 xl:col-span-1">
+            <p className="text-sm font-normal text-white font-poppins leading-6 tracking-wider uppercase">
               Our Office
-            </h3>
+            </p>
             <div className="flex gap-x-6">
               <svg
                 className="mt-2"
@@ -159,7 +170,7 @@ export const Footer = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-              <p className="text-gray-500 leading-7 font-normal text-sm">
+              <p className="text-gray-500 leading-7 font-poppins font-normal text-sm">
                 Near Petrol Pump Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat, India
                 - 390010.
               </p>
@@ -179,7 +190,7 @@ export const Footer = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-              <p className="text-gray-500 leading-7 font-normal text-sm">
+              <p className="text-gray-500 font-poppins leading-7 font-normal text-sm">
                 8866064026, 9033064026, 9824389873, 9712578788
               </p>
             </div>
@@ -198,26 +209,26 @@ export const Footer = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-              <p className="text-gray-500 font-normal leading-7 text-sm">
+              <p className="text-gray-500  font-poppins font-normal leading-7 text-sm">
                 info@actionengineers.com
               </p>
             </div>
           </div>
           <div className="space-y-8 xl:col-span-1">
-            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-              Business Hours
-            </h3>
+            <p className="text-sm font-normal text-white font-poppins leading-6 tracking-wider uppercase">
+              Business hours
+            </p>
             <div className=" flex flex-col  justify-stretch mt-5 pl-1 ">
               <ul className="my-1   gap-y-6">
                 <li className="flex ">
                   <div className="flex-grow pb-2 flex items-center text-sm ">
                     <div className="flex-grow flex justify-between">
-                      <div className="self-center text-sm font-archivo font-normal text-gray-500">
-                        <a className="font-medium" href="#0"></a>
+                      <div className="self-center text-sm font-poppins font-normal text-gray-500">
+                        <a className="font-medium font-poppins" href="#0"></a>
                         Monday-Friday:
                       </div>
-                      <div className="flex-shrink-0 self-start ml-2 text-sm font-archivo font-normal text-gray-500">
-                        <span className="font-medium ">9am to 6pm</span>
+                      <div className="flex-shrink-0 self-start ml-2 text-sm font-poppins font-normal text-gray-500">
+                        <span className="font-medium font-poppins">9am to 6pm</span>
                       </div>
                     </div>
                   </div>
@@ -226,12 +237,12 @@ export const Footer = () => {
                 <li className="flex ">
                   <div className="flex-grow flex items-center text-sm py-1">
                     <div className="flex-grow flex justify-between">
-                      <div className="self-center text-sm font-archivo font-normal text-gray-500">
-                        <a className="font-medium" href="#0"></a>
+                      <div className="self-center text-sm font-poppins font-normal text-gray-500">
+                        <a className="font-medium font-poppins" href="#0"></a>
                         Saturday:
                       </div>
-                      <div className="flex-shrink-0 self-start ml-2 text-sm font-archivo font-normal text-gray-500">
-                        <span className="font-medium ">9am to 6pm</span>
+                      <div className="flex-shrink-0 self-start ml-2 text-sm font-poppins font-normal text-gray-500">
+                        <span className="font-medium font-poppins">9am to 6pm</span>
                       </div>
                     </div>
                   </div>
@@ -239,12 +250,12 @@ export const Footer = () => {
                 <li className="flex ">
                   <div className="flex-grow flex items-center text-sm py-1">
                     <div className="flex-grow flex justify-between">
-                      <div className="self-center text-sm font-archivo font-normal text-gray-500">
-                        <a className="font-medium" href="#0"></a>
+                      <div className="self-center text-sm font-poppins font-normal text-gray-500">
+                        <a className="font-medium font-poppins" href="#0"></a>
                         Sunday:
                       </div>
-                      <div className="flex-shrink-0 self-start ml-2 text-sm font-archivo font-normal text-gray-500">
-                        <span className="font-medium ">Closed</span>
+                      <div className="flex-shrink-0 self-start ml-2 text-sm font-poppins font-normal text-gray-500">
+                        <span className="font-medium font-poppins">Closed</span>
                       </div>
                     </div>
                   </div>
@@ -257,9 +268,9 @@ export const Footer = () => {
       </div>
       <div className=" bg-gray-100 ">
         <div className="max-w-7xl mx-auto py-1 px-4 sm:px-6 lg:py-4 lg:px-8">
-          <p className="text-base text-gray-400 xl:text-left">
+          <Copyrighttext className=" font-poppins  text-gray-400 xl:text-left">
             Copyright &copy; 2021 Action Engineers
-          </p>
+          </Copyrighttext>
         </div>
       </div>
     </footer>
