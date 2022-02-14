@@ -25,6 +25,7 @@ const OurClients = () => {
               src="/images/clients/abb.png"
               alt="Siemens"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -34,6 +35,7 @@ const OurClients = () => {
               src="/images/clients/ABG.png"
               alt="Maruti Suzuki"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -70,6 +72,7 @@ const OurClients = () => {
               src="/images/clients/reliance.png"
               alt="Vasu Healthcare"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -79,6 +82,7 @@ const OurClients = () => {
               src="/images/clients/ntpc.png"
               alt="Lets Shave"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -115,6 +119,7 @@ const OurClients = () => {
               src="/images/clients/gail.png"
               alt="Grofers"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -123,7 +128,8 @@ const OurClients = () => {
             <img
               src="/images/clients/bhel.png"
               alt="Divya Bhaskar"
-              className="w-full h-full object-contain"
+              className="w-full h-full "
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -142,6 +148,7 @@ const OurClients = () => {
               src="/images/clients/railways.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -160,6 +167,7 @@ const OurClients = () => {
               src="/images/clients/gujrat-board.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -168,7 +176,8 @@ const OurClients = () => {
             <img
               src="/images/clients/thermax.png"
               alt="Divya Bhaskar"
-              className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
+              className="w-full h-full"
             />
           </div>
         </div>{' '}
@@ -178,6 +187,7 @@ const OurClients = () => {
               src="/images/clients/fertilizer.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -187,6 +197,7 @@ const OurClients = () => {
               src="/images/clients/windar.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -205,6 +216,7 @@ const OurClients = () => {
               src="/images/clients/ongc 1.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -223,6 +235,7 @@ const OurClients = () => {
               src="/images/clients/gadre.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
@@ -232,6 +245,7 @@ const OurClients = () => {
               src="/images/clients/fives-logo 1.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
+              style={{ objectFit: 'none' }}
             />
           </div>
         </div>
