@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
 import { ButtonArrow } from '../../../../static/svg/ButtonArrow';
 import InsightsBlocks from './InsightsBlocks';
 interface IInsights {
   singBlock?: boolean;
 }
 
+const MainText = styled.p`
+   {
+    font-size: 32px;
+    line-height: 48px;
+    font-style: normal;
+    font-weight: bold;
+  }
+`;
 const Insights = (props: IInsights) => {
   const { singBlock } = props;
   return (
@@ -16,11 +25,11 @@ const Insights = (props: IInsights) => {
           {!singBlock && (
             <p className="text-sm uppercase tracking-widest text-customColors-200">Our Insights</p>
           )}
-          <p className="font-medium text-3xl text-customColors-100 tracking-relaxed leading-snug">
+          <MainText className=" text-3xl text-black-100 font-display font-bold tracking-relaxed leading-snug">
             {!singBlock
               ? `National Accreditation Board for Testing and Calibration Laboratories (NABL)`
               : `Insights`}
-          </p>
+          </MainText>
         </div>
         {/* <div className="xs:hidden lg:flex-1 lg:flex justify-end items-start">
           <a

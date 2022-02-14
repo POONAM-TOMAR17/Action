@@ -4,7 +4,7 @@ import { FooterNav } from '../Layout/footerNav';
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-footerBackground relative">
+    <footer className="w-full bg-black-100 relative">
       <div className="w-full flex justify-start items-center flex-wrap xs:px-4 lg:px-8 lg:container lg:mx-auto ">
         <FooterForm />
         <FooterNav />

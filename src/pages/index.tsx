@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <Layout>
       <HeroSlider />
-      {/* <OverView /> */}
+      <OverView />
       {/* <CaseStudy /> */}
       {/* <Solutions /> */}
       <Solutions2 />

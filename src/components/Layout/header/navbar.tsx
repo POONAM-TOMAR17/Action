@@ -87,7 +87,7 @@ const Navbar = (props: INavbarProps) => {
                     menuActive.get() ? ' xs:flex xs:z-99 opacity-100' : ' xs:hidden opacity-0'
                   }`}
                 />
-                <div className="xs:w-4/5 xs:z-999 xs:flex flex-col justify-between items-start bg-white overflow-hidden overflow-y-auto lg:flex lg:z-auto lg:flex-1 lg:h-full lg:bg-transparent lg:overflow-unset no-scrollbar">
+                <div className="xs:w-4/5 xs:z-999 xs:flex flex-col justify-between items-end bg-white overflow-hidden overflow-y-auto lg:flex lg:z-auto lg:flex-1 lg:h-full lg:bg-transparent lg:overflow-unset no-scrollbar">
                   <div className="w-full xs:flex lg:hidden items-center justify-start flex-nowrap xs:h-16 px-4">
                     <a
                       onClick={() => {

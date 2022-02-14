@@ -120,7 +120,12 @@ export const mainNavigation = [
   {
     name: 'Our Labs',
     link: '/careers'
+  },
+   {
+    name: 'Contact Us',
+    link: '/contact-us'
   }
+
 ];
 
 export const mainSlider = [

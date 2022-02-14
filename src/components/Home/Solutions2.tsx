@@ -74,11 +74,16 @@ const Solutions2 = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <div className="text-lg leading-6 font-medium space-y-4">
-                      <h3>{person.name}</h3>
-                      <p className="text-customColors-800 font-normal text-base">{person.role}</p>
+                    <div className="text-lg font-semibold font-style-normal leading-snug space-y-4">
+                      <p className="text-black-100 font-display">{person.name}</p>
+                      <p className="text-gray-100 leading-6 font-display font-normal text-base">
+                        {person.role}
+                      </p>
                     </div>
-                    <div role="list" className="flex space-x-5 text-red-600 font-semibold">
+                    <div
+                      role="list"
+                      className="flex space-x-6 mt-4 text-pink-100 font-display text-base leading-7 font-semibold"
+                    >
                       <h3>{person.read}</h3>
                     </div>
                   </div>

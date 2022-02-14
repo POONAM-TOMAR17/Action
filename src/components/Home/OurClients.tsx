@@ -1,13 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const MainText = styled.p`
+   {
+    font-size: 32px;
+    line-height: 48px;
+    font-style: normal;
+    font-weight: bold;
+  }
+`;
 const OurClients = () => {
   return (
     <section className="w-full h-full flex justify-start items-start flex-col xs:px-4 lg:px-8 mb-14 lg:container lg:mx-auto">
       <div className="w-4/5 flex justify-start items-start flex-col space-y-4">
         <p className="text-sm uppercase tracking-widest text-customColors-200 mt-4">Our Clients</p>
-        <p className="font-medium text-4xl text-customColors-100 tracking-relaxed leading-snug">
-          People we have woked with
-        </p>
+        <MainText className=" text-3xl text-black-100 font-display font-bold tracking-relaxed leading-snug ">
+          Our Clients
+        </MainText>
       </div>
       <div className="w-full grid xs:grid-cols-3 xs:gap-3 lg:grid-cols-5 lg:gap-15 xs:pt-5 lg:pt-10">
         <div className="w-full flex items-center justify-center overflow-hidden ">
@@ -94,7 +103,7 @@ const OurClients = () => {
         <div className="w-full flex items-center justify-center overflow-hidden ">
           <div className="w-1/3 flex items-center justify-center overflow-hidden">
             <img
-              src="/images/clients/welspun.png"
+              src="/images/clients/Ratnamani 2.png"
               alt="TrueMind Capital"
               className="w-full h-full object-contain"
             />
@@ -230,15 +239,6 @@ const OurClients = () => {
           <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
             <img
               src="/images/clients/wind-power.png"
-              alt="Divya Bhaskar"
-              className="w-full h-full object-contain"
-            />
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-center overflow-hidden ">
-          <div className="xs:w-4/5 lg:w-1/2 flex items-center justify-center overflow-hidden">
-            <img
-              src="/images/clients/Ratnamani 2.png"
               alt="Divya Bhaskar"
               className="w-full h-full object-contain"
             />

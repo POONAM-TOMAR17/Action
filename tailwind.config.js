@@ -48,7 +48,12 @@ module.exports = {
         900: '#ececec'
       }
     },
-    fontFamily: {},
+    fontFamily: {
+      sans: ['Quicksand', 'sans-serif'],
+      serif: ['DM Serif Display', 'serif'],
+      display: ["Raleway", "sans-serif"],
+      body: ["Raleway", "sans-serif"],
+    },
     zIndex: {
       1: -1,
       0: 0,
@@ -109,6 +114,20 @@ module.exports = {
       },
       width: {
         88: '22rem'
+      },
+      colors: {
+        black: {
+          '100': '#0F0F10'
+        },
+        gray: {
+          '100': '#8F8F99',
+          '200': '#EBECF0',
+          '300': '#8F9098'
+        },
+        pink: {
+          '100': '#E22025'
+        }
+
       }
     }
   },
