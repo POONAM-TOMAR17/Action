@@ -50,6 +50,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Quicksand', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
       serif: ['DM Serif Display', 'serif'],
       display: ["Raleway", "sans-serif"],
       body: ["Raleway", "sans-serif"],
@@ -122,7 +123,10 @@ module.exports = {
         gray: {
           '100': '#8F8F99',
           '200': '#EBECF0',
-          '300': '#8F9098'
+          '300': '#8F9098',
+          '400': '#FCFCFC',
+          '500': '#BFC0C8',
+          '600': '#BFBFBF'
         },
         pink: {
           '100': '#E22025'

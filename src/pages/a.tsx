@@ -1,5 +1,14 @@
-/* This example requires Tailwind CSS v2.0+ */
 import React from 'react';
+import styled from 'styled-components';
+
+const Companytext = styled.p`
+   {
+    font-size: 16px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: normal;
+  }
+`;
 const navigation = {
   solutions: [
     { name: 'Home', href: '#' },
@@ -90,7 +99,7 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className="bg-black-100" aria-labelledby="footer-heading">
+    <footer className=" w-full bg-black-100 relative" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -99,14 +108,14 @@ export default function Example() {
           <div className="space-y-8 xl:col-span-1">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
+                <h3 className="text-base font-semibold text-white leading-6 tracking-wider uppercase">
                   Company
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-white hover:text-white">
-                        {item.name}
+                      <a href={item.href} className=" text-gray-400 hover:text-white">
+                        <Companytext>{item.name}</Companytext>
                       </a>
                     </li>
                   ))}
@@ -119,8 +128,11 @@ export default function Example() {
                 <ul role="list" className="mt-9 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-white hover:text-white">
-                        {item.name}
+                      <a
+                        href={item.href}
+                        className="text-base font-normal text-gray-400 hover:text-white"
+                      >
+                        <Companytext>{item.name}</Companytext>
                       </a>
                     </li>
                   ))}
@@ -132,37 +144,110 @@ export default function Example() {
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
               Our Office
             </h3>
-            <p className="text-white text-base">
-              Making the world a better place through constructing elegant hierarchies.
-            </p>
-            <div className="flex space-x-6">
+            <div className="flex gap-x-6">
+              <svg width="40" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.954 1.364 1.346.15c.93.103 1.645.847 1.49 1.77-.276 1.657-1.197 4.418-4.142 7.363-2.945 2.945-5.706 3.867-7.364 4.143-.923.155-1.667-.56-1.77-1.49l-.15-1.346a2 2 0 0 1 .996-1.958l.969-.553a1.796 1.796 0 0 1 2.16.29c.425.424 1.039.603 1.569.32.458-.243 1.056-.644 1.704-1.291.647-.648 1.048-1.246 1.292-1.704.282-.53.103-1.144-.322-1.568a1.796 1.796 0 0 1-.29-2.161l.554-.97a2 2 0 0 1 1.958-.995Z"
+                  stroke="#BFC0C8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p className="text-gray-500 leading-7 font-normal text-base">
+                Near Petrol Pump Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat, India
+                - 390010.
+              </p>
+            </div>
+            <div className="flex gap-x-3">
+              <svg width="40" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.954 1.364 1.346.15c.93.103 1.645.847 1.49 1.77-.276 1.657-1.197 4.418-4.142 7.363-2.945 2.945-5.706 3.867-7.364 4.143-.923.155-1.667-.56-1.77-1.49l-.15-1.346a2 2 0 0 1 .996-1.958l.969-.553a1.796 1.796 0 0 1 2.16.29c.425.424 1.039.603 1.569.32.458-.243 1.056-.644 1.704-1.291.647-.648 1.048-1.246 1.292-1.704.282-.53.103-1.144-.322-1.568a1.796 1.796 0 0 1-.29-2.161l.554-.97a2 2 0 0 1 1.958-.995Z"
+                  stroke="#BFC0C8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p className="text-gray-500 leading-7 font-normal text-base">
+                8866064026, 9033064026, 9824389873, 9712578788
+              </p>
+            </div>
+            <div className="flex gap-x-1">
+              <svg width="40" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.954 1.364 1.346.15c.93.103 1.645.847 1.49 1.77-.276 1.657-1.197 4.418-4.142 7.363-2.945 2.945-5.706 3.867-7.364 4.143-.923.155-1.667-.56-1.77-1.49l-.15-1.346a2 2 0 0 1 .996-1.958l.969-.553a1.796 1.796 0 0 1 2.16.29c.425.424 1.039.603 1.569.32.458-.243 1.056-.644 1.704-1.291.647-.648 1.048-1.246 1.292-1.704.282-.53.103-1.144-.322-1.568a1.796 1.796 0 0 1-.29-2.161l.554-.97a2 2 0 0 1 1.958-.995Z"
+                  stroke="#BFC0C8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p className="text-gray-500 font-normal leading-7 text-base">
+                info@actionengineers.com
+              </p>
+            </div>
+            {/* <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-white hover:text-white">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="space-y-8 xl:col-span-1">
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
-              Business hours
+              Business Hours
             </h3>
-            <p className="text-white text-base">
-              Making the world a better place through constructing elegant hierarchies.
-            </p>
-            <div className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-white hover:text-white">
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
+            <div className=" flex flex-col justify-stretch mt-5 pl-1 ">
+              <ul className="my-1 divide-y divide-gray-100 gap-y-6">
+                <li className="flex ">
+                  <div className="flex-grow flex items-center text-sm ">
+                    <div className="flex-grow flex justify-between">
+                      <div className="self-center text-sm font-archivo font-normal text-gray-500">
+                        <a className="font-medium" href="#0"></a>
+                        Monday-Friday:
+                      </div>
+                      <div className="flex-shrink-0 self-start ml-2 text-sm font-archivo font-normal text-gray-500">
+                        <span className="font-medium ">9am to 6pm</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                {/* Item */}
+                <li className="flex ">
+                  <div className="flex-grow flex items-center text-sm py-1">
+                    <div className="flex-grow flex justify-between">
+                      <div className="self-center text-sm font-archivo font-normal text-gray-500">
+                        <a className="font-medium" href="#0"></a>
+                        Saturday:
+                      </div>
+                      <div className="flex-shrink-0 self-start ml-2 text-sm font-archivo font-normal text-gray-500">
+                        <span className="font-medium ">9am to 6pm</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="flex ">
+                  <div className="flex-grow flex items-center text-sm py-1">
+                    <div className="flex-grow flex justify-between">
+                      <div className="self-center text-sm font-archivo font-normal text-gray-500">
+                        <a className="font-medium" href="#0"></a>
+                        Sunday:
+                      </div>
+                      <div className="flex-shrink-0 self-start ml-2 text-sm font-archivo font-normal text-gray-500">
+                        <span className="font-medium ">Closed</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                {/* Item */}
+              </ul>
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-white xl:text-left">
+      </div>
+      <div className=" bg-gray-100 ">
+        <div className="max-w-7xl mx-auto py-1 px-4 sm:px-6 lg:py-4 lg:px-8">
+          <p className="text-base text-gray-400 xl:text-left">
             Copyright &copy; 2021 Action Engineers
           </p>
         </div>
