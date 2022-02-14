@@ -21,7 +21,7 @@ const HeroSlider = () => {
                     {/* <img src={item.src} className="w-full h-full object-cover" alt="main-image" /> */}
                     <img
                       src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2560,h_1769/http://wordpress.actionengineers.com/wp-content/uploads/2021/09/action-building-scaled.jpg"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full "
                       alt="main-image"
                     />
                   </div>
