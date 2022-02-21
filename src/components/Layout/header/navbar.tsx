@@ -60,7 +60,11 @@ const Navbar = (props: INavbarProps) => {
                 </svg>
               </a>
               <a href="/" className="flex items-center justify-center">
-                <img src="/images/actonate-logo.svg" alt="actonate-logo" />
+                <img
+                  // src="/images/actonate-logo.svg"
+                  src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/http://wordpress.actionengineers.com/wp-content/uploads/2018/01/Action_Engineers_Logo.png"
+                  alt="actonate-logo"
+                />
               </a>
             </div>
             <div className="lg:h-full lg:flex-1 lg:flex justify-between lg:ml-6">

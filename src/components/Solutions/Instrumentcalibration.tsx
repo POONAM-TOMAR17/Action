@@ -107,7 +107,7 @@ interface IInstrumentsProps {
 export default function InstrumentCalibration(props: IInstrumentsProps) {
   const { features } = props;
   return (
-    <div className="py-3 xl:py-3 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+    <div className="py-3 xl:py-3 px-4 xs:px-10 lg:px-8 bg-white overflow-hidden">
       <div className="max-w-max lg:max-w-7xl mx-auto">
         <div className="font-semibold text-customColors-900 text-2xl">Instruments we Calibrate</div>
         <div className="relative">
@@ -116,7 +116,7 @@ export default function InstrumentCalibration(props: IInstrumentsProps) {
               {/* <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none"> */}
 
               {/* <div className="prose prose-indigo text-gray-500 grid-cols-3 grid "> */}
-              <div className="  text-customColors-800 text-sm gap-y-3 grid-cols-3 gap-x-6 grid ">
+              <div className="  text-customColors-800 text-sm gap-y-3 lg:grid-cols-3 gap-x-6 grid ">
                 {features.map((feature) => (
                   <div key={feature.name1} className="">
                     {/* <ul className="w-full list-inside ml-5"> */}

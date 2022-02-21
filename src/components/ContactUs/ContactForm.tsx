@@ -20,9 +20,13 @@ const ContactForm = (props: IContactForm) => {
 
   return (
     <>
-      <div className="w-full h-full flex justify-between items-top  mb-5 lg:justify-start lg:container lg:mx-auto">
-        <section className="w-1/2 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
+      <div className="w-full h-full lg:flex justify-between items-top  mb-20 lg:justify-start lg:container lg:mx-auto">
+        <section className="lg:w-1/2 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
+            <p className="pt-6 text-sm font-normal text-customColors-800  pb-10">
+              Call or submit our online form to request an estimate or for general questions about
+              our services. We look forward to serving you!
+            </p>
             <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-5 lg:gap-x-10 lg:gap-y-8">
               <div className="w-full flex items-center justify-center flex-wrap">
                 <input
@@ -101,7 +105,7 @@ const ContactForm = (props: IContactForm) => {
               <textarea
                 placeholder="Message"
                 name="message"
-                rows={5}
+                rows={10}
                 className="form-input rounded-sm text-base w-full border border-customColors-400 text-primary focus:border-black focus:outline-none px-3 py-2 text-light tracking-wide relative resize-none"
               />
               <p className="w-full text-customColors-500 text-xs hidden">error message</p>
@@ -111,7 +115,7 @@ const ContactForm = (props: IContactForm) => {
                 type="submit"
                 className="flex items-center justify-center border border-customColors-500 text-customColors-500 px-4 py-1 rounded-sm transform transition-all duration-300 hover:bg-customColors-500 hover:text-white cs-readmore"
               >
-                Send
+                Send Message
                 <ButtonArrow className="ml-2 " />
               </button>
             </div>
@@ -120,18 +124,21 @@ const ContactForm = (props: IContactForm) => {
         <section className="w-1/2 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
             {/* <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-5 lg:gap-x-10 lg:gap-y-8"> */}
-            <div className="w-full flex">
-              <div className="w-1/2 uppercase text-xl">
-                Mailing Address
-                <p className="text-sm py-4 pb-8">
+            <div className="w-full gap-x-8 lg:flex">
+              <div className="w-1/2  text-xl">
+                <p className="uppercase"> Mailing Address</p>
+                <p className="text-sm leading-6 font-normal text-customColors-800 py-4 pb-8">
                   Near Petrol Pump, Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
                   India – 390010.
                 </p>
               </div>
-              <div className="w-1/2 uppercase text-xl ">
-                Contact Info
-                <p className="text-sm py-3">
-                  8866064026,9033064026, 9824389873, 9712578788 info@actionengineers.com
+              <div className="w-1/2  text-xl ">
+                <p className="uppercase">Contact Info</p>
+                <p className="text-sm leading-6 font-normal text-customColors-800 py-3">
+                  8866064026,9033064026,<br></br>
+                  9824389873, 9712578788
+                  <br></br>
+                  <div className=" text-customColors-700">info@actionengineers.com</div>
                 </p>
               </div>
             </div>

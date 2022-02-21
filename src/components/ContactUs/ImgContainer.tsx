@@ -4,7 +4,10 @@ const ImgContainer = () => {
   return (
     <section className="w-full lg:h-full flex justify-between items-center overflow-hidden mb-5">
       <div className="w-full lg:h-full flex justify-start items-center flex-wrap lg:justify-start relative">
-        <div className="w-full h-full flex items-center justify-center relative top-image">
+        <div
+          style={{ height: '296px' }}
+          className="w-full h-full flex items-center justify-center relative top-image"
+        >
           <div className="w-full h-full absolute top-0 left-0 z-1">
             <img
               // src="/images/contact-us-banner.jpg"

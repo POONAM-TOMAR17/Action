@@ -10,7 +10,10 @@ const ImgContainer = (props: IImgContainerProps) => {
   return (
     <section className="w-full lg:h-full flex justify-between items-center overflow-hidden mb-5">
       <div className="w-full lg:h-full flex justify-start items-center flex-wrap lg:justify-start relative">
-        <div className="w-full h-full flex items-center justify-center relative top-image">
+        <div
+          style={{ height: '296px' }}
+          className="w-full h-full flex items-center justify-center relative top-image"
+        >
           <div className="w-full h-full absolute top-0 left-0 z-1">
             <img src={img} alt={name} className="w-full h-full object-cover z-1" />
             <div className="absolute left-0 top-0 w-full h-full bg-black bg-opacity-60" />

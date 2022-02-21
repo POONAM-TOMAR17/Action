@@ -46,7 +46,14 @@ const SolutionsContainer = (props: ISolutionsContainerProps) => {
               ))}
             <InstrumentCalibration features={item.features} />
             <TableContainer people={item.people} />
-            {/* <CaseStudy name={item.name} caseStudyName={item.caseStudy} singBlock /> */}
+            {/* <Table
+              headers={['name', '1Y', '3Y', '5Y', 'all']}
+              // rows={createReturnsInformation()}
+              rows={[]}
+              rowsPerPage={5}
+              heading={'Returns and benchmark comparison'}
+            /> */}
+            ;{/* <CaseStudy name={item.name} caseStudyName={item.caseStudy} singBlock /> */}
           </Fragment>
         ))}
     </>

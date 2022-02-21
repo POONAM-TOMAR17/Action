@@ -112,6 +112,28 @@ export const Footer = () => {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="absolute inset-x-0 top-0 transform translate-y-px">
+          <div className="flex justify-left max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 transform -translate-y-1/2">
+            <span
+              style={{ width: '435px', height: '72px', alignItems: 'center' }}
+              className="inline-flex   bg-gray-600 px-4 py-1 text-base leading-6 font-normal font-poppins tracking-wider text-black-100"
+            >
+              <div className="w-8 mt-8 ml-0 absolute left-0 top-0  overflow-hidden inline-block">
+                <div className=" h-16  bg-gray-100  rotate-45 transform origin-bottom-left"></div>
+              </div>
+              {/* <svg
+                className="inset-0 ml-3 absolute left-1 mt-16"
+                width="28"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M13 0h427v28H0L13 0Z" fill="#BFBFBF" />
+              </svg> */}
+              Follow Us
+            </span>
+          </div>
+        </div>
         <div className="xl:grid xl:grid-cols-3 xl:gap-1">
           <div className="space-y-8 xl:col-span-1">
             <div className="md:grid md:grid-cols-2 md:gap-1">
@@ -218,7 +240,7 @@ export const Footer = () => {
             <p className="text-sm font-normal text-white font-poppins leading-6 tracking-wider uppercase">
               Business hours
             </p>
-            <div className=" flex flex-col  justify-stretch mt-5 pl-1 ">
+            <div className=" flex flex-col mr-40  justify-stretch mt-5 pl-1 ">
               <ul className="my-1   gap-y-6">
                 <li className="flex ">
                   <div className="flex-grow pb-2 flex items-center text-sm ">
