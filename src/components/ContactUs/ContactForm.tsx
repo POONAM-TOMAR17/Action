@@ -21,7 +21,7 @@ const ContactForm = (props: IContactForm) => {
   return (
     <>
       <div className="w-full h-full lg:flex justify-between items-top  mb-20 lg:justify-start lg:container lg:mx-auto">
-        <section className="lg:w-1/2 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
+        <section className="lg:w-3/4 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
             <p className="pt-6 text-sm font-normal text-customColors-800  pb-10">
               Call or submit our online form to request an estimate or for general questions about
@@ -121,7 +121,7 @@ const ContactForm = (props: IContactForm) => {
             </div>
           </form>
         </section>
-        <section className="w-1/2 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
+        <section className="w-1/4 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
             {/* <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-5 lg:gap-x-10 lg:gap-y-8"> */}
             <div className="w-full gap-x-8 lg:flex">

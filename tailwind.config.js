@@ -51,6 +51,7 @@ module.exports = {
     fontFamily: {
       sans: ['Quicksand', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
+      montserrat: ['Montserrat'],
       serif: ['DM Serif Display', 'serif'],
       display: ["Raleway", "sans-serif"],
       body: ["Raleway", "sans-serif"],
@@ -126,7 +127,8 @@ module.exports = {
           '300': '#8F9098',
           '400': '#FCFCFC',
           '500': '#BFC0C8',
-          '600': '#BFBFBF'
+          '600': '#BFBFBF',
+          '700': '#fbfbfb'
         },
         pink: {
           '100': '#E22025'
