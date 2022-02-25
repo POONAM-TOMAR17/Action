@@ -49,9 +49,10 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Quicksand', 'sans-serif'],
+      sans: ['sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
       montserrat: ['Montserrat'],
+      ptsans: ['PT-Sans'],
       serif: ['DM Serif Display', 'serif'],
       display: ["Raleway", "sans-serif"],
       body: ["Raleway", "sans-serif"],
@@ -128,7 +129,9 @@ module.exports = {
           '400': '#FCFCFC',
           '500': '#BFC0C8',
           '600': '#BFBFBF',
-          '700': '#fbfbfb'
+          '700': '#fbfbfb',
+          '800': '#222222',
+          '900': '#999999'
         },
         pink: {
           '100': '#E22025'

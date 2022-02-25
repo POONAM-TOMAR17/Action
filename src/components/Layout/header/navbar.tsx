@@ -24,7 +24,7 @@ const Navbar = (props: INavbarProps) => {
   return (
     <>
       <header className="relative bg-white w-full xs:h-16 lg:h-20 xs:z-99 lg:z-auto">
-        <div className="relative h-full lg:shadow-lg">
+        <div className="relative h-full lg:shadow-sm">
           <div className="w-full h-full flex justify-between items-center xs:px-4 lg:px-8 lg:justify-start lg:container lg:mx-auto">
             <div className="flex items-end justify-start flex-nowrap">
               <a

@@ -1,29 +1,33 @@
+import MobileTeamSlider from '../AboutUs/OurTeam/MobileTeamSlider';
+import TeamSlider from '../AboutUs/OurTeam/TeamSlider';
 import { useState } from '@hookstate/core';
 import React from 'react';
 import Select from 'react-select';
 import { ButtonArrow } from '../../../static/svg/ButtonArrow';
 import { InquiryOptions } from '../../components/constants';
 import { DropdownIndicator } from '../../components/libs/selectDropdownArrow';
+import MobileMap from './MobileMap';
+import MapWeb from './Map';
 
 interface IContactForm {
   isMobile?: boolean;
 }
 
 const ContactForm = (props: IContactForm) => {
-  const {} = props;
+  // const {} = props;
   const isHelp = useState(null);
 
   // tslint:disable-next-line: no-any
   const onChangeHandle = (selectedOption: any) => {
     isHelp.set(selectedOption);
   };
-
+  const { isMobile } = props;
   return (
     <>
       <div className="w-full h-full lg:flex justify-between items-top  mb-20 lg:justify-start lg:container lg:mx-auto">
         <section className="lg:w-3/4 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
-            <p className="pt-6 text-sm font-normal text-customColors-800  pb-10">
+            <p className="pt-6 text-sm font-normal font-sans text-customColors-800  pb-10">
               Call or submit our online form to request an estimate or for general questions about
               our services. We look forward to serving you!
             </p>
@@ -121,28 +125,29 @@ const ContactForm = (props: IContactForm) => {
             </div>
           </form>
         </section>
-        <section className="w-1/4 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
+        <section className="w-1/4 h-full flex justify-between items-center  lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
             {/* <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-5 lg:gap-x-10 lg:gap-y-8"> */}
-            <div className="w-full gap-x-8 lg:flex">
-              <div className="w-1/2  text-xl">
-                <p className="uppercase"> Mailing Address</p>
-                <p className="text-sm leading-6 font-normal text-customColors-800 py-4 pb-8">
+            <div className="w-full gap-x-8 lg:flex xs:px-4">
+              <div className="lg:w-1/2 xs:w-3/5  text-xl  text-xl">
+                <p className="uppercase font-montserrat"> Mailing Address</p>
+                <p className="text-sm leading-6 font-normal font-sans text-customColors-800 py-4 pb-8">
                   Near Petrol Pump, Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
                   India – 390010.
                 </p>
               </div>
-              <div className="w-1/2  text-xl ">
-                <p className="uppercase">Contact Info</p>
-                <p className="text-sm leading-6 font-normal text-customColors-800 py-3">
+              <div className="lg:w-1/2 xs:w-3/5  text-xl  text-xl ">
+                <p className="uppercase font-montserrat">Contact Info</p>
+                <p className="text-sm leading-6 font-sans font-normal text-customColors-800 py-3">
                   8866064026,9033064026,<br></br>
                   9824389873, 9712578788
                   <br></br>
-                  <div className=" text-customColors-700">info@actionengineers.com</div>
+                  <div className="font-sans text-customColors-700">info@actionengineers.com</div>
                 </p>
               </div>
             </div>
-            <div className="mapouter">
+            {!isMobile ? <MapWeb /> : <MobileMap />}
+            {/* <div className="mapouter">
               <div className="gmap_canvas">
                 <iframe
                   width="600"
@@ -160,7 +165,7 @@ const ContactForm = (props: IContactForm) => {
                 <a href="https://www.embedgooglemap.net">custom google maps embed</a>
                 <style>.gmap_canvas </style>
               </div>
-            </div>
+            </div> */}
             <div className="w-full xs:hidden lg:flex items-center justify-center flex-wrap" />
 
             <div className="w-full xs:hidden lg:flex items-center justify-center flex-wrap" />

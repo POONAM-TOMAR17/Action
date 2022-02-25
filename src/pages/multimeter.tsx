@@ -1,12 +1,10 @@
 import Multimeter from '../components/Multimeter/Multimeter';
 import React from 'react';
-
-import ImgContainer from '../components/ContactUs/ImgContainer';
-import OverView from '../components/ContactUs/OverView';
 import Layout from '../components/Layout/layout';
 import { useWindowSize } from '../components/libs/useWindowSize';
 import TableContainer from '../components/Multimeter/TableContainer';
 import BrandSection from '../components/Multimeter/BrandsSection';
+import ImgContainer from '../components/Multimeter/ImgContainer';
 
 const ContactUs = () => {
   const [width] = useWindowSize();

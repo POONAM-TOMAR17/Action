@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #4a5568;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Montserrat', 'PT Sans', sans-serif;
   overflow-x: hidden;
 }
 

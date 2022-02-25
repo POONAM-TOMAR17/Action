@@ -23,7 +23,7 @@ const OverView = (props: IOverViewProps) => {
         )}
         {description && description !== '' && (
           <div
-            className="text-lg space-y-3"
+            className="text-sm text-customColors-800 leading-6 lg:pt-10 space-y-3"
             dangerouslySetInnerHTML={{ __html: description || '' }}
           />
         )}
