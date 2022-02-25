@@ -14,7 +14,7 @@ const BrandSection = () => {
     <section className="w-full h-full flex justify-start items-start flex-col xs:px-6 lg:px-0 mb-14 lg:container lg:mx-auto">
       <div className="w-4/5 flex justify-start items-start flex-col space-y-4">
         <p className="text-sm uppercase tracking-widest text-customColors-200 mt-4">Our Clients</p>
-        <MainText className=" text-3xl text-black-100 font-display font-bold tracking-relaxed leading-snug ">
+        <MainText className=" text-3xl text-black-100 font-montserrat font-bold tracking-relaxed leading-snug ">
           Makes/Brands
         </MainText>
       </div>

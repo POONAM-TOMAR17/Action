@@ -5,10 +5,10 @@ const ImgContainer = () => {
     <div className="border-b bg-gray-700">
       <section className="w-full h-full flex  justify-between items-center mb-5 lg:justify-start lg:container lg:mx-auto">
         <div className="w-full lg:h-full flex-wrap lg:justify-start ">
-          <p className="lg:text-4xl xs:text-3xl font-semibold text-customColors-900 py-8">
+          <p className="lg:text-4xl xs:text-3xl font-semibold xs:text-center lg:text-left text-customColors-900 py-8 xs:px-4">
             MULTIMETER ANALOG
           </p>
-          <div className="">
+          <div className="xs:ml-4">
             <div className="w-full flex items-center justify-start  lg:container lg:mx-auto">
               <a
                 href="/"

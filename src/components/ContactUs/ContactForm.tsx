@@ -27,7 +27,7 @@ const ContactForm = (props: IContactForm) => {
       <div className="w-full h-full lg:flex justify-between items-top  mb-20 lg:justify-start lg:container lg:mx-auto">
         <section className="lg:w-3/4 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
-            <p className="pt-6 text-sm font-normal font-sans text-customColors-800  pb-10">
+            <p className="pt-6 text-sm font-normal font-ptsans text-customColors-800  pb-10">
               Call or submit our online form to request an estimate or for general questions about
               our services. We look forward to serving you!
             </p>
@@ -129,20 +129,20 @@ const ContactForm = (props: IContactForm) => {
           <form action="" name="contact_form" method="post">
             {/* <div className="w-full grid xs:grid-cols-1 lg:grid-cols-2 xs:gap-5 lg:gap-x-10 lg:gap-y-8"> */}
             <div className="w-full gap-x-8 lg:flex xs:px-4">
-              <div className="lg:w-1/2 xs:w-3/5  text-xl  text-xl">
+              <div className="lg:w-1/2 xs:w-3/5  text-xl  ">
                 <p className="uppercase font-montserrat"> Mailing Address</p>
                 <p className="text-sm leading-6 font-normal font-sans text-customColors-800 py-4 pb-8">
                   Near Petrol Pump, Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
                   India – 390010.
                 </p>
               </div>
-              <div className="lg:w-1/2 xs:w-3/5  text-xl  text-xl ">
+              <div className="lg:w-1/2 xs:w-3/5  text-xl  ">
                 <p className="uppercase font-montserrat">Contact Info</p>
-                <p className="text-sm leading-6 font-sans font-normal text-customColors-800 py-3">
+                <p className="text-sm leading-6 font-ptsans font-normal text-customColors-800 py-3">
                   8866064026,9033064026,<br></br>
                   9824389873, 9712578788
                   <br></br>
-                  <div className="font-sans text-customColors-700">info@actionengineers.com</div>
+                  <div className="font-ptsans text-customColors-700">info@actionengineers.com</div>
                 </p>
               </div>
             </div>

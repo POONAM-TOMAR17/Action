@@ -65,7 +65,9 @@ export default function TableContainer() {
           {/* <p className="text-sm uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
             Case Study
           </p> */}
-          <p className="font-semibold text-customColors-900 text-2xl">Specification</p>
+          <p className="font-semibold font-montserrat text-customColors-900 text-2xl">
+            Specification
+          </p>
         </div>
         {/* <div className="xs:hidden lg:flex-1 lg:flex justify-end items-start">
           <a

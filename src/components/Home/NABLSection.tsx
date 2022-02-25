@@ -63,7 +63,7 @@ export default function NABLSection() {
               </div>
               <div className="flex-1 bg-white flex flex-col justify-between text-center">
                 <div className="flex-1">
-                  <p className="text-lg leading-snug  font-display mt-6 font-semibold text-gray-300">
+                  <p className="text-lg leading-snug  font-montserrat mt-6 font-semibold text-gray-300">
                     <a href={post.category.href} className="hover:underline">
                       {post.category.name}
                     </a>
@@ -71,7 +71,7 @@ export default function NABLSection() {
                 </div>
                 <a
                   className="block w-full mt-6 py-3 px-5 text-center bg-white border-gray-200
-                   border border-transparent font-display shadow-md leading-7 text-base text-pink-100 font-semibold hover:bg-gray-50 sm:inline-block sm:w-auto"
+                   border border-transparent font-montserrat shadow-md leading-7 text-base text-pink-100 font-semibold hover:bg-gray-50 sm:inline-block sm:w-auto"
                   href={post.author.href}
                 >
                   {post.author.name}

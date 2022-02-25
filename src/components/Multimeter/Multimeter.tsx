@@ -42,7 +42,7 @@ const Multimeter = (props: IMultimeter) => {
             <img
               src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/http://wordpress.actionengineers.com/wp-content/uploads/2021/08/multimeter-300x300.jpg"
               alt="multimeter"
-              className="w-full h-full object-cover"
+              // className="w-full h-full object-cover"
             />
             <div className="w-full xs:hidden lg:flex items-center justify-center flex-wrap" />
 

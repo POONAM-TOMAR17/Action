@@ -8,7 +8,7 @@ const HeroSlider = () => {
         {/* Slider */}
         <div
           className="w-full h-full relative main-slider swiper-container"
-          style={{ height: '600px' }}
+          // style={{ height: '600px' }}
         >
           {mainSlider.map(
             (item, index) =>
@@ -21,11 +21,11 @@ const HeroSlider = () => {
                     {/* <img src={item.src} className="w-full h-full object-cover" alt="main-image" /> */}
                     <img
                       src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2560,h_1769/http://wordpress.actionengineers.com/wp-content/uploads/2021/09/action-building-scaled.jpg"
-                      className="w-full h-full "
+                      className="w-full h-full object-cover "
                       alt="main-image"
                     />
                   </div>
-                  <p className="xs:w-full xs:px-6 text-white font-display text-7xl text-center font-bold lg:w-4/5 lg:px-14 lg:leading-normal">
+                  <p className="xs:w-full xs:px-6 text-white font-roboto xs:text-6xl lg:text-7xl text-center font-medium lg:w-4/5 lg:px-14 lg:leading-tight">
                     {/* {item.text} */}
                     Calibrated today will set a precise future
                   </p>

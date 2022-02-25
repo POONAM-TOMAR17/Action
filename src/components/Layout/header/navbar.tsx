@@ -107,7 +107,7 @@ const Navbar = (props: INavbarProps) => {
                       <img src="/images/actonate-logo.svg" alt="actonate-logo" />
                     </a>
                   </div>
-                  <ul className="flex-col xs:w-full lg:w-auto lg:h-full lg:flex-row flex justify-center items-center">
+                  <ul className="flex-col font-montserrat xs:w-full lg:w-auto lg:h-full lg:flex-row flex justify-center items-center">
                     {mainNavigation.map((item: MainNavigationType, index: number) => (
                       <li
                         key={index}
@@ -116,7 +116,7 @@ const Navbar = (props: INavbarProps) => {
                         {!item.subMenu ? (
                           <a
                             href={item.link}
-                            className="relative transform transition-all duration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base lg:h-full xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                            className="relative transform transition-all text-gray-900 textduration-300 hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base lg:h-full xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
                           >
                             {item.name}
                           </a>
@@ -125,7 +125,7 @@ const Navbar = (props: INavbarProps) => {
                             {!isMobile ? (
                               <a
                                 href={item.link}
-                                className="relative transform transition-all duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
+                                className="relative transform transition-all text-gray-900 duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto"
                               >
                                 {item.name}
                                 {item.subMenu && item.subMenu.length > 0 && (
@@ -141,7 +141,7 @@ const Navbar = (props: INavbarProps) => {
                                 )}
                               </a>
                             ) : (
-                              <div className="relative transform transition-all duration-300 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto">
+                              <div className="relative transform transition-all duration-300 text-gray-900 lg:hover:text-customColors-500 flex items-center xs:justify-between lg:justify-center xs:text-xl lg:text-base xs:py-5 lg:py-0 px-5 cursor-pointer xs:w-full lg:w-auto">
                                 <a href={item.link}>{item.name}</a>
                                 {item.subMenu && item.subMenu.length > 0 && (
                                   <p
