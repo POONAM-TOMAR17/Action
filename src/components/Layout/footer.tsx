@@ -153,7 +153,7 @@ export const Footer = () => {
                       <li key={item.name}>
                         <a
                           href={item.href}
-                          className=" text-gray-400 font-normal font-ptsans text-sm hover:text-white"
+                          className=" text-gray-1000 font-normal font-ptsans leading-4 text-sm hover:text-white"
                         >
                           <p>{item.name}</p>
                         </a>
@@ -165,12 +165,12 @@ export const Footer = () => {
                   {/* <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
                   Support
                 </h3> */}
-                  <ul role="list" className="mt-9 space-y-4">
+                  <ul role="list" className="mt-9 space-y-3">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
                         <a
                           href={item.href}
-                          className=" text-gray-400 font-normal font-ptsans text-sm hover:text-white"
+                          className=" text-gray-1000 font-normal leading-4 font-ptsans text-sm hover:text-white"
                         >
                           <p className="text-sm">{item.name}</p>
                         </a>
@@ -186,7 +186,7 @@ export const Footer = () => {
               </p>
               <div className="flex gap-x-3">
                 <img src="/images/Location.png" alt="value-pride-1" className="object-contain" />
-                <p className="text-gray-500 leading-7 font-ptsans font-normal text-sm">
+                <p className="text-gray-900 leading-7 font-ptsans font-normal text-sm">
                   Near Petrol Pump Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
                   India - 390010.
                 </p>
@@ -207,13 +207,13 @@ export const Footer = () => {
                     stroke-linejoin="round"
                   />
                 </svg> */}
-                <p className="text-gray-500 font-ptsans leading-7 font-normal text-sm">
+                <p className="text-gray-900 font-ptsans leading-4 font-normal text-sm">
                   8866064026, 9033064026, 9824389873, 9712578788
                 </p>
               </div>
               <div className="flex gap-x-3">
                 <img src="/images/Mail.png" alt="value-pride-1" className="object-contain" />
-                <p className="text-gray-500  font-ptsans font-normal leading-7 text-sm">
+                <p className="text-gray-900  font-ptsans font-normal leading-4 text-sm">
                   info@actionengineers.com
                 </p>
               </div>
@@ -227,11 +227,11 @@ export const Footer = () => {
                   <li className="flex ">
                     <div className="flex-grow pb-2 flex items-center text-sm ">
                       <div className="flex-grow flex justify-between">
-                        <div className="self-center text-sm font-ptsans font-normal text-gray-500">
+                        <div className="self-center text-sm font-ptsans font-normal text-gray-900">
                           <a className="font-medium font-ptsans" href="#0"></a>
                           Monday-Friday:
                         </div>
-                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-500">
+                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-900">
                           <span className="font-medium font-ptsans">9am to 6pm</span>
                         </div>
                       </div>
@@ -241,11 +241,11 @@ export const Footer = () => {
                   <li className="flex ">
                     <div className="flex-grow flex items-center text-sm py-1">
                       <div className="flex-grow flex justify-between">
-                        <div className="self-center text-sm font-ptsans font-normal text-gray-500">
+                        <div className="self-center text-sm font-ptsans font-normal text-gray-900">
                           <a className="font-medium font-ptsans" href="#0"></a>
                           Saturday:
                         </div>
-                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-500">
+                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-900">
                           <span className="font-medium font-ptsans">9am to 6pm</span>
                         </div>
                       </div>
@@ -254,11 +254,11 @@ export const Footer = () => {
                   <li className="flex ">
                     <div className="flex-grow flex items-center text-sm py-1">
                       <div className="flex-grow flex justify-between">
-                        <div className="self-center text-sm font-ptsans font-normal text-gray-500">
+                        <div className="self-center text-sm font-ptsans font-normal text-gray-900">
                           <a className="font-medium font-ptsans" href="#0"></a>
                           Sunday:
                         </div>
-                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-500">
+                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-900">
                           <span className="font-medium font-ptsans">Closed</span>
                         </div>
                       </div>
