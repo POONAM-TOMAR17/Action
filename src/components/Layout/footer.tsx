@@ -145,7 +145,7 @@ export const Footer = () => {
             <div className="space-y-8 xl:col-span-1">
               <div className="md:grid md:grid-cols-2 md:gap-1 xs:gap-x-20 xs:mb-4 flex">
                 <div>
-                  <p className="text-sm font-normal text-white font-montserrat leading-6 tracking-wider uppercase">
+                  <p className="text-sm font-normal text-customColors-1000 font-montserrat leading-6 tracking-wider uppercase">
                     Company
                   </p>
                   <ul role="list" className="mt-4 space-y-4">
@@ -181,11 +181,16 @@ export const Footer = () => {
               </div>
             </div>
             <div className="space-y-4 mr-12 xl:col-span-1 xs:mb-12">
-              <p className="text-sm font-normal text-white font-montserrat leading-6 tracking-wider uppercase">
+              <p className="text-sm font-normal text-customColors-1000 font-montserrat leading-6 tracking-wider uppercase">
                 Our Office
               </p>
               <div className="flex gap-x-3">
-                <img src="/images/Location.png" alt="value-pride-1" className="object-contain" />
+                <img
+                  src="/images/Location.png"
+                  alt="value-pride-1"
+                  style={{ alignSelf: 'start' }}
+                  className="object-contain mt-2"
+                />
                 <p className="text-gray-900 leading-7 font-ptsans font-normal text-sm">
                   Near Petrol Pump Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
                   India - 390010.
@@ -207,7 +212,7 @@ export const Footer = () => {
                     stroke-linejoin="round"
                   />
                 </svg> */}
-                <p className="text-gray-900 font-ptsans leading-4 font-normal text-sm">
+                <p className="text-gray-900 font-ptsans lg:leading-4 xs:leading-2 font-normal text-sm">
                   8866064026, 9033064026, 9824389873, 9712578788
                 </p>
               </div>
@@ -219,7 +224,7 @@ export const Footer = () => {
               </div>
             </div>
             <div className="space-y-8 xl:col-span-1">
-              <p className="text-sm font-normal text-white font-montserrat leading-6 tracking-wider uppercase">
+              <p className="text-sm font-normal text-customColors-1000 font-montserrat leading-6 tracking-wider uppercase">
                 Business hours
               </p>
               <div className=" flex flex-col mr-40  justify-stretch mt-5 ">
