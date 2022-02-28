@@ -8,7 +8,7 @@ const HeroSlider = () => {
         {/* Slider */}
         <div
           className="w-full h-full relative main-slider swiper-container"
-          // style={{ height: '600px' }}
+          style={{ height: '650px' }}
         >
           {mainSlider.map(
             (item, index) =>

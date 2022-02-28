@@ -170,7 +170,7 @@ export const Footer = () => {
                       <li key={item.name}>
                         <a
                           href={item.href}
-                          className=" text-gray-400 font-normal font-poppins text-sm hover:text-white"
+                          className=" text-gray-400 font-normal font-ptsans text-sm hover:text-white"
                         >
                           <p className="text-sm">{item.name}</p>
                         </a>
@@ -184,28 +184,16 @@ export const Footer = () => {
               <p className="text-sm font-normal text-white font-montserrat leading-6 tracking-wider uppercase">
                 Our Office
               </p>
-              <div className="flex gap-x-6">
-                <svg
-                  className="mt-2"
-                  width="40"
-                  height="16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m11.954 1.364 1.346.15c.93.103 1.645.847 1.49 1.77-.276 1.657-1.197 4.418-4.142 7.363-2.945 2.945-5.706 3.867-7.364 4.143-.923.155-1.667-.56-1.77-1.49l-.15-1.346a2 2 0 0 1 .996-1.958l.969-.553a1.796 1.796 0 0 1 2.16.29c.425.424 1.039.603 1.569.32.458-.243 1.056-.644 1.704-1.291.647-.648 1.048-1.246 1.292-1.704.282-.53.103-1.144-.322-1.568a1.796 1.796 0 0 1-.29-2.161l.554-.97a2 2 0 0 1 1.958-.995Z"
-                    stroke="#BFC0C8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <div className="flex gap-x-3">
+                <img src="/images/Location.png" alt="value-pride-1" className="object-contain" />
                 <p className="text-gray-500 leading-7 font-ptsans font-normal text-sm">
                   Near Petrol Pump Vadsar Bridge (West End), GIDC Makarpura, Vadodara, Gujarat,
                   India - 390010.
                 </p>
               </div>
               <div className="flex gap-x-3">
-                <svg
+                <img src="/images/Call.png" alt="value-pride-1" className="object-contain" />
+                {/* <svg
                   className="mt-2"
                   width="40"
                   height="16"
@@ -218,27 +206,14 @@ export const Footer = () => {
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
-                </svg>
-                <p className="text-gray-500 font-poppins leading-7 font-normal text-sm">
+                </svg> */}
+                <p className="text-gray-500 font-ptsans leading-7 font-normal text-sm">
                   8866064026, 9033064026, 9824389873, 9712578788
                 </p>
               </div>
-              <div className="flex gap-x-1">
-                <svg
-                  className="mt-2"
-                  width="40"
-                  height="16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m11.954 1.364 1.346.15c.93.103 1.645.847 1.49 1.77-.276 1.657-1.197 4.418-4.142 7.363-2.945 2.945-5.706 3.867-7.364 4.143-.923.155-1.667-.56-1.77-1.49l-.15-1.346a2 2 0 0 1 .996-1.958l.969-.553a1.796 1.796 0 0 1 2.16.29c.425.424 1.039.603 1.569.32.458-.243 1.056-.644 1.704-1.291.647-.648 1.048-1.246 1.292-1.704.282-.53.103-1.144-.322-1.568a1.796 1.796 0 0 1-.29-2.161l.554-.97a2 2 0 0 1 1.958-.995Z"
-                    stroke="#BFC0C8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p className="text-gray-500  font-poppins font-normal leading-7 text-sm">
+              <div className="flex gap-x-3">
+                <img src="/images/Mail.png" alt="value-pride-1" className="object-contain" />
+                <p className="text-gray-500  font-ptsans font-normal leading-7 text-sm">
                   info@actionengineers.com
                 </p>
               </div>
@@ -247,8 +222,8 @@ export const Footer = () => {
               <p className="text-sm font-normal text-white font-montserrat leading-6 tracking-wider uppercase">
                 Business hours
               </p>
-              <div className=" flex flex-col mr-40  justify-stretch mt-5 pl-1 ">
-                <ul className="my-1 divide-y divide-gray-100 gap-y-6">
+              <div className=" flex flex-col mr-40  justify-stretch mt-5 ">
+                <ul className="my-1 divide-y divide-gray-800 gap-y-6">
                   <li className="flex ">
                     <div className="flex-grow pb-2 flex items-center text-sm ">
                       <div className="flex-grow flex justify-between">
@@ -266,12 +241,12 @@ export const Footer = () => {
                   <li className="flex ">
                     <div className="flex-grow flex items-center text-sm py-1">
                       <div className="flex-grow flex justify-between">
-                        <div className="self-center text-sm font-sans font-normal text-gray-500">
-                          <a className="font-medium font-sans" href="#0"></a>
+                        <div className="self-center text-sm font-ptsans font-normal text-gray-500">
+                          <a className="font-medium font-ptsans" href="#0"></a>
                           Saturday:
                         </div>
-                        <div className="flex-shrink-0 self-start ml-2 text-sm font-sans font-normal text-gray-500">
-                          <span className="font-medium font-sans">9am to 6pm</span>
+                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-500">
+                          <span className="font-medium font-ptsans">9am to 6pm</span>
                         </div>
                       </div>
                     </div>
@@ -279,12 +254,12 @@ export const Footer = () => {
                   <li className="flex ">
                     <div className="flex-grow flex items-center text-sm py-1">
                       <div className="flex-grow flex justify-between">
-                        <div className="self-center text-sm font-sans font-normal text-gray-500">
-                          <a className="font-medium font-sans" href="#0"></a>
+                        <div className="self-center text-sm font-ptsans font-normal text-gray-500">
+                          <a className="font-medium font-ptsans" href="#0"></a>
                           Sunday:
                         </div>
-                        <div className="flex-shrink-0 self-start ml-2 text-sm font-sans font-normal text-gray-500">
-                          <span className="font-medium font-sans">Closed</span>
+                        <div className="flex-shrink-0 self-start ml-2 text-sm font-ptsans font-normal text-gray-500">
+                          <span className="font-medium font-ptsans">Closed</span>
                         </div>
                       </div>
                     </div>

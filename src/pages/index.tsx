@@ -22,8 +22,8 @@ const Index = () => {
       <Insights />
       <NABLSection />
       {/* <Testimonials /> */}
-      <OurClients />
       <WorkWithUs />
+      <OurClients />
     </Layout>
   );
 };
