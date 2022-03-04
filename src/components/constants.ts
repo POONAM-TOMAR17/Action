@@ -10,10 +10,10 @@ export const mainNavigation = [
       {
         name: 'Core',
            items: [
-         { name: 'Our History', link: '/case-study/siemens' },
-         { name: 'Accreditation', link: '/solutions/business-intelligence' },
-          { name: 'Our Team', link: '/case-study/sapna-online' },
-          { name: 'Quality Policy', link: '/case-study/letsshave' },
+         { name: 'Our History', link: '/aboutus/our-history' },
+         { name: 'Accreditation', link: '/aboutus/accreditation' },
+          { name: 'Our Team', link: '/aboutus/our-team' },
+          { name: 'Quality Policy', link: '/aboutus/quality-policy' },
           // { name: 'Pressure', link: '/case-study/grofers' },
           // { name: 'Torque', link: '/case-study/dainik-bhaskar' },
           // { name: 'Thermal', link: '/case-study/cosmetize' }
@@ -68,7 +68,8 @@ export const mainNavigation = [
   },
   {
     name: 'Calibration',
-    link: '/case-study',
+    // link: '/case-study',
+       link: '',
     // subMenu: [
     //   {
     //     name: 'Read studies for',
@@ -87,14 +88,14 @@ export const mainNavigation = [
       {
         name: 'Core',
         items: [
-          { name: 'Electrical Calibration', link: '/solutions/business-intelligence' },
-          { name: 'Pressure', link: '/solutions/digital-transformation' },
-             { name: 'Dimension', link: '/solutions/internet-of-things' },
+          { name: 'Electrical Calibration', link: '/solutions/electrical-calibration' },
+          { name: 'Pressure', link: '/solutions/pressure-calibration' },
+             { name: 'Dimension', link: '/solutions/dimension-calibration' },
           // { name: 'Dimension', link: '/solutions/analytics' },
-          { name: 'Mass,Volume,Weight', link: '/solutions/artificial-intelligence' },
+          { name: 'Mass,Volume,Weight', link: '/solutions/mass-calibration' },
           
-          { name: 'Torque', link: '/solutions/expert-system' },
-          { name: 'Thermal', link: '/solutions/product-development' },
+          { name: 'Torque', link: '/solutions/torque-calibration' },
+          { name: 'Thermal', link: '/solutions/thermal-calibration' },
           // { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
          
           // { name: 'IoT', link: '/solutions/internet-of-things' }

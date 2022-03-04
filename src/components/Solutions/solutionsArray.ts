@@ -1,9 +1,9 @@
 export const solutionsArray = [
   {
-    id: 'digital-transformation',
+    id: 'pressure-calibration',
     name: 'PRESSURE CALIBRATION',
     img: '/images/digitalization-banner.jpg',
-    link: '/solutions/digital-transformation',
+    link: '/solutions/pressure-calibration',
     caseStudy: 'grofers',
     overView: {
       labelText: '',
@@ -1098,11 +1098,11 @@ export const solutionsArray = [
     ]
   },
   {
-    id: 'business-intelligence',
+    id: 'electrical-calibration',
     name: 'ELECTRICAL CALIBRATION',
     // img: '/images/digitalization-banner.jpg',
     img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/electricalbanner.jpg',
-    link: '/solutions/business-intelligence',
+    link: '/solutions/electrical-calibration',
     caseStudy: 'vasu healthcare',
     overView: {
       labelText: '',
@@ -2199,10 +2199,10 @@ export const solutionsArray = [
     ]
   },
   {
-    id: 'internet-of-things',
+    id: 'dimension-calibration',
     name: 'DIMENSION CALIBRATION',
     img: '/images/digitalization-banner.jpg',
-    link: '/solutions/iot',
+    link: '/solutions/dimension-calibration',
     caseStudy: 'vasu healthcare',
     overView: {
       // labelText: 'About',
@@ -3728,10 +3728,10 @@ export const solutionsArray = [
 
 // trial
    {
-    id: 'artificial-intelligence',
+    id: 'mass-calibration',
     name: 'MASS, VOLUME & WEIGHT CALIBRATION',
     img: '/images/digitalization-banner.jpg',
-    link: '/solutions/iot',
+    link: '/solutions/mass-calibration',
     caseStudy: 'vasu healthcare',
     overView: {
       // labelText: 'About',
@@ -4595,10 +4595,10 @@ export const solutionsArray = [
   },
    
    {
-    id: 'expert-system',
+    id: 'torque-calibration',
     name: 'TORQUE CALIBRATION',
     img: '/images/digitalization-banner.jpg',
-    link: '/solutions/iot',
+    link: '/solutions/torque-calibration',
     caseStudy: 'vasu healthcare',
     overView: {
       // labelText: 'About',
@@ -4812,10 +4812,10 @@ export const solutionsArray = [
     ]
   },
     {
-    id: 'product-development',
+    id: 'thermal-calibration',
     name: 'THERMAL CALIBRATION',
     img: '/images/digitalization-banner.jpg',
-    link: '/solutions/iot',
+    link: '/solutions/thermal-calibration',
     caseStudy: 'vasu healthcare',
     overView: {
        labelText: '',

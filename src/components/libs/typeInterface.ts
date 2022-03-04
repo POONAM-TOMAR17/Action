@@ -50,11 +50,14 @@ export type SolutionBlockType = {
   list?: string[];
 };
 
-export type InstrumentCalibrationType = {
+export type QualityPolicyCalibrationType = {
   name1: string;
 
 }
+export type OurHistoryType = {
+  desc: string;
 
+}
 export type TableContainerType = {
   no: string;
   name: string;
@@ -146,6 +149,24 @@ export type CaseStudyInnerType = {
   link: string;
   description: string;
   bannerImg: string;
+  features: { name1: string }[];
+  // descriptions: { desc: string }[];
+  category: string;
+  customerName: string;
+  location: string;
+  year: number;
+  overView: OverViewType;
+  content: StudyContentType;
+};
+export type AboutusInnerType = {
+  id: string;
+  name: string;
+  img: string;
+  link: string;
+  description: string;
+  bannerImg: string;
+  features: { name1: string }[];
+  // descriptions: { desc: string }[];
   category: string;
   customerName: string;
   location: string;

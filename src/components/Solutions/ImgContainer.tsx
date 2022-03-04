@@ -22,20 +22,20 @@ const ImgContainer = (props: IImgContainerProps) => {
             src="/images/a-vector.png"
             className="xs:h-1/2 xs:transform xs:translate-x-36 lg:h-full absolute lg:translate-x-0 lg:right-0 bottom-0 z-1"
           /> */}
-          <div className="flex flex-row items-center justify-centet text-5xl text-white font-semibold xs:px-4 lg:px-8">
+          <div className="flex font-montserrat flex-row items-center justify-centet text-5xl text-white font-semibold xs:px-4 lg:px-8">
             {/* <span className="mr-3 font-light xs:hidden lg:inline-block"> Solutions |</span> */}
             {name}
           </div>
           <div className="absolute bottom-10 left-0 w-full">
-            <div className="w-full flex items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
-              {/* <a
+            <div className="w-full font-montserrat flex items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
+              <a
                 href="/"
-                className="uppercase text-customColors-400 text-xs font-medium tracking-loose hover:underline"
+                className="uppercase font-montserrat text-customColors-400 text-xs font-medium tracking-loose hover:underline"
               >
                 Home
               </a>
-              <span className="uppercase text-customColors-400 text-xs mx-2">/</span> */}
-              <p className="xs:hidden lg:block uppercase text-customColors-400 text-xs font-bold tracking-loose">
+              <span className="uppercase text-customColors-400 text-xs mx-2">/</span>
+              <p className="xs:hidden font-montserrat lg:block uppercase text-customColors-400 text-xs font-bold tracking-loose">
                 {name}
               </p>
             </div>

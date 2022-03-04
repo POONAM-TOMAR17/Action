@@ -20,7 +20,7 @@ const ImgContainer = () => {
           <p className="text-5xl font-semibold text-white">Case Study</p>
           <div className="absolute bottom-10 left-0 w-full">
             <div className="w-full flex items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
-              <p className="uppercase text-customColors-400 text-xs font-bold tracking-loose">
+              <p className="uppercase font-montserrat text-customColors-400 text-xs font-bold tracking-loose">
                 All Cases
               </p>
             </div>

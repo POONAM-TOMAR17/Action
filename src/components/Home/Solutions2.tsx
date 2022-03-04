@@ -82,7 +82,7 @@ const Solutions2 = () => {
                     </div>
                     <div
                       role="list"
-                      className="flex space-x-6 mt-4 text-customColors-700 font-display text-sm leading-7 font-bold"
+                      className="flex space-x-6 mt-4 text-customColors-700 font-montserrat text-sm leading-7 font-bold"
                     >
                       <h3>{person.read}</h3>
                     </div>

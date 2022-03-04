@@ -18,7 +18,7 @@ const ImgContainer = () => {
 
           <p className="text-5xl font-semibold uppercase text-white">Get In Touch</p>
           <div className="absolute bottom-10 left-0 w-full">
-            <div className="w-full flex items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
+            <div className="w-full font-montserrat flex items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
               <a
                 href="/"
                 className="uppercase text-customColors-400 text-xs font-medium tracking-loose hover:underline"
@@ -26,7 +26,7 @@ const ImgContainer = () => {
                 Home
               </a>
               <span className="uppercase text-customColors-400 text-xs mx-2">/</span>
-              <p className="uppercase text-customColors-400 text-xs font-bold tracking-loose">
+              <p className="uppercase font-montserrat text-customColors-400 text-xs font-bold tracking-loose">
                 Contact Us
               </p>
             </div>

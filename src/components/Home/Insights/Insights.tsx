@@ -23,7 +23,9 @@ const Insights = (props: IInsights) => {
       <div className="w-full pt-10 flex items-center justify-between xs:px-4 lg:px-8 lg:my-5 lg:container lg:mx-auto">
         <div className="w-full lg:w-5/5 flex justify-start items-start flex-col space-y-4">
           {!singBlock && (
-            <p className="text-sm uppercase tracking-widest text-customColors-200">Our Insights</p>
+            <p className="text-sm uppercase font-montserrat tracking-widest text-customColors-200">
+              Our Insights
+            </p>
           )}
           <p className=" text-3xl text-black-100 font-montserrat font-extrabold tracking-relaxed leading-snug">
             {!singBlock

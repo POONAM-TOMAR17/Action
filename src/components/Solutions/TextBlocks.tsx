@@ -44,12 +44,12 @@ const TextBlocks = (props: ITextBlocksProps) => {
       >
         <div className="w-full flex justify-start items-start flex-col space-y-4">
           {labelText && labelText !== '' && (
-            <p className="text-sm uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
+            <p className="text-sm font-montserrat uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
               {labelText}
             </p>
           )}
           {title && title !== '' && (
-            <p className="font-medium text-4xl text-customColors-100 tracking-relaxed leading-snug">
+            <p className="font-medium font-montserrat text-4xl text-customColors-100 tracking-relaxed leading-snug">
               {title}
             </p>
           )}

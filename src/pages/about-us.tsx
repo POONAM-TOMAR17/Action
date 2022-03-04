@@ -13,12 +13,17 @@ const AboutUs = () => {
   console.log(width);
   return (
     <Layout>
-      <ImgContainer />
+      {/* <ImgContainer name="name" img="/images/about-us-banner.jpg" /> */}
+      <ImgContainer
+        name="about us"
+        img="http://wordpress.actionengineers.com/wp-content/uploads/2021/07/about-banner.png"
+      />
+
       <OverView />
-      <OurGoal />
+      {/* <OurGoal />
       <ValuesPride />
       <OurTeam isMobile={width > 1024 ? false : true} />
-      <Insights singBlock />
+      <Insights singBlock /> */}
     </Layout>
   );
 };

@@ -65,7 +65,7 @@ export default function TableContainer(props: ITableContainerProps) {
           {/* <p className="text-sm uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
             Case Study
           </p> */}
-          <p className="font-semibold text-customColors-900 text-2xl">
+          <p className="font-semibold font-montserrat text-customColors-900 text-2xl">
             {/* {name} Case Studies */}
             Our Calibration Scope
           </p>

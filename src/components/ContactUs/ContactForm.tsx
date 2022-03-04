@@ -27,7 +27,7 @@ const ContactForm = (props: IContactForm) => {
       <div className="w-full h-full lg:flex justify-between items-top  mb-20 lg:justify-start lg:container lg:mx-auto">
         <section className="lg:w-3/4 h-full flex justify-between items-center xs:px-4 lg:px-8 mb-5 lg:justify-start lg:container lg:mx-auto">
           <form action="" name="contact_form" method="post">
-            <p className="pt-6 text-sm font-normal font-ptsans text-customColors-800  pb-10">
+            <p className="pt-6 text-sm font-normal font-montserrat text-customColors-800  pb-10">
               Call or submit our online form to request an estimate or for general questions about
               our services. We look forward to serving you!
             </p>
@@ -117,7 +117,7 @@ const ContactForm = (props: IContactForm) => {
             <div className="w-full flex items-center justify-start xs:mt-5 lg:mt-8">
               <button
                 type="submit"
-                className="flex items-center justify-center border border-customColors-500 text-customColors-500 px-4 py-1 rounded-sm transform transition-all duration-300 hover:bg-customColors-500 hover:text-white cs-readmore"
+                className="flex font-montserrat items-center justify-center border border-customColors-500 text-customColors-500 px-4 py-1 rounded-sm transform transition-all duration-300 hover:bg-customColors-500 hover:text-white cs-readmore"
               >
                 Send Message
                 <ButtonArrow className="ml-2 " />

@@ -1,10 +1,16 @@
+import AccreditationSection from '../../components/AboutUs/AccreditationSection';
 import React, { Fragment } from 'react';
 import { CaseStudyInnerType } from '../../components/libs/typeInterface';
 import { caseStudyArray } from './caseStudyArray';
 import ImgContainer from './ImgContainer';
-import ListStudies from './LandingPage/ListStudies';
-import MainContents from './MainContents';
-import OverView from './OverView';
+// import ListStudies from './LandingPage/ListStudies';
+// import MainContents from './MainContents';
+// import OverView from './OverView';
+// import OurTeam from '../AboutUs/OurTeam/OurTeam';
+import OurTeamSection from '../../components/AboutUs/OurTeamSection';
+import QualityPolicySection from '../../components/AboutUs/QualityPolicysection';
+import OurHistorySection from '../../components/AboutUs/OurHistorySection';
+// import OurHistorySection from '../../components/AboutUs/ourHistorySection';
 
 interface ICaseStudyContainerProps {
   width: number;
@@ -30,7 +36,11 @@ const CaseStudyContainer = (props: ICaseStudyContainerProps) => {
           return (
             <Fragment key={index}>
               <ImgContainer name={item.name} img={item.bannerImg} />
-              <OverView
+              <OurHistorySection />
+              <AccreditationSection />
+              <OurTeamSection />
+              <QualityPolicySection features={item.features} />
+              {/* <OverView
                 category={item.category}
                 customer={item.customerName}
                 location={item.location}
@@ -39,8 +49,8 @@ const CaseStudyContainer = (props: ICaseStudyContainerProps) => {
                 title={item.overView.title}
                 description={item.overView.description}
               />
-              <MainContents content={item.content} />
-              <ListStudies name={caseStudyArray[newIndex].id} isInnerPage />
+              <MainContents content={item.content} /> */}
+              {/* <ListStudies name={caseStudyArray[newIndex].id} isInnerPage /> */}
             </Fragment>
           );
         })}

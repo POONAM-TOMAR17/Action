@@ -25,7 +25,7 @@ const HeroSlider = () => {
                       alt="main-image"
                     />
                   </div>
-                  <p className="xs:w-full xs:px-6 text-white font-roboto xs:text-6xl lg:text-7xl text-center font-medium lg:w-4/5 lg:px-14 lg:leading-tight">
+                  <p className="xs:w-full xs:px-6 text-white font-montserrat xs:text-6xl lg:text-7xl text-center font-semibold lg:w-4/5 lg:px-14 lg:leading-snug">
                     {/* {item.text} */}
                     Calibrated today will set a precise future
                   </p>

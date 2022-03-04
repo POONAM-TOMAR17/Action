@@ -13,7 +13,7 @@ const Testimonials = () => {
         style={{ ...style }}
         onClick={onClick}
       >
-        <ArrowRight className="text-black" />
+        <ArrowRight className="text-customColors-100" />
       </div>
     );
   }
@@ -26,7 +26,7 @@ const Testimonials = () => {
         style={{ ...style }}
         onClick={onClick}
       >
-        <ArrowLeft className="text-black" />
+        <ArrowLeft className="text-customColors-100" />
       </div>
     );
   }

@@ -40,7 +40,7 @@ const TextBlocks = (props: ITextBlocksProps) => {
           }` + `${labelText === '' && title === '' && description === '' ? '' : ' xs:mb-5 lg:mb-8'}`
         }
       >
-        <div className="w-full flex justify-start items-start flex-col space-y-4">
+        <div className="w-full font-montserrat flex justify-start items-start flex-col space-y-4">
           {labelText && labelText !== '' && (
             <p className="text-sm uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
               {labelText}

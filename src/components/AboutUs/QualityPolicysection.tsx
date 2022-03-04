@@ -1,8 +1,8 @@
-import { InstrumentCalibrationType } from '@components/libs/typeInterface';
+import { QualityPolicyCalibrationType } from '../../components/libs/typeInterface';
 import React from 'react';
 
 interface IInstrumentsProps {
-  features: InstrumentCalibrationType[];
+  features: QualityPolicyCalibrationType[];
 }
 // const features = [
 //   {
@@ -104,13 +104,13 @@ interface IInstrumentsProps {
 //     name1: 'PROCESS CALIBRATOR CONTACT RESISTANCE METER ( CRM KIT )'
 //   }
 // ];
-export default function InstrumentCalibration(props: IInstrumentsProps) {
+export default function QualityPolicySection(props: IInstrumentsProps) {
   const { features } = props;
   return (
-    <div className="py-3 xl:py-3 px-4 xs:px-10 lg:px-8 bg-white overflow-hidden">
-      <div className="max-w-max lg:max-w-7xl mx-auto">
-        <div className="font-semibold font-montserrat text-customColors-900 text-2xl">
-          Instruments we Calibrate
+    <div className="py-3 xl:py-3 pt-8 px-4 xs:px-10 lg:px-8 bg-white overflow-hidden">
+      <div className="w-full  items-center justify-start xs:px-4 lg:px-8 lg:container lg:mx-auto">
+        <div className="font-normal text-customColors-800 font-ptsans text-sm">
+          In the field of calibration services ACTION ENGINEERS have following commitments:
         </div>
         <div className="relative">
           <div className="relative md:bg-white md:p-6">
@@ -118,7 +118,7 @@ export default function InstrumentCalibration(props: IInstrumentsProps) {
               {/* <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none"> */}
 
               {/* <div className="prose prose-indigo text-gray-500 grid-cols-3 grid "> */}
-              <div className="  text-customColors-800 text-sm gap-y-3 lg:grid-cols-3 gap-x-6 grid ">
+              <div className="  text-customColors-800 font-ptsans text-sm gap-y-3 lg:grid-cols-1 gap-x-6 grid ">
                 {features.map((feature) => (
                   <div key={feature.name1} className="">
                     {/* <ul className="w-full list-inside ml-5"> */}
