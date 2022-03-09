@@ -21,7 +21,7 @@ interface IAboutusContainerProps {
 const AboutusContainer = (props: IAboutusContainerProps) => {
   const { params } = props;
   const filteredArray = aboutusArray.filter((item) => item.id === params);
-  console.log('checkingg url', window.location.pathname);
+  // console.log('checkingg url', window.location.pathname);
   return (
     <>
       {filteredArray &&
