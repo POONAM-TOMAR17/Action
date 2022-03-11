@@ -1,9 +1,9 @@
 import { TableContainerType } from '@components/libs/typeInterface';
 import React from 'react';
 
-interface ITableContainerProps {
-  people: TableContainerType[];
-}
+// interface ITableContainerProps {
+//   people: TableContainerType[];
+// }
 
 const people = [
   {
@@ -56,18 +56,17 @@ const people = [
   }
 ];
 
-export default function TableContainer(props: ITableContainerProps) {
-  const { people } = props;
+export default function TableContainer() {
+  //   const { people } = props;
   return (
-    <section className={`w-full px-4 flex justify-start items-center flex-wrap `}>
+    <section className={`w-full lg:mb-10 xs:p-6 flex justify-start items-center flex-wrap `}>
       <div className="w-full flex items-center justify-between xs:px-0 lg:px-0 lg:my-5 lg:container lg:mx-auto">
         <div className="w-full lg:w-4/5 flex justify-start items-start flex-col space-y-4">
           {/* <p className="text-sm uppercase tracking-widest text-customColors-200 mt-6 lg:mt-4">
             Case Study
           </p> */}
           <p className="font-semibold font-montserrat text-customColors-900 text-2xl">
-            {/* {name} Case Studies */}
-            Our Calibration Scope
+            Specification
           </p>
         </div>
         {/* <div className="xs:hidden lg:flex-1 lg:flex justify-end items-start">
@@ -236,18 +235,6 @@ export default function TableContainer(props: ITableContainerProps) {
                         <tr>
                           <td>{person.range5}</td>
                         </tr>
-                        <tr>
-                          <td>{person.range6}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range7}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range8}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range9}</td>
-                        </tr>
                       </td>
                       <td className="p-2 w-52  whitespace-nowrap font-normal text-sm text-customColors-800">
                         <tr>
@@ -264,18 +251,6 @@ export default function TableContainer(props: ITableContainerProps) {
                         </tr>
                         <tr>
                           <td>{person.role5}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.role6}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.role7}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.role8}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.role9}</td>
                         </tr>
                       </td>
                       <td className="p-2 w-52">

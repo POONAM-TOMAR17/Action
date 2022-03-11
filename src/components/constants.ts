@@ -22,50 +22,50 @@ export const mainNavigation = [
     
     ]
   },
-  {
-    name: 'Products',
-    link: '/solutions',
-    // subMenu: [
-    //   {
-    //     name: 'Core',
-    //     items: [
-    //       { name: 'Analytics', link: '/solutions/analytics' },
-    //       { name: 'Artificial Intelligence', link: '/solutions/artificial-intelligence' },
-    //       { name: 'Digital Transormation', link: '/solutions/digital-transformation' },
-    //       { name: 'Expert System', link: '/solutions/expert-system' },
-    //       { name: 'Product Development', link: '/solutions/product-development' },
-    //       { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
-    //       { name: 'Business Intelligence', link: '/solutions/business-intelligence' },
-    //       { name: 'IoT', link: '/solutions/internet-of-things' }
-    //     ]
-    //   },
-    //   {
-    //     name: 'Industry',
-    //     items: [
-    //       { name: 'E-Commerce', link: '/solutions/e-commerce' },
-    //       { name: 'Engineering', link: '/solutions/engineering' },
-    //       { name: 'Social Media', link: '/solutions/social-media' },
-    //       { name: 'Healthcare', link: '/solutions/healthcare' },
-    //       { name: 'Tourism', link: '/solutions/tourism' },
-    //       { name: 'Education', link: '/solutions/education' }
-    //     ]
-    //   }
-    // ]
-    //    subMenu: [
-    //   {
-    //     name: 'Read studies for',
-    //     items: [
-    //       // { name: 'Electrical Calibration', link: '/case-study/siemens' },
-    //          { name: 'Electrical Calibration', link: '/solutions/business-intelligence' },
-    //       { name: 'Dimension', link: '/case-study/sapna-online' },
-    //       { name: 'Mass,Volume,Weight', link: '/case-study/letsshave' },
-    //       { name: 'Pressure', link: '/case-study/grofers' },
-    //       { name: 'Torque', link: '/case-study/dainik-bhaskar' },
-    //       { name: 'Thermal', link: '/case-study/cosmetize' }
-    //     ]
-    //   }
-    // ]
-  },
+  // {
+  //   name: 'Products',
+  //   link: '/solutions',
+  //   subMenu: [
+  //     {
+  //       name: 'Core',
+  //       items: [
+  //         { name: 'Analytics', link: '/solutions/analytics' },
+  //         { name: 'Artificial Intelligence', link: '/solutions/artificial-intelligence' },
+  //         { name: 'Digital Transormation', link: '/solutions/digital-transformation' },
+  //         { name: 'Expert System', link: '/solutions/expert-system' },
+  //         { name: 'Product Development', link: '/solutions/product-development' },
+  //         { name: 'Technical Consulting', link: '/solutions/technical-consulting' },
+  //         { name: 'Business Intelligence', link: '/solutions/business-intelligence' },
+  //         { name: 'IoT', link: '/solutions/internet-of-things' }
+  //       ]
+  //     },
+  //     {
+  //       name: 'Industry',
+  //       items: [
+  //         { name: 'E-Commerce', link: '/solutions/e-commerce' },
+  //         { name: 'Engineering', link: '/solutions/engineering' },
+  //         { name: 'Social Media', link: '/solutions/social-media' },
+  //         { name: 'Healthcare', link: '/solutions/healthcare' },
+  //         { name: 'Tourism', link: '/solutions/tourism' },
+  //         { name: 'Education', link: '/solutions/education' }
+  //       ]
+  //     }
+  //   ]
+  //      subMenu: [
+  //     {
+  //       name: 'Read studies for',
+  //       items: [
+  //         // { name: 'Electrical Calibration', link: '/case-study/siemens' },
+  //            { name: 'Electrical Calibration', link: '/solutions/business-intelligence' },
+  //         { name: 'Dimension', link: '/case-study/sapna-online' },
+  //         { name: 'Mass,Volume,Weight', link: '/case-study/letsshave' },
+  //         { name: 'Pressure', link: '/case-study/grofers' },
+  //         { name: 'Torque', link: '/case-study/dainik-bhaskar' },
+  //         { name: 'Thermal', link: '/case-study/cosmetize' }
+  //       ]
+  //     }
+  //   ]
+  // },
   {
     name: 'Calibration',
     // link: '/case-study',
@@ -116,12 +116,12 @@ export const mainNavigation = [
   },
   {
     name: 'Consulting',
-    link: '/insights'
+    link: '/consulting'
   },
-  {
-    name: 'Our Labs',
-    link: '/careers'
-  },
+  // {
+  //   name: 'Our Labs',
+  //   link: '/careers'
+  // },
    {
     name: 'Contact Us',
     link: '/contact-us'

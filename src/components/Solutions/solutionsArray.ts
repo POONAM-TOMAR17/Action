@@ -4597,7 +4597,7 @@ export const solutionsArray = [
    {
     id: 'torque-calibration',
     name: 'TORQUE CALIBRATION',
-    img: '/images/digitalization-banner.jpg',
+    img: '/images/Torque.jpg',
     link: '/solutions/torque-calibration',
     caseStudy: 'vasu healthcare',
     overView: {

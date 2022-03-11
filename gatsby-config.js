@@ -19,7 +19,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: tailwindConfig.theme.colors.customColors[100],
         display: `minimal-ui`,
-        icon: `static/images/actonate-favicon.png`
+        icon: `static/images/action-favicon.png`
       }
     },
     {
