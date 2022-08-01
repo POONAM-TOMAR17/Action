@@ -105,27 +105,27 @@ export default function TableContainer(props: ITableContainerProps) {
                       scope="col"
                       className="px-1  break-words w-24 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
                     >
-                      MEASURAND OR REFERENCE MATERIAL/TYPE OF INSTRUMENT OR MATERIAL TO BE
-                      CALIBRATED OR MEASURED / QUANTITY MEASURED / INSTRUMENT
+                      Measurand or Reference Material/Type of instrument or material to be
+                      calibrated or measured / Quantity Measured /Instrument
                     </th>
                     <th
                       scope="col"
-                      className="px-1 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
+                      className="px-1  break-words w-24 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
                     >
-                      MEASUREMENT RANGE AND ADDITIONAL PARAMETERS WHERE APPLICABLE(RANGE AND
-                      FREQUENCY)
+                      Calibration or Measurement Method or procedure
                     </th>
                     <th
                       scope="col"
-                      className="px-1 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
+                      className="px-1  break-words w-24 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
                     >
-                      CALIBRATION AND MEASUREMENT CAPABILITY(CMC)(±)
+                      Measurement range and additional parameters where applicable(Range and
+                      Frequency)
                     </th>
                     <th
                       scope="col"
-                      className="px-1 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
+                      className="px-1  break-words w-24 py-3 text-left text-sm font-bold text-customColors-800 uppercase tracking-wider"
                     >
-                      CALIBRATION OR MEASUREMENT METHOD OR PROCEDURE)
+                      * Calibration and Measurement Capability(CMC)(±)
                     </th>
                     {/* <th scope="col" className="relative px-6 py-3">
                     <span className="sr-only">Edit</span>
@@ -220,34 +220,40 @@ export default function TableContainer(props: ITableContainerProps) {
                           <td>{person.title9}</td>
                         </tr>
                       </td> */}
-                      <td className="p-2 w-52 whitespace-nowrap text-sm font-normal text-customColors-800">
-                        <tr>
-                          <td>{person.range1}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range2}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range3}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range4}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range5}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range6}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range7}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range8}</td>
-                        </tr>
-                        <tr>
-                          <td>{person.range9}</td>
-                        </tr>
+                      <td className="p-2 w-52 break-words">
+                        <div className="flex items-center">
+                          <div className="">
+                            <div className="text-sm font-normal text-customColors-800">
+                              <tr>
+                                <td>{person.range1}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range2}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range3}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range4}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range5}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range6}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range7}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range8}</td>
+                              </tr>
+                              <tr>
+                                <td>{person.range9}</td>
+                              </tr>
+                            </div>
+                          </div>
+                        </div>
                       </td>
                       <td className="p-2 w-52  whitespace-nowrap font-normal text-sm text-customColors-800">
                         <tr>
