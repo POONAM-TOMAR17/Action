@@ -89,7 +89,10 @@ const TextBlocks = (props: ITextBlocksProps) => {
                         <img src={bimg} alt={item.name} className="w-96  h-full object-cover" />
                       </div>
                       <div className=" bg-gray-900 bg-opacity-10" />
-                      <ImgFlip className="relative p-8 items-left text-center w-full flex">
+                      <ImgFlip
+                        className="relative p-8 items-left text-center w-full flex"
+                        style={{ height: '100%' }}
+                      >
                         <div className=" relative text-left transparent-bg text-black-100 ">
                           <h3 className="font-bold pb-3">{item.heading}</h3>
                           <ul className="font-medium">
