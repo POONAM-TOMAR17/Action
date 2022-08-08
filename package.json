@@ -35,6 +35,7 @@
   "dependencies": {
     "@egjs/flicking-plugins": "^4.2.1",
     "@egjs/react-flicking": "^4.3.0",
+    "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.5",
     "@hookstate/core": "^3.0.11",
     "@tailwindcss/ui": "^0.7.2",

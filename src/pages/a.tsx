@@ -1,267 +1,1014 @@
+/*
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+*/
 import React from 'react';
-import { ChevronDownIcon } from '@heroicons/react/solid';
+import { Fragment, useState } from 'react';
+import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
+import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' }
+  categories: [
+    {
+      id: 'women',
+      name: 'Women',
+      featured: [
+        {
+          name: 'New Arrivals',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.'
+        },
+        {
+          name: 'Basic Tees',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
+          imageAlt:
+            'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.'
+        }
+      ],
+      sections: [
+        {
+          id: 'clothing',
+          name: 'Clothing',
+          items: [
+            { name: 'Tops', href: '#' },
+            { name: 'Dresses', href: '#' },
+            { name: 'Pants', href: '#' },
+            { name: 'Denim', href: '#' },
+            { name: 'Sweaters', href: '#' },
+            { name: 'T-Shirts', href: '#' },
+            { name: 'Jackets', href: '#' },
+            { name: 'Activewear', href: '#' },
+            { name: 'Browse All', href: '#' }
+          ]
+        },
+        {
+          id: 'accessories',
+          name: 'Accessories',
+          items: [
+            { name: 'Watches', href: '#' },
+            { name: 'Wallets', href: '#' },
+            { name: 'Bags', href: '#' },
+            { name: 'Sunglasses', href: '#' },
+            { name: 'Hats', href: '#' },
+            { name: 'Belts', href: '#' }
+          ]
+        },
+        {
+          id: 'brands',
+          name: 'Brands',
+          items: [
+            { name: 'Full Nelson', href: '#' },
+            { name: 'My Way', href: '#' },
+            { name: 'Re-Arranged', href: '#' },
+            { name: 'Counterfeit', href: '#' },
+            { name: 'Significant Other', href: '#' }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'men',
+      name: 'Men',
+      featured: [
+        {
+          name: 'New Arrivals',
+          href: '#',
+          imageSrc:
+            'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
+          imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.'
+        },
+        {
+          name: 'Artwork Tees',
+          href: '#',
+          imageSrc:
+            'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
+          imageAlt:
+            'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.'
+        }
+      ],
+      sections: [
+        {
+          id: 'clothing',
+          name: 'Clothing',
+          items: [
+            { name: 'Tops', href: '#' },
+            { name: 'Pants', href: '#' },
+            { name: 'Sweaters', href: '#' },
+            { name: 'T-Shirts', href: '#' },
+            { name: 'Jackets', href: '#' },
+            { name: 'Activewear', href: '#' },
+            { name: 'Browse All', href: '#' }
+          ]
+        },
+        {
+          id: 'accessories',
+          name: 'Accessories',
+          items: [
+            { name: 'Watches', href: '#' },
+            { name: 'Wallets', href: '#' },
+            { name: 'Bags', href: '#' },
+            { name: 'Sunglasses', href: '#' },
+            { name: 'Hats', href: '#' },
+            { name: 'Belts', href: '#' }
+          ]
+        },
+        {
+          id: 'brands',
+          name: 'Brands',
+          items: [
+            { name: 'Re-Arranged', href: '#' },
+            { name: 'Counterfeit', href: '#' },
+            { name: 'Full Nelson', href: '#' },
+            { name: 'My Way', href: '#' }
+          ]
+        }
+      ]
+    }
   ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' }
+  pages: [
+    { name: 'Company', href: '#' },
+    { name: 'Stores', href: '#' }
+  ]
+};
+const favorites = [
+  {
+    id: 1,
+    name: 'Black Basic Tee',
+    price: '$32',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
+    imageAlt: "Model wearing women's black cotton crewneck tee."
+  },
+  {
+    id: 2,
+    name: 'Off-White Basic Tee',
+    price: '$32',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
+    imageAlt: "Model wearing women's off-white cotton crewneck tee."
+  },
+  {
+    id: 3,
+    name: 'Mountains Artwork Tee',
+    price: '$36',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
+    imageAlt:
+      "Model wearing women's burgundy red crewneck artwork tee with small white triangle overlapping larger black triangle."
+  }
+];
+const footerNavigation = {
+  shop: [
+    { name: 'Bags', href: '#' },
+    { name: 'Tees', href: '#' },
+    { name: 'Objects', href: '#' },
+    { name: 'Home Goods', href: '#' },
+    { name: 'Accessories', href: '#' }
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
+    { name: 'Who we are', href: '#' },
+    { name: 'Sustainability', href: '#' },
     { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' }
+    { name: 'Careers', href: '#' },
+    { name: 'Terms & Conditions', href: '#' },
+    { name: 'Privacy', href: '#' }
   ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' }
+  account: [
+    { name: 'Manage Account', href: '#' },
+    { name: 'Returns & Exchanges', href: '#' },
+    { name: 'Redeem a Gift Card', href: '#' }
   ],
-  social: [
-    {
-      name: 'Facebook',
-      href: '#',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )
-    },
-    {
-      name: 'Instagram',
-      href: '#',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )
-    },
-    {
-      name: 'Twitter',
-      href: '#',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-        </svg>
-      )
-    },
-    {
-      name: 'GitHub',
-      href: '#',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )
-    },
-    {
-      name: 'Dribbble',
-      href: '#',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )
-    }
+  connect: [
+    { name: 'Contact Us', href: '#' },
+    { name: 'Twitter', href: '#' },
+    { name: 'Instagram', href: '#' },
+    { name: 'Pinterest', href: '#' }
   ]
 };
 
+function classNames(...classes: any) {
+  return classes.filter(Boolean).join(' ');
+}
+
 export default function Example() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-4">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Solutions
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Support
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Company
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Legal
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Language &amp; Currency
-            </h3>
-            <form className="mt-4 sm:max-w-xs">
-              <fieldset className="w-full">
-                <label htmlFor="language" className="sr-only">
-                  Language
-                </label>
-                <div className="relative">
-                  <select
-                    id="language"
-                    name="language"
-                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    defaultValue="English"
+    <div className="bg-white">
+      {/* Mobile menu */}
+      <Transition.Root show={open} as={Fragment}>
+        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+          <Transition.Child
+            as={Fragment}
+            enter="transition-opacity ease-linear duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity ease-linear duration-300"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 flex z-40">
+            <Transition.Child
+              as={Fragment}
+              enter="transition ease-in-out duration-300 transform"
+              enterFrom="-translate-x-full"
+              enterTo="translate-x-0"
+              leave="transition ease-in-out duration-300 transform"
+              leaveFrom="translate-x-0"
+              leaveTo="-translate-x-full"
+            >
+              <Dialog.Panel className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+                <div className="px-4 pt-5 pb-2 flex">
+                  <button
+                    type="button"
+                    className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
+                    onClick={() => setOpen(false)}
                   >
-                    <option>English</option>
-                    <option>French</option>
-                    <option>German</option>
-                    <option>Japanese</option>
-                    <option>Spanish</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                    <ChevronDownIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
+                    <span className="sr-only">Close menu</span>
+                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                  </button>
+                </div>
+
+                {/* Links */}
+                <Tab.Group as="div" className="mt-2">
+                  <div className="border-b border-gray-200">
+                    <Tab.List className="-mb-px flex px-4 space-x-8">
+                      {navigation.categories.map((category) => (
+                        <Tab
+                          key={category.name}
+                          className={({ selected }) =>
+                            classNames(
+                              selected
+                                ? 'text-indigo-600 border-indigo-600'
+                                : 'text-gray-900 border-transparent',
+                              'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium'
+                            )
+                          }
+                        >
+                          {category.name}
+                        </Tab>
+                      ))}
+                    </Tab.List>
+                  </div>
+                  <Tab.Panels as={Fragment}>
+                    {navigation.categories.map((category) => (
+                      <Tab.Panel key={category.name} className="pt-10 pb-8 px-4 space-y-10">
+                        <div className="grid grid-cols-2 gap-x-4">
+                          {category.featured.map((item) => (
+                            <div key={item.name} className="group relative text-sm">
+                              <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
+                                <img
+                                  src={item.imageSrc}
+                                  alt={item.imageAlt}
+                                  className="object-center object-cover"
+                                />
+                              </div>
+                              <a href={item.href} className="mt-6 block font-medium text-gray-900">
+                                <span className="absolute z-10 inset-0" aria-hidden="true" />
+                                {item.name}
+                              </a>
+                              <p aria-hidden="true" className="mt-1">
+                                Shop now
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                        {category.sections.map((section) => (
+                          <div key={section.name}>
+                            <p
+                              id={`${category.id}-${section.id}-heading-mobile`}
+                              className="font-medium text-gray-900"
+                            >
+                              {section.name}
+                            </p>
+                            <ul
+                              role="list"
+                              aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
+                              className="mt-6 flex flex-col space-y-6"
+                            >
+                              {section.items.map((item) => (
+                                <li key={item.name} className="flow-root">
+                                  <a href={item.href} className="-m-2 p-2 block text-gray-500">
+                                    {item.name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </Tab.Panel>
+                    ))}
+                  </Tab.Panels>
+                </Tab.Group>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  {navigation.pages.map((page) => (
+                    <div key={page.name} className="flow-root">
+                      <a href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
+                        {page.name}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <div className="flow-root">
+                    <a href="#" className="-m-2 p-2 block font-medium text-gray-900">
+                      Sign in
+                    </a>
+                  </div>
+                  <div className="flow-root">
+                    <a href="#" className="-m-2 p-2 block font-medium text-gray-900">
+                      Create account
+                    </a>
                   </div>
                 </div>
-              </fieldset>
-              <fieldset className="mt-4 w-full">
-                <label htmlFor="currency" className="sr-only">
-                  Currency
-                </label>
-                <div className="relative">
-                  <select
-                    id="currency"
-                    name="currency"
-                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    defaultValue="AUD"
-                  >
-                    <option>ARS</option>
-                    <option>AUD</option>
-                    <option>CAD</option>
-                    <option>CHF</option>
-                    <option>EUR</option>
-                    <option>GBP</option>
-                    <option>JPY</option>
-                    <option>USD</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                    <ChevronDownIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
-                  </div>
+
+                <div className="border-t border-gray-200 py-6 px-4">
+                  <a href="#" className="-m-2 p-2 flex items-center">
+                    <img
+                      src="https://tailwindui.com/img/flags/flag-canada.svg"
+                      alt=""
+                      className="w-5 h-auto block flex-shrink-0"
+                    />
+                    <span className="ml-3 block text-base font-medium text-gray-900">CAD</span>
+                    <span className="sr-only">, change currency</span>
+                  </a>
                 </div>
-              </fieldset>
-            </form>
+              </Dialog.Panel>
+            </Transition.Child>
           </div>
-        </div>
-        <div className="border-t border-gray-200 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
-          <div>
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Subscribe to our newsletter
-            </h3>
-            <p className="mt-2 text-base text-gray-500">
-              The latest news, articles, and resources, sent to your inbox weekly.
-            </p>
-          </div>
-          <form className="mt-4 sm:flex sm:max-w-md lg:mt-0">
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <input
-              type="email"
-              name="email-address"
-              id="email-address"
-              autoComplete="email"
-              required
-              className="appearance-none min-w-0 w-full bg-white border border-gray-300 py-2 px-4 text-base rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 sm:max-w-xs"
-              placeholder="Enter your email"
-            />
-            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+        </Dialog>
+      </Transition.Root>
+
+      <header className="relative overflow-hidden">
+        {/* Top navigation */}
+        <nav
+          aria-label="Top"
+          className="relative z-20 bg-white bg-opacity-90 backdrop-filter backdrop-blur-xl"
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="h-16 flex items-center">
               <button
-                type="submit"
-                className="w-full bg-indigo-600 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                type="button"
+                className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
+                onClick={() => setOpen(true)}
               >
-                Subscribe
+                <span className="sr-only">Open menu</span>
+                <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </button>
+
+              {/* Logo */}
+              <div className="ml-4 flex lg:ml-0">
+                <a href="#">
+                  <span className="sr-only">Workflow</span>
+                  <img
+                    className="h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              {/* Flyout menus */}
+              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+                <div className="h-full flex space-x-8">
+                  {navigation.categories.map((category) => (
+                    <Popover key={category.name} className="flex">
+                      {({ open }) => (
+                        <>
+                          <div className="relative flex">
+                            <Popover.Button
+                              className={classNames(
+                                open
+                                  ? 'border-indigo-600 text-indigo-600'
+                                  : 'border-transparent text-gray-700 hover:text-gray-800',
+                                'relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px'
+                              )}
+                            >
+                              {category.name}
+                            </Popover.Button>
+                          </div>
+
+                          <Transition
+                            as={Fragment}
+                            enter="transition ease-out duration-200"
+                            enterFrom="opacity-0"
+                            enterTo="opacity-100"
+                            leave="transition ease-in duration-150"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
+                          >
+                            <Popover.Panel className="absolute top-full inset-x-0 bg-white text-sm text-gray-500">
+                              {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
+                              <div
+                                className="absolute inset-0 top-1/2 bg-white shadow"
+                                aria-hidden="true"
+                              />
+                              {/* Fake border when menu is open */}
+                              <div
+                                className="absolute inset-0 top-0 h-px max-w-7xl mx-auto px-8"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  className={classNames(
+                                    open ? 'bg-gray-200' : 'bg-transparent',
+                                    'w-full h-px transition-colors ease-out duration-200'
+                                  )}
+                                />
+                              </div>
+
+                              <div className="relative">
+                                <div className="max-w-7xl mx-auto px-8">
+                                  <div className="grid grid-cols-2 gap-y-10 gap-x-8 py-16">
+                                    <div className="col-start-2 grid grid-cols-2 gap-x-8">
+                                      {category.featured.map((item) => (
+                                        <div
+                                          key={item.name}
+                                          className="group relative text-base sm:text-sm"
+                                        >
+                                          <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
+                                            <img
+                                              src={item.imageSrc}
+                                              alt={item.imageAlt}
+                                              className="object-center object-cover"
+                                            />
+                                          </div>
+                                          <a
+                                            href={item.href}
+                                            className="mt-6 block font-medium text-gray-900"
+                                          >
+                                            <span
+                                              className="absolute z-10 inset-0"
+                                              aria-hidden="true"
+                                            />
+                                            {item.name}
+                                          </a>
+                                          <p aria-hidden="true" className="mt-1">
+                                            Shop now
+                                          </p>
+                                        </div>
+                                      ))}
+                                    </div>
+                                    <div className="row-start-1 grid grid-cols-3 gap-y-10 gap-x-8 text-sm">
+                                      {category.sections.map((section) => (
+                                        <div key={section.name}>
+                                          <p
+                                            id={`${section.name}-heading`}
+                                            className="font-medium text-gray-900"
+                                          >
+                                            {section.name}
+                                          </p>
+                                          <ul
+                                            role="list"
+                                            aria-labelledby={`${section.name}-heading`}
+                                            className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                                          >
+                                            {section.items.map((item) => (
+                                              <li key={item.name} className="flex">
+                                                <a href={item.href} className="hover:text-gray-800">
+                                                  {item.name}
+                                                </a>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
+                                      ))}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </Popover.Panel>
+                          </Transition>
+                        </>
+                      )}
+                    </Popover>
+                  ))}
+
+                  {navigation.pages.map((page) => (
+                    <a
+                      key={page.name}
+                      href={page.href}
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                    >
+                      {page.name}
+                    </a>
+                  ))}
+                </div>
+              </Popover.Group>
+
+              <div className="ml-auto flex items-center">
+                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                    Sign in
+                  </a>
+                  <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                    Create account
+                  </a>
+                </div>
+
+                <div className="hidden lg:ml-8 lg:flex">
+                  <a href="#" className="text-gray-700 hover:text-gray-800 flex items-center">
+                    <img
+                      src="https://tailwindui.com/img/flags/flag-canada.svg"
+                      alt=""
+                      className="w-5 h-auto block flex-shrink-0"
+                    />
+                    <span className="ml-3 block text-sm font-medium">CAD</span>
+                    <span className="sr-only">, change currency</span>
+                  </a>
+                </div>
+
+                {/* Search */}
+                <div className="flex lg:ml-6">
+                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Search</span>
+                    <SearchIcon className="w-6 h-6" aria-hidden="true" />
+                  </a>
+                </div>
+
+                {/* Cart */}
+                <div className="ml-4 flow-root lg:ml-6">
+                  <a href="#" className="group -m-2 p-2 flex items-center">
+                    <ShoppingBagIcon
+                      className="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+                      0
+                    </span>
+                    <span className="sr-only">items in cart, view bag</span>
+                  </a>
+                </div>
+              </div>
             </div>
-          </form>
-        </div>
-        <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2020 Workflow, Inc. All rights reserved.
-          </p>
+        </nav>
+
+        {/* Hero section */}
+        <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+            <div className="sm:max-w-lg">
+              <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
+                Summer styles are finally here
+              </h1>
+              <p className="mt-4 text-xl text-gray-500">
+                This year, our new summer collection will shelter you from the harsh elements of a
+                world that doesn't care if you live or die.
+              </p>
+            </div>
+            <div>
+              <div className="mt-10">
+                {/* Decorative image grid */}
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full"
+                >
+                  <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                    <div className="flex items-center space-x-6 lg:space-x-8">
+                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#"
+                  className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
+                >
+                  Shop Collection
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </header>
+
+      <main>
+        {/* Category section */}
+        <section aria-labelledby="category-heading" className="bg-gray-50">
+          <div className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div className="sm:flex sm:items-baseline sm:justify-between">
+              <h2
+                id="category-heading"
+                className="text-2xl font-extrabold tracking-tight text-gray-900"
+              >
+                Shop by Category
+              </h2>
+              <a
+                href="#"
+                className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+              >
+                Browse all categories<span aria-hidden="true"> &rarr;</span>
+              </a>
+            </div>
+
+            <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
+              <div className="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+                <img
+                  src="https://tailwindui.com/img/ecommerce-images/home-page-03-featured-category.jpg"
+                  alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
+                  className="object-center object-cover group-hover:opacity-75"
+                />
+                <div
+                  aria-hidden="true"
+                  className="bg-gradient-to-b from-transparent to-black opacity-50"
+                />
+                <div className="p-6 flex items-end">
+                  <div>
+                    <h3 className="font-semibold text-white">
+                      <a href="#">
+                        <span className="absolute inset-0" />
+                        New Arrivals
+                      </a>
+                    </h3>
+                    <p aria-hidden="true" className="mt-1 text-sm text-white">
+                      Shop now
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
+                <img
+                  src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg"
+                  alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
+                  className="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full"
+                />
+                <div
+                  aria-hidden="true"
+                  className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"
+                />
+                <div className="p-6 flex items-end sm:absolute sm:inset-0">
+                  <div>
+                    <h3 className="font-semibold text-white">
+                      <a href="#">
+                        <span className="absolute inset-0" />
+                        Accessories
+                      </a>
+                    </h3>
+                    <p aria-hidden="true" className="mt-1 text-sm text-white">
+                      Shop now
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="group aspect-w-2 aspect-h-1 rounded-lg overflow-hidden sm:relative sm:aspect-none sm:h-full">
+                <img
+                  src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg"
+                  alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
+                  className="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full"
+                />
+                <div
+                  aria-hidden="true"
+                  className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"
+                />
+                <div className="p-6 flex items-end sm:absolute sm:inset-0">
+                  <div>
+                    <h3 className="font-semibold text-white">
+                      <a href="#">
+                        <span className="absolute inset-0" />
+                        Workspace
+                      </a>
+                    </h3>
+                    <p aria-hidden="true" className="mt-1 text-sm text-white">
+                      Shop now
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 sm:hidden">
+              <a
+                href="#"
+                className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+              >
+                Browse all categories<span aria-hidden="true"> &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured section */}
+        <section aria-labelledby="cause-heading">
+          <div className="relative bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
+            <div className="absolute inset-0 overflow-hidden">
+              <img
+                src="https://tailwindui.com/img/ecommerce-images/home-page-03-feature-section-full-width.jpg"
+                alt=""
+                className="w-full h-full object-center object-cover"
+              />
+            </div>
+            <div aria-hidden="true" className="absolute inset-0 bg-gray-900 bg-opacity-50" />
+            <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">
+              <p className="mt-3 text-xl text-white">
+                We're committed to responsible, sustainable, and ethical manufacturing. Our
+                small-scale approach allows us to focus on quality and reduce our impact. We're
+                doing our best to delay the inevitable heat-death of the universe.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Favorites section */}
+        <section aria-labelledby="favorites-heading">
+          <div className="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div className="sm:flex sm:items-baseline sm:justify-between">
+              <h2
+                id="favorites-heading"
+                className="text-2xl font-extrabold tracking-tight text-gray-900"
+              >
+                Our Favorites
+              </h2>
+              <a
+                href="#"
+                className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+              >
+                Browse all favorites<span aria-hidden="true"> &rarr;</span>
+              </a>
+            </div>
+
+            <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 lg:gap-x-8">
+              {favorites.map((favorite) => (
+                <div key={favorite.id} className="group relative">
+                  <div className="w-full h-96 rounded-lg overflow-hidden group-hover:opacity-75 sm:h-auto sm:aspect-w-2 sm:aspect-h-3">
+                    <img
+                      src={favorite.imageSrc}
+                      alt={favorite.imageAlt}
+                      className="w-full h-full object-center object-cover"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-base font-semibold text-gray-900">
+                    <a href={favorite.href}>
+                      <span className="absolute inset-0" />
+                      {favorite.name}
+                    </a>
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{favorite.price}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 sm:hidden">
+              <a
+                href="#"
+                className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+              >
+                Browse all favorites<span aria-hidden="true"> &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA section */}
+        <section aria-labelledby="sale-heading">
+          <div className="pt-32 overflow-hidden sm:pt-14">
+            <div className="bg-gray-800">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative pt-48 pb-16 sm:pb-24">
+                  <div>
+                    <h2
+                      id="sale-heading"
+                      className="text-4xl font-extrabold tracking-tight text-white md:text-5xl"
+                    >
+                      Final Stock.
+                      <br />
+                      Up to 50% off.
+                    </h2>
+                    <div className="mt-6 text-base">
+                      <a href="#" className="font-semibold text-white">
+                        Shop the sale<span aria-hidden="true"> &rarr;</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="absolute -top-32 left-1/2 transform -translate-x-1/2 sm:top-6 sm:translate-x-0">
+                    <div className="ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-8">
+                      <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                        <div className="flex-shrink-0">
+                          <img
+                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg"
+                            alt=""
+                          />
+                        </div>
+
+                        <div className="mt-6 flex-shrink-0 sm:mt-0">
+                          <img
+                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                        <div className="flex-shrink-0">
+                          <img
+                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg"
+                            alt=""
+                          />
+                        </div>
+
+                        <div className="mt-6 flex-shrink-0 sm:mt-0">
+                          <img
+                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                        <div className="flex-shrink-0">
+                          <img
+                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg"
+                            alt=""
+                          />
+                        </div>
+
+                        <div className="mt-6 flex-shrink-0 sm:mt-0">
+                          <img
+                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer aria-labelledby="footer-heading" className="bg-white">
+        <h2 id="footer-heading" className="sr-only">
+          Footer
+        </h2>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="py-20 xl:grid xl:grid-cols-3 xl:gap-8">
+            <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+              <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 className="text-sm font-medium text-gray-900">Shop</h3>
+                  <ul role="list" className="mt-6 space-y-6">
+                    {footerNavigation.shop.map((item) => (
+                      <li key={item.name} className="text-sm">
+                        <a href={item.href} className="text-gray-500 hover:text-gray-600">
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium text-gray-900">Company</h3>
+                  <ul role="list" className="mt-6 space-y-6">
+                    {footerNavigation.company.map((item) => (
+                      <li key={item.name} className="text-sm">
+                        <a href={item.href} className="text-gray-500 hover:text-gray-600">
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 className="text-sm font-medium text-gray-900">Account</h3>
+                  <ul role="list" className="mt-6 space-y-6">
+                    {footerNavigation.account.map((item) => (
+                      <li key={item.name} className="text-sm">
+                        <a href={item.href} className="text-gray-500 hover:text-gray-600">
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium text-gray-900">Connect</h3>
+                  <ul role="list" className="mt-6 space-y-6">
+                    {footerNavigation.connect.map((item) => (
+                      <li key={item.name} className="text-sm">
+                        <a href={item.href} className="text-gray-500 hover:text-gray-600">
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="mt-16 md:mt-16 xl:mt-0">
+              <h3 className="text-sm font-medium text-gray-900">Sign up for our newsletter</h3>
+              <p className="mt-6 text-sm text-gray-500">
+                The latest deals and savings, sent to your inbox weekly.
+              </p>
+              <form className="mt-2 flex sm:max-w-md">
+                <label htmlFor="email-address" className="sr-only">
+                  Email address
+                </label>
+                <input
+                  id="email-address"
+                  type="text"
+                  autoComplete="email"
+                  required
+                  className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-indigo-500 placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+                />
+                <div className="ml-4 flex-shrink-0">
+                  <button
+                    type="submit"
+                    className="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-200 py-10">
+            <p className="text-sm text-gray-500">Copyright &copy; 2021 Clothing Company Inc.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 }

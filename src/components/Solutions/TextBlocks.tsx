@@ -1,8 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 import { placeholder, placeholderBig } from '../../../src/components/constants';
 import { SolutionBlockType } from '../../components/libs/typeInterface';
 import InstrumentCalibration from './Instrumentcalibration';
 import Example from './TextBlocks1';
+
+const ImgFlip = styled.div`
+  .transparent-bg {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 100%;
+    height: 100%,
+    text-align: left;
+    font-size: 13px;
+  }
+`;
 
 interface ITextBlocksProps {
   labelText: string;
@@ -70,16 +82,28 @@ const TextBlocks = (props: ITextBlocksProps) => {
                 bimg = item.img;
               }
               return (
-                <div
-                  key={index}
-                  className="w-full flex items-start justify-start flex-wrap space-y-4"
-                >
-                  <div
-                    className={`w-full  flex itmes-center justify-center ${
-                      isService ? ' lg:h-72' : ' lg:h-72'
-                    }`}
-                  >
-                    <img src={bimg} alt={item.name} className="w-full h-full object-cover" />
+                <div key={index} className="w-full  space-y-4">
+                  <div className={`flex   ${isService ? 'lg:h-72 w-full' : 'lg:h-72 w-full'}`}>
+                    <div className="relative  ">
+                      <div className="absolute inset-0 ">
+                        <img src={bimg} alt={item.name} className="w-96  h-full object-cover" />
+                      </div>
+                      <div className=" bg-gray-900 bg-opacity-10" />
+                      <ImgFlip className="relative p-8 items-left text-center w-full flex">
+                        <div className=" relative transparent-bg text-black-100 ">
+                          <h3 className="font-bold pb-3">{item.heading}</h3>
+                          <ul className="font-medium">
+                            <li>{item.point1}</li>
+                            <li>{item.point2}</li>
+                            <li>{item.point3}</li>
+                          </ul>
+                        </div>
+                      </ImgFlip>
+                      {/* <ImgFlip className="container">
+                        <img src={bimg} alt={item.name} className="w-full  h-full object-cover" />
+                      </ImgFlip> */}
+                    </div>
+
                     {/* <img
                       src="http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Fluke-reference-multimeter.jpg"
                       alt={item.name}
