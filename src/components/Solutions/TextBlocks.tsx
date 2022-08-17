@@ -7,13 +7,34 @@ import Example from './TextBlocks1';
 
 const ImgFlip = styled.div`
   .transparent-bg {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+   
     width: 100%;
     height: 100%,
     text-align: left;
     font-size: 13px;
   }
+ .hovercap {
+  /* (C1) DIMENSIONS */
+ top:1;
+  width: 100%;
+ 
+ 
+  /* (C2) PLACE AT BOTTOM */
+ 
+
+ 
+  /* (C3) COLORS */
+  background: rgba(0,15, 15, 16);
+    padding: 20px;
+  color: white;
+}
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.transparent-bg:hover .hovercap {
+  visibility: visible; opacity: 1;
+}
 `;
 
 interface ITextBlocksProps {
@@ -85,21 +106,27 @@ const TextBlocks = (props: ITextBlocksProps) => {
                 <div key={index} className="w-full  space-y-4">
                   <div className={`flex   ${isService ? 'lg:h-72 w-full' : 'lg:h-72 w-full'}`}>
                     <div className="relative  ">
-                      <div className="absolute inset-0 ">
+                      <div className="lg:absolute lg:inset-0 ">
                         <img src={bimg} alt={item.name} className="w-96  h-full object-cover" />
                       </div>
                       <div className=" bg-gray-900 bg-opacity-10" />
                       <ImgFlip
-                        className="relative p-8 items-left text-center w-full flex"
+                        className="relative  items-left text-center w-full flex"
                         style={{ height: '100%' }}
                       >
-                        <div className=" relative text-left transparent-bg text-black-100 ">
-                          <h3 className="font-bold pb-3">{item.heading}</h3>
-                          <ul className="font-medium">
-                            <li>{item.point1}</li>
-                            <li>{item.point2}</li>
-                            <li>{item.point3}</li>
-                          </ul>
+                        <div className="transparent-bg xs:hidden lg:block">
+                          <div className=" hovercap h-full xs:hidden lg:block">
+                            <div className="relative  text-left  text-black-100 ">
+                              <div className="">
+                                <h3 className="font-bold pb-3 text-white">{item.heading}</h3>
+                                <ul className="font-medium text-white ">
+                                  <li>{item.point1}</li>
+                                  <li>{item.point2}</li>
+                                  <li>{item.point3}</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </ImgFlip>
                       {/* <ImgFlip className="container">
@@ -115,17 +142,20 @@ const TextBlocks = (props: ITextBlocksProps) => {
                   </div>
                   {isService ? (
                     <>
-                      {/* {item.name !== '' && (
-                        <div className="w-full flex items-start justify-start">
+                      {item.name !== '' && (
+                        <div className="w-full lg:hidden flex items-start justify-start">
                           <p className="text-lg font-semibold">{item.name}</p>
+                          {/* <p className="text-lg font-semibold">{item.point1}</p> */}
+                          {/* <p className="text-lg font-semibold">{item.point2}</p>
+                          <p className="text-lg font-semibold">{item.point3}</p> */}
                         </div>
-                      )} */}
-                      {/* <div className="w-full flex items-start justify-start">
+                      )}
+                      <div className="w-full flex lg:hidden items-start justify-start">
                         <div
                           className="w-full text-base space-y-2"
                           dangerouslySetInnerHTML={{ __html: item.desc || '' }}
                         />
-                      </div> */}
+                      </div>
                     </>
                   ) : (
                     <>

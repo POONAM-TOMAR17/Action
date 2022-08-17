@@ -677,16 +677,16 @@ export const solutionsArray = [
         blocks: [
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Digital-manometer.jpg',
-            name: 'Improved Efficiency',
-            desc: '<p>Digital technology enhances your organization efficiency in several key ways such as improved information flow, increased collaboration among employees and different functions, and automation of manual processes.</p>',
+            name: 'Pressure Transmitter & Sensor Calibration',
+            desc: '<p>We calibrate gage and differential pressure transmitters and pressure switches from manufacturers like Rosemount / Emerson, Additel, Ashcroft, Druck, Dwyer, and many more Field & on-site calibrations are available</p>',
             heading: 'Pressure Transmitter & Sensor Calibration',
             point1: 'We calibrate gage and differential pressure transmitters and pressure switches from manufacturers like Rosemount / Emerson, Additel, Ashcroft, Druck, Dwyer, and many more',
             point2: 'Field & on-site calibrations are available'
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Digital-pressure-gauge.jpg',
-            name: 'Cost Saving',
-            desc: '<p>Technology transformation brings with it the benefits of new and quicker systems that can save your organizations large sums of money compared to running legacy systems.  The total cost of ownership for severely reduces with smart investments in technology.</p>',
+            name: 'Pressure Gauge Calibration & Vacuum Gauge Calibration',
+            desc: '<p>Action Engineers calibrates all types of digital pressure gauges We also offer calibration services for analog pressure gauges Field & on-site calibrations are available</p>',
             heading: 'Pressure Gauge Calibration & Vacuum Gauge Calibration',
             point1: 'Action Engineers calibrates all types of digital pressure gauges',
             point2: 'We also offer calibration services for analog pressure gauges',
@@ -694,16 +694,16 @@ export const solutionsArray = [
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Pressure-calibrator.jpg',
-            name: 'Better Customer Experience',
-            desc: '<p>Digital Transformation improves an organization’s agility and its ability to quickly respond to customer needs. Digital analytics combines with automation helps to delight customers with personalized product offering.</p>',
+            name: 'Transducer Calibration',
+            desc: '<p>We calibrate all varieties of pressure transducers and pressure sensors including current to pneumatic transducers, air flow monitors, self-powered sensor modules Field & on-site calibrations are available</p>',
             heading: 'Transducer Calibration',
             point1: 'We calibrate all varieties of pressure transducers and pressure sensors  including current to pneumatic transducers, air flow monitors, self-powered sensor modules',
             point2: 'Field & on-site calibrations are available',
           },
             {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Pressure-calibrator.jpg',
-            name: 'Better Customer Experience',
-            desc: '<p>Digital Transformation improves an organization’s agility and its ability to quickly respond to customer needs. Digital analytics combines with automation helps to delight customers with personalized product offering.</p>',
+            name: 'Manometers Calibration',
+            desc: '<p>Action Engineers offers accredited calibration services for all varieties of manometers including the calibration of digital manometers Field & on-site calibrations are available</p>',
             heading: 'Manometers Calibration',
             point1: 'Action Engineers offers accredited calibration services for all varieties of manometers including the calibration of digital manometers',
             point2: 'Field & on-site calibrations are available',
@@ -4153,48 +4153,48 @@ export const solutionsArray = [
         description: '',
         blocks: [
           {
-            name: 'Data Driven Business Decisions',
-            desc: '<p>Data is the life blood for any organization. Implementing data analytics helps your organization to make decisions based on facts. It helps organizations track market and customer behavior in real-time and derive key operational insights critical to satisfactory delivery of services.</p>',
+            name: 'Digital Mutimeter Calibration, Multifunctional Calibrators',
+            desc: '<p>We calibrate Fluke meters such as 6.5-digit multimeter, 5.5-digit multifunction calibrators, 87-series, 787, 789, and 170-series, Megger multimeters and all other makes/models We also calibrate handheld, clamp-on, insulation testing, digital multimeters and analog multimeters</p>',
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Fluke-reference-multimeter.jpg',
             heading: 'Digital Mutimeter Calibration, Multifunctional Calibrators',
             point1: 'We calibrate Fluke meters such as 6.5-digit multimeter, 5.5-digit multifunction calibrators, 87-series, 787, 789, and 170-series, Megger multimeters and all other makes/models',
             point2: 'We also calibrate handheld, clamp-on, insulation testing, digital multimeters and analog multimeters'
           },
           {
-            name: 'Increased Organizational Efficiency',
-            desc: '<p>Business Analytics provides a way to benchmark organization efficiency and identify where operational gaps exists. It helps to measure and report the holistic performance of the organization, provide a basis for deep dives and create what-if scenario modelling.</p>',
+            name: 'Oscilloscope Calibration',
+            desc: '<p>Action Engineers calibrates oscilloscopes ranging up to 450 MHz from the top names in scopes including Keysight, Tektronix, Scientific, Fluke, and many more Handheld oscilloscopes including the Fluke 190 series, the AEMC Instruments OX-series, and the Keysight/Agilent U16-series</p>',
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/2-multimeter.jpg',
             heading: 'Oscilloscope Calibration',
             point1: 'Action Engineers calibrates oscilloscopes ranging up to 450 MHz from the top names in scopes including Keysight, Tektronix, Scientific, Fluke, and many more',
             point2: 'Handheld oscilloscopes including the Fluke 190 series, the AEMC Instruments OX-series, and the Keysight/Agilent U16-series'
           },
           {
-            name: 'Increased Competitive Advantage',
-            desc: '<p>Data can help with in-depth understanding of macro factors within a market. An Organization can accurately decide its strategy and tactics such as decide when to enter or exit a market, when to grow or de-grow its capacity, when to outsource or produce in-house.</p>',
+            name: 'Insulation Tester Calibration and Megohmmeter Calibration',
+            desc: '<p>Action Engineers services benchtop resistance testers such as the the Megger MIT500-series and MIT1000-series, as well as benchtop units from manufacturers such as Hioki, EIT Labs, and AEMC We also calibrate handheld resistance testers and insulation testers such as the Fluke 1500-seriesand the Megger MIT400-series</p>',
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Fluke-multimeter-calibrator.jpg',
             heading: 'Insulation Tester Calibration and Megohmmeter Calibration',
             point1: 'Action Engineers services benchtop resistance testers such as the the Megger MIT500-series and MIT1000-series, as well as benchtop units from manufacturers such as Hioki, EIT Labs, and AEMC',
              point2 :'We also calibrate handheld resistance testers and insulation testers such as the Fluke 1500-seriesand the Megger MIT400-series',
           },
           {
-            name: 'Improved Data Governance',
-            desc: '<p>Modern data architecture enables organizations to combine different data from both internal and external sources for rich analysis. With the option of cloud hosting, there is no need to invest CAPEX into expensive data storage and analytics infrastructure. Both storage and analytics can now been accessed on-demand as a service.</p>',
+            name: 'Micro-Ohmmmeter/DLRO Calibration',
+            desc: '<p>Action Engineers calibrates Digital Low Resistance Ohmmeters (DLROs) such as the Megger DLRO10-series and the AEMC Instruments 6200-series, as well as microohmmeters from B&K Precision, Extech, Hioki, and & more</p>',
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Voltage-ration-transformer.jpg',
             heading: 'Micro-Ohmmmeter/DLRO Calibration',
             point1: 'Action Engineers calibrates Digital Low Resistance Ohmmeters (DLROs) such as the Megger DLRO10-series and the AEMC Instruments 6200-series, as well as microohmmeters from B&K Precision, Extech, Hioki, and & more',
              point2: ''
           },
            {
-            name: 'Improved Data Governance',
-            desc: '<p>Modern data architecture enables organizations to combine different data from both internal and external sources for rich analysis. With the option of cloud hosting, there is no need to invest CAPEX into expensive data storage and analytics infrastructure. Both storage and analytics can now been accessed on-demand as a service.</p>',
+            name: '3 Phase Relay Test Kit',
+            desc: '<p>We at Action Engineers also calibrate Omicron 3 Phase Relay Test kit.</p>',
              img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Giga-Ohm-box.jpg',
              heading: '3 Phase Relay Test Kit',
              point1: 'We at Action Engineers also calibrate Omicron 3 Phase Relay Test kit.',
              point2: ''
           },
             {
-            name: 'Improved Data Governance',
-            desc: '<p>Modern data architecture enables organizations to combine different data from both internal and external sources for rich analysis. With the option of cloud hosting, there is no need to invest CAPEX into expensive data storage and analytics infrastructure. Both storage and analytics can now been accessed on-demand as a service.</p>',
+            name: '',
+            desc: '<p></p>',
               img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/AC-DC-divider.jpg',
               heading: '',
               point1: '',
@@ -6472,32 +6472,32 @@ export const solutionsArray = [
         blocks: [
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Length-measuring-machine.jpg',
-            name: 'Lower operational costs',
-            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Micrometer Calibration',
+            desc: '<p>Action Engineers calibrates every type and size micrometer including bore micrometers, depth micrometers, groove micrometers, and head micrometers as well as inside, outside, threat pitch.</p>',
             heading: 'Micrometer Calibration',
             point1: 'Action Engineers calibrates every type and size micrometer including bore micrometers, depth micrometers, groove micrometers, and head micrometers as well as inside, outside, threat pitch',
             point2: ''
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Vision-measuring-machine.jpg',
-            name: 'Increased productivity',
-            desc: '<p>IoT data can help businesses derive actionable insights about both the internal and external environments. It helps the organization to appropriately and timely respond to market trends thereby remaining relevant to the customers.</p>',
+            name: 'Caliper Calibration',
+            desc: '<p>We calibrate calipers and cal-masters including dial calipers, digital calipers, and vernier calipers</p>',
              heading: 'Caliper Calibration',
             point1: 'We calibrate calipers and cal-masters including dial calipers, digital calipers, and vernier calipers',
             point2: ''
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Steel-caliper-checker.jpg',
-            name: 'Better customer experience',
-            desc: '<p>The IoT data can help create personalized customer offer by tracking, monitoring and analyzing customer behavior data. This is key for any organization looking to guarantee market growth.</p>',
+            name: 'Measure Tape Calibration',
+            desc: '<p>Action Engineers is your source for measure tape calibration, straight edge calibration, steel scale calibration and a variety of other dimensional hand tools</p>',
              heading: 'Measure Tape Calibration',
             point1: 'Action Engineers is your source for measure tape calibration, straight edge calibration, steel scale calibration and a variety of other dimensional hand tools',
             point2: ''
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Scale-tape-measuring.jpg',
-            name: 'Improved productivity',
-            desc: '<p>IoT enables manual and repetitive task to be automated thereby freeing up human capacity for more challenging and complex tasks. This greatly improves operational efficiency and job satisfaction among employees.</p>',
+            name: 'Gauge Calibration‚ Bore Gauges, Ring Gauges, Plug Gauges',
+            desc: '<p>We calibrate every type of gage including plug gauges, pin gauges, height gauges, feeler gauges, bore gauges, and ring gauges</p>',
              heading: 'Gauge Calibration‚ Bore Gauges, Ring Gauges, Plug Gauges',
             point1: 'We calibrate every type of gage including plug gauges, pin gauges, height gauges, feeler gauges, bore gauges, and ring gauges',
             point2: ''
@@ -7992,8 +7992,8 @@ export const solutionsArray = [
         blocks: [
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/E2-class-weights.jpg',
-            name: 'Lower operational costs',
-            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Weights and Weight Sets',
+            desc: '<p>Action Engineers offers precision calibration of class F1, F2, M1 and M2 Our range of calibration is 1mg to 100kg</p>',
             heading: 'Weights and Weight Sets',
             point1: 'Action Engineers offers precision calibration of class F1, F2, M1 and M2',
             point2: 'Our range of calibration is 1mg to 100kg',
@@ -8001,8 +8001,8 @@ export const solutionsArray = [
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/F2-class-weights.jpg',
-            name: 'Increased productivity',
-            desc: '<p>IoT data can help businesses derive actionable insights about both the internal and external environments. It helps the organization to appropriately and timely respond to market trends thereby remaining relevant to the customers.</p>',
+            name: 'Pipette, Flask, and Beaker',
+            desc: '<p>At Action Engineers offers precision volumetric calibration from 10 μl to 5000m</p>',
             heading: 'Pipette, Flask, and Beaker',
             point1: 'At Action Engineers offers precision volumetric calibration from 10 μl to 5000m',
             point2: '',
@@ -8223,8 +8223,8 @@ export const solutionsArray = [
         blocks: [
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/Torque-sensor.jpg',
-            name: 'Lower operational costs',
-            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Torque Wrench',
+            desc: '<p>Action Engineers offers precision calibration of Type 1 Class B & C and Type 2 Class A & B Our range of calibration is 2Nm to 2000Nm.</p>',
             heading: 'Torque Wrench',
             point1: 'Action Engineers offers precision calibration of Type 1 Class B & C and Type 2 Class A & B',
             point2: 'Our range of calibration is 2Nm to 2000Nm',
@@ -8987,8 +8987,8 @@ export const solutionsArray = [
         blocks: [
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/temprature-scaner-sensors.jpg',
-            name: 'Lower operational costs',
-            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Thermometer Calibration - Infrared and Handheld',
+            desc: '<p>Infrared thermometer calibration of instruments such as the Fluke, Meco and Thermal Imager Liquid in Glass and Digital/Handheld Thermometers of all types ranges.Field/on-site measurements available</p>',
             heading: 'Thermometer Calibration - Infrared and Handheld',
             point1: 'Infrared thermometer calibration of instruments such as the Fluke, Meco and Thermal Imager',
             point2: 'Liquid in Glass and Digital/Handheld Thermometers of all types ranges.',
@@ -8996,8 +8996,8 @@ export const solutionsArray = [
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/digital-IR-thermometer.jpg',
-            name: 'Increased productivity',
-            desc: '<p>IoT data can help businesses derive actionable insights about both the internal and external environments. It helps the organization to appropriately and timely respond to market trends thereby remaining relevant to the customers.</p>',
+            name: 'RTD Calibration',
+            desc: '<p>RTD probes such as the Fluke and all models and ranges from brands like Thermo Probe, Isotech, and Ametek / Jofra</p>',
             heading: 'RTD Calibration',
             point1: 'RTD probes such as the Fluke and all models and ranges from brands like Thermo Probe, Isotech, and Ametek / Jofra',
             point2: '',
@@ -9005,8 +9005,8 @@ export const solutionsArray = [
           },
           {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/humidity-date-logger.jpg',
-            name: 'Lower operational costs',
-            desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Thermocouple Calibration',
+            desc: '<p>Electrical calibration of thermocouple devices including Types B, E, J, K, N, R, S, and T thermocouples from -200° C to 1,800° C On-site/field temperature indicator calibrations available</p>',
             heading: 'Thermocouple Calibration',
             point1: 'Electrical calibration of thermocouple devices including Types B, E, J, K, N, R, S, and T thermocouples from -200° C to 1,800° C',
             point2: 'On-site/field temperature indicator calibrations available',
@@ -9014,8 +9014,8 @@ export const solutionsArray = [
           },
            {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/R-type-thermocouple.jpg',
-            name: 'Lower operational costs',
-             desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Dry Block, Oven, Temperature Bath, and Furnace Calibration',
+             desc: '<p>Dry well / dry block calibration such as the Fluke 9000 & 9100 series & the Ametek/Jofra RTC, CTC, & ITC seriesce Baths and Liquid calibration bathsThermocouple calibration ovens / furnaces</p>',
              heading: 'Dry Block, Oven, Temperature Bath, and Furnace Calibration',
              point1: 'Dry well / dry block calibration such as the Fluke 9000 & 9100 series & the Ametek/Jofra RTC, CTC, & ITC series',
              point2: 'ce Baths and Liquid calibration baths',
@@ -9023,16 +9023,16 @@ export const solutionsArray = [
           },
             {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/4-wire.jpg',
-            name: 'Lower operational costs',
-              desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Hygrometer Calibration',
+              desc: '<p>Action Engineers calibrates all varieties of Digital Hygrometers and Portable Hygrometers, such as the Extech, HTC, etc</p>',
               heading: 'Hygrometer Calibration',
               point1: 'Action Engineers calibrates all varieties of Digital Hygrometers and Portable Hygrometers, such as the Extech, HTC, etc',
             
           },
             {
             img: 'http://wordpress.actionengineers.com/wp-content/uploads/2021/07/4-wire.jpg',
-            name: 'Lower operational costs',
-              desc: '<p>IoT sensors can provide your business with real-time data to help optimize workflows, increase capacity utilization and lower operational costs. The data provides the necessary operational visibility that an organization can use to plan flexibility required within the processes.</p>',
+            name: 'Moisture Meter & Dew Point Meter Calibration',
+              desc: '<p>We offer convenient managed services to calibrate all dew point and moisture meters including models from popular brands such as Amprobe, Extech, Testo</p>',
               heading: 'Moisture Meter & Dew Point Meter Calibration',
               point1: 'We offer convenient managed services to calibrate all dew point and moisture meters including models from popular brands such as Amprobe, Extech, Testo',
             
